@@ -1,0 +1,10 @@
+This is a programm that implements an LZ78 compressor and decompressor.
+options allowed are:
+-c to compress the file
+-d to decompress
+-v to have verbose output
+-i [input_file] to specify the input file, if it isn't specified the input has
+to be given by the standard input
+-o [output_file] to specify the output file, if it isn't specified the output
+is given on the standard output
+-s [N] to specify, in N, the dictionary size
