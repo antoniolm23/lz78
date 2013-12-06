@@ -182,8 +182,10 @@ int bitio_read(bitio* f, uint64_t* datum, int len) {
     
     int offset, readable, noffset;
     uint64_t* pointer;
-    uint64_t tmp/*, tmp2*/;
+    uint64_t tmp=0, tmp2=0;
     int res;
+	bool rep=false;
+	int old_n;
     
     //check all the parameters
     if((f == NULL) || (len < 1) || (len > sizeof(datum)*8)) {
@@ -210,7 +212,7 @@ again:
     
     //all bits read, so read another block
     if(readable==f->size) {
-		res=read(f->fd, f->buf, MAX_SIZE*8);
+		res=read(f->fd, f->buf, (MAX_SIZE*8));
 		if(res<0) {
 			fprintf(stderr, "error in read\n");
 			return -1;
@@ -218,8 +220,8 @@ again:
 		
 		//reset the structure
 		f->next=0;
-		f->end=MAX_SIZE*8;
-		f->size=MAX_SIZE*8;
+		f->end=MAX_SIZE*64;
+		//f->size=MAX_SIZE*64;
 	}
 	
 	//go to the right address
@@ -234,16 +236,24 @@ again:
 	//retrieve the datum on 64 bits
 	tmp=le64toh(*pointer);
 	tmp>>=offset;
-	tmp &= (((uint64_t)1 << (len)) - 1);
-	f->next+=noffset;
+	if(len<64)
+		tmp &= (((uint64_t)1 << (len)) - 1);
+	f->next=(f->next+noffset)%(f->end);
 	len-=noffset;
 	
 	//check if I have to continue
 	if(len>0) {
-		tmp>>=len;
+		tmp2=tmp;
+		rep=true;
+		old_n=noffset;
 		goto again;
 	}
-	
+	if(rep==true) {
+		tmp<<=old_n;
+		tmp=(tmp|tmp2);
+	}
+	htole64(tmp);
+	*datum=tmp;
     return 1;
 }
 
@@ -253,4 +263,44 @@ void bitio_close(bitio* b) {
 	close(b->fd);		//close the file
 	free(b);		//free the structure		
 	
+}
+
+int main() {
+  struct bitio* b=bit_open("prova.txt", "w");
+  uint64_t a=0;
+  bitio_write(b, 'a', 64);
+  bitio_write(b, 'b', 64);
+  bitio_write(b, 'c', 32);
+  bitio_write(b, 'd', 24);
+  //bitio_write(b, 'd', 8);
+  //bitio_write(b, 'd', 8);
+  bitio_write(b, 0x8, 4);
+  bitio_write(b, 0xf3, 14);
+  bitio_write(b, 'a', 55);
+  bitio_write(b, 'b', 64);
+  bitio_write(b, 'a', 64);
+  bitio_write(b, 'a', 64);
+  bitio_close(b);
+  b=bit_open("prova.txt", "r");
+  bitio_read(b, &a, 64);
+  fprintf(stderr, "%x\n",(int)a);
+  bitio_read(b, &a, 64);
+  fprintf(stderr, "%x\n",(int)a);
+  bitio_read(b, &a, 32);
+  fprintf(stderr, "%x\n",(int)a);
+  bitio_read(b, &a, 24);
+  fprintf(stderr, "%x\n",(int)a);
+  //bitio_read(b, &a, 8);
+  //fprintf(stderr, "%x\n",(int)a);
+  //bitio_read(b, &a, 8);
+  //fprintf(stderr, "%x\n",(int)a);
+  bitio_read(b, &a, 4);
+  fprintf(stderr, "%x\n",(int)a);
+  bitio_read(b, &a, 14);
+  fprintf(stderr, "%x\n",(int)a);
+  bitio_close(b);
+  bitio_read(b, &a, 55);
+  fprintf(stderr, "%x\n",(int)a);
+  
+  return 0;
 }

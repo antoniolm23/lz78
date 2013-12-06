@@ -60,7 +60,7 @@ bitio* bit_open(char* name, char* mode) {
   	//set the structure for reading mode
   	if(f->writing==O_RDONLY) {
     	//fprintf(stderr, "apro il file in reading\n");
-    	f->end=f->size;
+    	f->end=0;
     	f->next=0;
   	}
   
@@ -118,10 +118,7 @@ again:  space=f->end-f->next;
    		
    		//write the buffer in the file	
     	result=(int)write(f->fd, f->buf, MAX_SIZE*8);
-    	if(result<0) {
-			fprintf(stderr, "Error in write\n");
-			return -1;
-		}
+    	if(result<0) fprintf(stderr, "Error in write\n");
     	
     	//reset the buffer
     	for(i=0; i<MAX_SIZE; i++) {
@@ -160,8 +157,7 @@ again:  space=f->end-f->next;
   	d>>=n;
   	
   	//check if there are bits left to put in the buffer
-  	if(len>0) 
-		goto again;
+  	if(len>0) goto again;
     
     if(original==EOFC) {
     	
@@ -182,7 +178,7 @@ int bitio_read(bitio* f, uint64_t* datum, int len) {
     
     int offset, readable, noffset;
     uint64_t* pointer;
-    uint64_t tmp/*, tmp2*/;
+    uint64_t tmp, tmp2;
     int res;
     
     //check all the parameters
@@ -200,50 +196,47 @@ int bitio_read(bitio* f, uint64_t* datum, int len) {
         return -1;
     }
 	
-again: 
-	readable=f->end-f->next;
-    if(readable<0) {
-		errno=EINVAL;
-		fprintf(stderr, "Error3\n");
-		return -1;
-    }
+    readable = (f->end - f->next);
     
-    //all bits read, so read another block
-    if(readable==f->size) {
-		res=read(f->fd, f->buf, MAX_SIZE*8);
-		if(res<0) {
-			fprintf(stderr, "error in read\n");
-			return -1;
-		}
-		
-		//reset the structure
-		f->next=0;
-		f->end=MAX_SIZE*8;
-		f->size=MAX_SIZE*8;
-	}
-	
-	//go to the right address
-	pointer=f->buf+(f->next/64);
-	//go to the right offset
-	offset=f->next%64;
-	noffset=64-offset;
-	
-	if(len<noffset) 
-		noffset=len;
-	
-	//retrieve the datum on 64 bits
-	tmp=le64toh(*pointer);
-	tmp>>=offset;
-	tmp &= (((uint64_t)1 << (len)) - 1);
-	f->next+=noffset;
-	len-=noffset;
-	
-	//check if I have to continue
-	if(len>0) {
-		tmp>>=len;
-		goto again;
-	}
-	
+    if(readable < 0) {       //check if there are bits to read
+        errno = EINVAL;
+        fprintf(stderr, "Error4\n");
+        return -1;
+    }
+    if(readable < len) {  //Check if refill the structure
+        res=read(f->fd, f->buf, (MAX_SIZE * 8));
+        if(res<0) fprintf(stderr, "ERROR\n");
+        f->next = 0;
+        f->end = f->size;
+        readable = MAX_SIZE * 64;
+    }
+
+    pointer = f->buf + (f->next / 64);
+    offset = f->next % 64;
+    noffset = 64 - offset;
+    
+    if(len <= noffset) {      //Reading on only one element of buf
+        tmp = le64toh(*pointer);
+        tmp >>= offset;
+        tmp &= (((uint64_t)1 << (len)) - 1);
+        f->next += len;
+        
+    }else {                         //Reading ALSO on the next element of buf
+        tmp = le64toh(*pointer);
+        tmp >>= offset;
+        tmp &= (((uint64_t)1 << offset) - 1); //Set to 0 the unused bits of the buffer of the element
+        f->next += len;
+        pointer = f->buf + (f->next / 64);
+        offset = f->next % 64;
+        tmp2 = le64toh(*pointer);
+        tmp2 <<= noffset;
+        tmp2 &= (((uint64_t)1 << (len)) - 1); //Set to 0 the unused bits of the buffer of the element
+        tmp |= tmp2;                //Make the datum
+        len=len-noffset;
+    }
+    //*pointer = htole64(tmp);
+    *datum = tmp;
+    //fprintf(stderr, "Reading of %llx on offset %i \n", tmp, offset);
     return 1;
 }
 

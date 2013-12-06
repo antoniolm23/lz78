@@ -1,0 +1,8 @@
+/*
+ This is an header file
+ */
+#include <stdio.h>	//standard io library
+#include <stdlib.h>	//standard library
+#include <unistd.h>
+#include <ctype.h>
+typedef enum{false, true} bool;	//definition of bool type

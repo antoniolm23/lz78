@@ -1,0 +1,49 @@
+/***********************************************
+ *Copyright La Marra Antonio Rotili Giacomo
+ * (c) 2013
+ **********************************************/
+#include "everything.h"
+int main(int argc, char* argv[]) {
+  //array to keep int account the options passed:
+  /*0: c 1: v 2: i 3: o 4: d 5: s */
+  bool option[6];
+  //inizialization of option array
+  int i;
+  for(i=0; i<6; i++) option[i]=false;
+  //checking of number of arguments passed
+  if(argc<2)  {	//this means that the program was called without arguments
+    fprintf(stderr, "Missing arguments\n");//print message on stderror
+    exit(-1);//exit from the program
+  }
+  //checking the type of arguments passed
+  int actopt;//takes into account the character corresponding to actual option
+  while((actopt=getopt(argc, argv, "cvi:o:d:s:"))!=-1) {
+    switch(actopt) {
+      case 'c':
+	option[0]=true;
+	break;
+      case 'v':
+	option[1]=true;
+	break;
+      case 'i':
+	option[2]=true;
+	break;
+      case 'o':
+	option[3]=true;
+	break;
+      case 'd':
+	option[4]=true;
+	break;
+      case 's':
+	option[5]=true;
+	break;
+      default:
+	break;
+    }
+  }
+  //usage of option TO DELETE
+  for(i=0; i<6; i++) printf("%i \t",option[i]);
+  printf("\n");
+  printf("Hello World\n");
+  return 0;
+}
