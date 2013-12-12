@@ -30,9 +30,11 @@ int dict_add_word(int index, int father, unsigned int symbol, dictionary* d) {
 }
 
 //search a couple father son in the table
-int dict_search(int* father, unsigned int child, dictionary* D){	
-	int tmp = hash_search(father, child, &D->table);
+int dict_search(int* father, unsigned int child, dictionary* D){
+	int tmp_father=*father;
+	int tmp = hash_search(&tmp_father, child, &D->table);
 	//fprintf(stderr, "dict_index: %i\n", tmp);
+	*father=tmp_father;
 	return tmp;
 }
 
