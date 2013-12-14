@@ -5,3 +5,4 @@ CFLAGS= -Wall -O2	#compiler options
 OBJS= $(SRCS:.c=.o)
 $(PROG): $(OBJS)
 	$(CC) -o $(PROG) $(OBJS) $(LDFLAGS)
+	rm *.o
