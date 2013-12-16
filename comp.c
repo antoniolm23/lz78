@@ -108,15 +108,19 @@ void compress(char* from, char* to, int size){
     //close all the structures writing EOFC on the compressed file
     bitio_write(bit, EOFC, blen);
     bitio_close(bit);
+	
 	//fprintf(stderr, "%i\n", longest_match);
 	
 	//write the longest match in the file
 	file_write=fopen(to, "r+b");
 	fseek(file_write, sizeof(int), SEEK_SET); 
 	hdr.longest_match=longest_match;
+	
+	//fprintf(stderr, "\t\tlongest match: %i\n", longest_match);
+	
 	fwrite(&hdr.longest_match, sizeof(int), 1, file_write);
 	fclose(file_write);
-	hash_print(&dict->table);
+	//hash_print(&dict->table);
     //free all other structures
     comp_dict_suppress(dict);
     free(dict);
@@ -149,12 +153,12 @@ void decompress(char* from, char* to){
 	//fprintf(stderr, "aaaaa %i %i\n", hdr.dictionary_size, hdr.longest_match);
 	
 	//management of the vector in which put the symbols
-	max_length=hdr.longest_match+40;
+	max_length=hdr.longest_match*8;
 	fprintf(stderr, "ml: %i\n", max_length);
 	vector=malloc(max_length+1);
 	vector[max_length]='\0';
     
-    dict = malloc(sizeof(dictionary));
+    dict = malloc(sizeof(dec_dictionary));
     decomp_dict_init(dict, hdr.dictionary_size, 256);
    
     aux = hdr.dictionary_size;         //Compute the number of bits representing the indexes
@@ -179,7 +183,7 @@ void decompress(char* from, char* to){
 		
         //critical situation
         if(res_retrieve==-1) {
-			child_root=vector[0];
+			//child_root=vector[0];
         	fprintf(stderr, "$ret$: ");
 			decomp_dict_insertion(prev_current, child_root, dict);
 			actual_length=0;
@@ -206,14 +210,17 @@ void decompress(char* from, char* to){
         bitio_read(comp_file, &read_index, index_bits);                 //Read the index
     }
     
+    fprintf(stderr, "decompression executed\n");
+    
     print_tab(&dict->tab);
+	free(vector);
     //Closure of all data structures
     bitio_close(comp_file);                                 
     fclose(decomp);
     //print_dict(dict);
     decomp_dict_suppress(dict);
     
-    fprintf(stderr, "decompression executed\n");
+    
 }
 
 

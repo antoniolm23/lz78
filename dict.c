@@ -55,7 +55,7 @@ void comp_dict_suppress(dictionary* d) {
 
 //function to initialize the dictionary used by the decompressor
 void decomp_dict_init(dec_dictionary* d, int size, int symbols) {
-	
+	//fprintf(stderr, "size: %i\n", size);
 	d->size=size;
 	d->symbols=symbols;
 	

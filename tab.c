@@ -287,7 +287,7 @@ void hash_print(ht_table* table) {
 void tab_init(table* t, int size, int symbols) {
 	
 	int i;
-	
+	fprintf(stderr, "size: %li\n", size*sizeof(entry)*2);
 	t->array=malloc(size*sizeof(entry));
 	
 	//initialize the first entries as did in the compressor_table

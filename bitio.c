@@ -58,17 +58,17 @@ bitio* bit_open(char* name, char* mode) {
   	f->size=MAX_SIZE*64;		//size in bits
   	
   	//set the structure for reading mode
-  	//if(f->writing==O_RDONLY) {
+  	if(f->writing==O_RDONLY) {
     	//fprintf(stderr, "apro il file in reading\n");
     	f->end=f->size;
     	f->next=0;
-  	//}
+  	}
   
   	//set the structure for writing mode
-  	//else {
-    //	f->end=f->size;
-   // 	f->next=0;
-  	//}
+  	else {
+    	f->end=f->size;
+    	f->next=0;
+  	}
   
   	//set the buffer to zero in order to perform the writing operations
   	for(i=0; i<MAX_SIZE; i++) {
@@ -211,7 +211,7 @@ again:
     }
     
     //all bits read, so read another block
-    if(readable==f->size||readable==0) {
+    if(readable==f->size) {
 		res=read(f->fd, f->buf, (MAX_SIZE*8));
 		if(res<0) {
 			fprintf(stderr, "error in read\n");
