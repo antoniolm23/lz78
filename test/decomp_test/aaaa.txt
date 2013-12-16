@@ -1,0 +1,4563 @@
+ml: 51
+65535
+read 35: 35 
+read 105: 105 
+insertion: 257: 35 i
+read 110: 110 
+insertion: 258: 105 n
+read 99: 99 
+insertion: 259: 110 c
+read 108: 108 
+insertion: 260: 99 l
+read 117: 117 
+insertion: 261: 108 u
+read 100: 100 
+insertion: 262: 117 d
+read 101: 101 
+insertion: 263: 100 e
+read 32: 32 
+insertion: 264: 101  
+read 34: 34 
+insertion: 265: 32 "
+read 99: 99 
+insertion: 266: 34 c
+read 111: 111 
+insertion: 267: 99 o
+read 109: 109 
+insertion: 268: 111 m
+read 112: 112 
+insertion: 269: 109 p                                                                                                                                                                           
+read 46: 46                                                                                                                                                                                     
+insertion: 270: 112 .                                                                                                                                                                           
+read 104: 104                                                                                                                                                                                   
+insertion: 271: 46 h                                                                                                                                                                            
+read 34: 34                                                                                                                                                                                     
+insertion: 272: 104 "                                                                                                                                                                           
+read 10: 10                                                                                                                                                                                                                                                                    
+insertion: 273: 34                                                                                                                                                                                                                                                             
+                                                                                                                                                                                                                                                                               
+read 47: 47                                                                                                                                                                                                                                                                    
+insertion: 274: 10 /                                                                                                                                                                                                                                                           
+read 47: 47                                                                                                                                                                                                                                                                    
+insertion: 275: 47 /                                                                                                                                                                                                                                                           
+read 257: 35 105                                                                                                                                                                                                                                                               
+insertion: 276: 47 #                                                                                                                                                                                                                                                           
+read 259: 110 99                                                                                                                                                                                                                                                               
+insertion: 277: 257 n                                                                                                                                                                                                                                                          
+read 261: 108 117                                                                                                                                                                                                                                                              
+insertion: 278: 259 l                                                                                                                                                                                                                                                          
+read 263: 100 101                                                                                                                                                                                                                                                              
+insertion: 279: 261 d                                                                                                                                                                                                                                                          
+read 265: 32 34                                                                                                                                                                                                                                                                
+insertion: 280: 263                                                                                                                                                                                                                                                            
+read 100: 100                                                                                                                                                                                                                                                                  
+insertion: 281: 265 d                                                                                                                                                                                                                                                          
+read 105: 105                                                                                                                                                                                                                                                                  
+insertion: 282: 100 i
+read 99: 99 
+insertion: 283: 105 c
+read 116: 116 
+insertion: 284: 99 t
+read 271: 46 104 
+insertion: 285: 116 .
+read 273: 34 10 
+insertion: 286: 271 "
+read 275: 47 47 
+insertion: 287: 273 /
+read 277: 35 105 110 
+insertion: 288: 275 #
+read 260: 99 108 
+insertion: 289: 277 c
+read 262: 117 100 
+insertion: 290: 260 u
+read 264: 101 32 
+insertion: 291: 262 e
+read 34: 34 
+insertion: 292: 264 "
+read 98: 98 
+insertion: 293: 34 b
+read 105: 105 
+insertion: 294: 98 i
+read 116: 116 
+insertion: 295: 105 t
+read 105: 105 
+insertion: 296: 116 i
+read 111: 111 
+insertion: 297: 105 o
+read 286: 46 104 34 
+insertion: 298: 111 .
+read 10: 10 
+insertion: 299: 286 
+
+read 274: 10 47 
+insertion: 300: 10 
+
+read 47: 47 
+insertion: 301: 274 /
+read 101: 101 
+insertion: 302: 47 e
+read 120: 120 
+insertion: 303: 101 x
+read 116: 116 
+insertion: 304: 120 t
+read 114: 114 
+insertion: 305: 116 r
+read 97: 97 
+insertion: 306: 114 a
+read 284: 99 116 
+insertion: 307: 97 c
+read 32: 32 
+insertion: 308: 284  
+read 116: 116 
+insertion: 309: 32 t
+read 104: 104 
+insertion: 310: 116 h
+read 264: 101 32 
+insertion: 311: 104 e
+read 303: 101 120 
+insertion: 312: 264 e
+read 116: 116 
+insertion: 313: 303 t
+read 101: 101 
+insertion: 314: 116 e
+read 110: 110 
+insertion: 315: 101 n
+read 115: 115 
+insertion: 316: 110 s
+read 297: 105 111 
+insertion: 317: 115 i
+read 110: 110 
+insertion: 318: 297 n
+read 32: 32 
+insertion: 319: 110  
+read 102: 102 
+insertion: 320: 32 f
+read 114: 114 
+insertion: 321: 102 r
+read 268: 111 109 
+insertion: 322: 114 o
+read 309: 32 116 
+insertion: 323: 268  
+read 311: 104 101 
+insertion: 324: 309 h
+read 320: 32 102 
+insertion: 325: 311  
+read 105: 105 
+insertion: 326: 320 i
+read 108: 108 
+insertion: 327: 105 l
+read 315: 101 110 
+insertion: 328: 108 e
+read 97: 97 
+insertion: 329: 315 a
+read 109: 109 
+insertion: 330: 97 m
+read 101: 101 
+insertion: 331: 109 e
+read 10: 10 
+insertion: 332: 101 
+
+read 98: 98 
+insertion: 333: 10 b
+read 111: 111 
+insertion: 334: 98 o
+read 111: 111 
+insertion: 335: 111 o
+read 108: 108 
+insertion: 336: 111 l
+read 32: 32 
+insertion: 337: 108  
+read 313: 101 120 116 
+insertion: 338: 32 e
+read 306: 114 97 
+insertion: 339: 313 r
+read 284: 99 116 
+insertion: 340: 306 c
+read 95: 95 
+insertion: 341: 284 _
+read 313: 101 120 116 
+insertion: 342: 95 e
+read 315: 101 110 
+insertion: 343: 313 e
+read 317: 115 105 
+insertion: 344: 315 s
+read 111: 111 
+insertion: 345: 317 o
+read 110: 110 
+insertion: 346: 111 n
+read 40: 40 
+insertion: 347: 110 (
+read 99: 99 
+insertion: 348: 40 c
+read 104: 104 
+insertion: 349: 99 h
+read 97: 97 
+insertion: 350: 104 a
+read 114: 114 
+insertion: 351: 97 r
+read 42: 42 
+insertion: 352: 114 *
+read 326: 32 102 105 
+insertion: 353: 42  
+read 328: 108 101 
+insertion: 354: 326 l
+read 110: 110 
+insertion: 355: 328 n
+read 330: 97 109 
+insertion: 356: 110 a
+read 101: 101 
+insertion: 357: 330 e
+read 44: 44 
+insertion: 358: 101 ,
+read 32: 32 
+insertion: 359: 44  
+read 349: 99 104 
+insertion: 360: 32 c
+read 351: 97 114 
+insertion: 361: 349 a
+read 353: 42 32 
+insertion: 362: 351 *
+read 313: 101 120 116 
+insertion: 363: 353 e
+read 41: 41 
+insertion: 364: 313 )
+read 32: 32 
+insertion: 365: 41  
+read 123: 123 
+insertion: 366: 32 {
+read 10: 10 
+insertion: 367: 123 
+
+read 9: 9 
+insertion: 368: 10 
+read 258: 105 110 
+insertion: 369: 9 i
+read 116: 116 
+insertion: 370: 258 t
+read 32: 32 
+insertion: 371: 116  
+read 355: 108 101 110 
+insertion: 372: 32 l
+read 359: 44 32 
+insertion: 373: 355 ,
+read 105: 105 
+insertion: 374: 359 i
+read 59: 59 
+insertion: 375: 105 ;
+read 368: 10 9 
+insertion: 376: 59 
+
+read 355: 108 101 110 
+insertion: 377: 368 l
+read 61: 61 
+insertion: 378: 355 =
+read 40: 40 
+insertion: 379: 61 (
+read 370: 105 110 116 
+insertion: 380: 40 i
+read 41: 41 
+insertion: 381: 370 )
+read 115: 115 
+insertion: 382: 41 s
+read 305: 116 114 
+insertion: 383: 115 t
+read 355: 108 101 110 
+insertion: 384: 305 l
+read 40: 40 
+insertion: 385: 355 (
+read 102: 102 
+insertion: 386: 40 f
+read 327: 105 108 
+insertion: 387: 102 i
+read 329: 101 110 97 
+insertion: 388: 327 e
+read 331: 109 101 
+insertion: 389: 329 m
+read 41: 41 
+insertion: 390: 331 )
+read 59: 59 
+insertion: 391: 41 ;
+read 32: 32 
+insertion: 392: 59  
+read 275: 47 47 
+insertion: 393: 32 /
+read 355: 108 101 110 
+insertion: 394: 275 l
+read 103: 103 
+insertion: 395: 355 g
+read 310: 116 104 
+insertion: 396: 103 t
+read 32: 32 
+insertion: 397: 310  
+read 111: 111 
+insertion: 398: 32 o
+read 102: 102 
+insertion: 399: 111 f
+read 324: 32 116 104 
+insertion: 400: 102  
+read 264: 101 32 
+insertion: 401: 324 e
+read 387: 102 105 
+insertion: 402: 264 f
+read 355: 108 101 110 
+insertion: 403: 387 l
+read 357: 97 109 101 
+insertion: 404: 355 a
+read 368: 10 9 
+insertion: 405: 357 
+
+read 102: 102 
+insertion: 406: 368 f
+read 111: 111 
+insertion: 407: 102 o
+read 114: 114 
+insertion: 408: 111 r
+read 380: 40 105 
+insertion: 409: 114 (
+read 61: 61 
+insertion: 410: 380 =
+read 355: 108 101 110 
+insertion: 411: 61 l
+read 45: 45 
+insertion: 412: 355 -
+read 49: 49 
+insertion: 413: 45 1
+read 392: 59 32 
+insertion: 414: 49 ;
+read 105: 105 
+insertion: 415: 392 i
+read 62: 62 
+insertion: 416: 105 >
+read 61: 61 
+insertion: 417: 62 =
+read 48: 48 
+insertion: 418: 61 0
+read 415: 59 32 105 
+insertion: 419: 48 ;
+read 45: 45 
+insertion: 420: 415 -
+read 45: 45 
+insertion: 421: 45 -
+read 365: 41 32 
+insertion: 422: 45 )
+read 367: 123 10 
+insertion: 423: 365 {
+read 9: 9 
+insertion: 424: 367 
+read 369: 9 105 
+insertion: 425: 9 
+read 102: 102 
+insertion: 426: 369 f
+read 386: 40 102 
+insertion: 427: 102 (
+read 388: 105 108 101 
+insertion: 428: 386 i
+read 356: 110 97 
+insertion: 429: 388 n
+read 331: 109 101 
+insertion: 430: 356 m
+read 91: 91 
+insertion: 431: 331 [
+read 105: 105 
+insertion: 432: 91 i
+read 93: 93 
+insertion: 433: 105 ]
+read 61: 61 
+insertion: 434: 93 =
+read 61: 61 
+insertion: 435: 61 =
+read 39: 39 
+insertion: 436: 61 '
+read 46: 46 
+insertion: 437: 39 .
+read 39: 39 
+insertion: 438: 46 '
+read 423: 41 32 123 
+insertion: 439: 39 )
+read 368: 10 9 
+insertion: 440: 423 
+
+read 425: 9 9 
+insertion: 441: 368 
+read 383: 115 116 
+insertion: 442: 425 s
+read 114: 114 
+insertion: 443: 383 r
+read 99: 99 
+insertion: 444: 114 c
+read 112: 112 
+insertion: 445: 99 p
+read 121: 121 
+insertion: 446: 112 y
+read 40: 40 
+insertion: 447: 121 (
+read 313: 101 120 116 
+insertion: 448: 40 e
+read 359: 44 32 
+insertion: 449: 313 ,
+read 38: 38 
+insertion: 450: 359 &
+read 403: 102 105 108 
+insertion: 451: 38 f
+read 389: 101 110 97 109 
+insertion: 452: 403 e
+read 101: 101 
+insertion: 453: 389 e
+read 432: 91 105 
+insertion: 454: 101 [
+read 43: 43 
+insertion: 455: 432 +
+read 49: 49 
+insertion: 456: 43 1
+read 93: 93 
+insertion: 457: 49 ]
+read 391: 41 59 
+insertion: 458: 93 )
+read 441: 10 9 9 
+insertion: 459: 391 
+
+read 9: 9 
+insertion: 460: 441 
+read 114: 114 
+insertion: 461: 9 r
+read 101: 101 
+insertion: 462: 114 e
+read 116: 116 
+insertion: 463: 101 t
+read 117: 117 
+insertion: 464: 116 u
+read 114: 114 
+insertion: 465: 117 r
+read 319: 110 32 
+insertion: 466: 114 n
+read 305: 116 114 
+insertion: 467: 319 t
+read 117: 117 
+insertion: 468: 305 u
+read 101: 101 
+insertion: 469: 117 e
+read 376: 59 10 
+insertion: 470: 101 ;
+read 425: 9 9 
+insertion: 471: 376 
+read 125: 125 
+insertion: 472: 425 }
+read 368: 10 9 
+insertion: 473: 125 
+
+read 473: 125 10 
+insertion: 474: 368 }
+read 461: 9 114 
+insertion: 475: 473 
+read 463: 101 116 
+insertion: 476: 461 e
+read 465: 117 114 
+insertion: 477: 463 u
+read 319: 110 32 
+insertion: 478: 465 n
+read 102: 102 
+insertion: 479: 319 f
+read 97: 97 
+insertion: 480: 102 a
+read 108: 108 
+insertion: 481: 97 l
+read 115: 115 
+insertion: 482: 108 s
+read 470: 101 59 
+insertion: 483: 115 e
+read 10: 10 
+insertion: 484: 470 
+
+read 473: 125 10 
+insertion: 485: 10 }
+read 274: 10 47 
+insertion: 486: 473 
+
+read 353: 42 32 
+insertion: 487: 274 *
+read 267: 99 111 
+insertion: 488: 353 c
+read 269: 109 112 
+insertion: 489: 267 m
+read 462: 114 101 
+insertion: 490: 269 r
+read 115: 115 
+insertion: 491: 462 s
+read 115: 115 
+insertion: 492: 115 s
+read 408: 111 114 
+insertion: 493: 115 o
+read 32: 32 
+insertion: 494: 408  
+read 481: 97 108 
+insertion: 495: 32 a
+read 103: 103 
+insertion: 496: 481 g
+read 408: 111 114 
+insertion: 497: 103 o
+read 295: 105 116 
+insertion: 498: 408 i
+read 104: 104 
+insertion: 499: 295 h
+read 109: 109 
+insertion: 500: 104 m
+read 320: 32 102 
+insertion: 501: 109  
+read 494: 111 114 32 
+insertion: 502: 320 o
+read 108: 108 
+insertion: 503: 494 l
+read 122: 122 
+insertion: 504: 108 z
+read 55: 55 
+insertion: 505: 122 7
+read 56: 56 
+insertion: 506: 55 8
+read 58: 58 
+insertion: 507: 56 :
+read 10: 10 
+insertion: 508: 58 
+
+read 32: 32 
+insertion: 509: 10  
+read 353: 42 32 
+insertion: 510: 32 *
+read 321: 102 114 
+insertion: 511: 353 f
+read 323: 111 109 32 
+insertion: 512: 321 o
+read 105: 105 
+insertion: 513: 323 i
+read 115: 115 
+insertion: 514: 105 s
+read 401: 32 116 104 101 
+insertion: 515: 115  
+read 32: 32 
+insertion: 516: 401  
+read 112: 112 
+insertion: 517: 32 p
+read 97: 97 
+insertion: 518: 112 a
+read 397: 116 104 32 
+insertion: 519: 97 t
+read 399: 111 102 
+insertion: 520: 397 o
+read 516: 32 116 104 101 32 
+insertion: 521: 399  
+read 452: 102 105 108 101 
+insertion: 522: 516 f
+read 309: 32 116 
+insertion: 523: 452  
+read 111: 111 
+insertion: 524: 309 o
+read 360: 32 99 
+insertion: 525: 111  
+read 268: 111 109 
+insertion: 526: 360 o
+read 112: 112 
+insertion: 527: 268 p
+read 491: 114 101 115 
+insertion: 528: 112 r
+read 115: 115 
+insertion: 529: 491 s
+read 359: 44 32 
+insertion: 530: 115 ,
+read 317: 115 105 
+insertion: 531: 359 s
+read 122: 122 
+insertion: 532: 317 z
+read 264: 101 32 
+insertion: 533: 122 e
+read 514: 105 115 
+insertion: 534: 264 i
+read 516: 32 116 104 101 32 
+insertion: 535: 514  
+read 532: 115 105 122 
+insertion: 536: 516 s
+read 264: 101 32 
+insertion: 537: 532 e
+read 521: 111 102 32 
+insertion: 538: 264 o
+read 310: 116 104 
+insertion: 539: 521 t
+read 264: 101 32 
+insertion: 540: 310 e
+read 282: 100 105 
+insertion: 541: 264 d
+read 284: 99 116 
+insertion: 542: 282 c
+read 318: 105 111 110 
+insertion: 543: 284 i
+read 351: 97 114 
+insertion: 544: 318 a
+read 121: 121 
+insertion: 545: 351 y
+read 509: 10 32 
+insertion: 546: 121 
+
+read 353: 42 32 
+insertion: 547: 509 *
+read 116: 116 
+insertion: 548: 353 t
+read 525: 111 32 
+insertion: 549: 116 o
+read 535: 105 115 32 
+insertion: 550: 525 i
+read 540: 116 104 101 
+insertion: 551: 535 t
+read 526: 32 99 111 
+insertion: 552: 540  
+read 490: 109 112 114 
+insertion: 553: 526 m
+read 101: 101 
+insertion: 554: 490 e
+read 492: 115 115 
+insertion: 555: 101 s
+read 101: 101 
+insertion: 556: 492 e
+read 100: 100 
+insertion: 557: 101 d
+read 354: 32 102 105 108 
+insertion: 558: 100  
+read 264: 101 32 
+insertion: 559: 354 e
+read 430: 110 97 109 
+insertion: 560: 264 n
+read 358: 101 44 
+insertion: 561: 430 e
+read 32: 32 
+insertion: 562: 358  
+read 295: 105 116 
+insertion: 563: 32 i
+read 360: 32 99 
+insertion: 564: 295  
+read 97: 97 
+insertion: 565: 360 a
+read 319: 110 32 
+insertion: 566: 97 n
+read 98: 98 
+insertion: 567: 319 b
+read 264: 101 32 
+insertion: 568: 98 e
+read 349: 99 104 
+insertion: 569: 264 c
+read 111: 111 
+insertion: 570: 349 o
+read 483: 115 101 
+insertion: 571: 111 s
+read 32: 32 
+insertion: 572: 483  
+read 98: 98 
+insertion: 573: 32 b
+read 121: 121 
+insertion: 574: 98 y
+read 516: 32 116 104 101 32 
+insertion: 575: 121  
+read 117: 117 
+insertion: 576: 516 u
+read 483: 115 101 
+insertion: 577: 117 s
+read 114: 114 
+insertion: 578: 483 r
+read 359: 44 32 
+insertion: 579: 114 ,
+read 547: 10 32 42 
+insertion: 580: 359 
+
+read 32: 32 
+insertion: 581: 547  
+read 425: 9 9 
+insertion: 582: 32 
+read 111: 111 
+insertion: 583: 425 o
+read 540: 116 104 101 
+insertion: 584: 111 t
+read 114: 114 
+insertion: 585: 540 r
+read 119: 119 
+insertion: 586: 114 w
+read 514: 105 115 
+insertion: 587: 119 i
+read 264: 101 32 
+insertion: 588: 514 e
+read 97: 97 
+insertion: 589: 264 a
+read 32: 32 
+insertion: 590: 97  
+read 383: 115 116 
+insertion: 591: 32 s
+read 566: 97 110 
+insertion: 592: 383 a
+read 100: 100 
+insertion: 593: 566 d
+read 351: 97 114 
+insertion: 594: 100 a
+read 558: 100 32 
+insertion: 595: 351 d
+read 561: 110 97 109 101 
+insertion: 596: 558 n
+read 563: 32 105 
+insertion: 597: 561  
+read 515: 115 32 
+insertion: 598: 563 s
+read 112: 112 
+insertion: 599: 515 p
+read 117: 117 
+insertion: 600: 112 u
+read 371: 116 32 
+insertion: 601: 117 t
+read 258: 105 110 
+insertion: 602: 371 i
+read 563: 32 105 
+insertion: 603: 258  
+read 116: 116 
+insertion: 604: 563 t
+read 599: 115 32 112 
+insertion: 605: 116 s
+read 108: 108 
+insertion: 606: 599 l
+read 307: 97 99 
+insertion: 607: 108 a
+read 101: 101 
+insertion: 608: 307 e
+read 42: 42 
+insertion: 609: 101 *
+read 47: 47 
+insertion: 610: 42 /
+read 10: 10 
+insertion: 611: 47 
+
+read 118: 118 
+insertion: 612: 10 v
+read 111: 111 
+insertion: 613: 118 o
+read 105: 105 
+insertion: 614: 111 i
+read 558: 100 32 
+insertion: 615: 105 d
+read 489: 99 111 109 
+insertion: 616: 558 c
+read 528: 112 114 
+insertion: 617: 489 p
+read 555: 101 115 
+insertion: 618: 528 e
+read 115: 115 
+insertion: 619: 555 s
+read 348: 40 99 
+insertion: 620: 115 (
+read 350: 104 97 
+insertion: 621: 348 h
+read 352: 114 42 
+insertion: 622: 350 r
+read 320: 32 102 
+insertion: 623: 352  
+read 322: 114 111 
+insertion: 624: 320 r
+read 109: 109 
+insertion: 625: 322 m
+read 359: 44 32 
+insertion: 626: 109 ,
+read 361: 99 104 97 
+insertion: 627: 359 c
+read 623: 114 42 32 
+insertion: 628: 361 r
+read 549: 116 111 
+insertion: 629: 623 t
+read 374: 44 32 105 
+insertion: 630: 549 ,
+read 110: 110 
+insertion: 631: 374 n
+read 371: 116 32 
+insertion: 632: 110 t
+read 537: 115 105 122 101 
+insertion: 633: 371 s
+read 41: 41 
+insertion: 634: 537 )
+read 424: 123 10 9 
+insertion: 635: 41 {
+read 368: 10 9 
+insertion: 636: 424 
+
+read 275: 47 47 
+insertion: 637: 368 /
+read 102: 102 
+insertion: 638: 275 f
+read 528: 112 114 
+insertion: 639: 102 p
+read 370: 105 110 116 
+insertion: 640: 528 i
+read 427: 102 40 
+insertion: 641: 370 f
+read 383: 115 116 
+insertion: 642: 427 s
+read 263: 100 101 
+insertion: 643: 383 d
+read 114: 114 
+insertion: 644: 263 r
+read 579: 114 44 
+insertion: 645: 114 r
+read 265: 32 34 
+insertion: 646: 579  
+read 617: 99 111 109 112 
+insertion: 647: 265 c
+read 529: 114 101 115 115 
+insertion: 648: 617 r
+read 408: 111 114 
+insertion: 649: 529 o
+read 92: 92 
+insertion: 650: 408 \
+read 110: 110 
+insertion: 651: 92 n
+read 34: 34 
+insertion: 652: 110 "
+read 459: 41 59 10 
+insertion: 653: 34 )
+read 32: 32 
+insertion: 654: 459  
+read 655: res_retrieve
+insertion: 655: 32  
+32 32 
+read 393: 32 47 
+insertion: 656: 655  
+read 47: 47 
+insertion: 657: 393 /
+read 370: 105 110 116 
+insertion: 658: 47 i
+read 374: 44 32 105 
+insertion: 659: 370 ,
+read 359: 44 32 
+insertion: 660: 374 ,
+read 102: 102 
+insertion: 661: 359 f
+read 355: 108 101 110 
+insertion: 662: 102 l
+read 59: 59 
+insertion: 663: 355 ;
+read 9: 9 
+insertion: 664: 59 
+read 394: 47 47 108 
+insertion: 665: 9 /
+read 315: 101 110 
+insertion: 666: 394 e
+read 396: 103 116 
+insertion: 667: 315 g
+read 104: 104 
+insertion: 668: 396 h
+read 398: 32 111 
+insertion: 669: 104  
+read 400: 102 32 
+insertion: 670: 398 f
+read 452: 102 105 108 101 
+insertion: 671: 400 f
+read 110: 110 
+insertion: 672: 452 n
+read 405: 97 109 101 10 
+insertion: 673: 110 a
+read 656: 32 32 32 
+insertion: 674: 405  
+read 657: 32 47 47 
+insertion: 675: 656  
+read 370: 105 110 116 
+insertion: 676: 657 i
+read 563: 32 105 
+insertion: 677: 370  
+read 376: 59 10 
+insertion: 678: 563 ;
+read 675: 32 32 32 32 
+insertion: 679: 376  
+read 117: 117 
+insertion: 680: 675 u
+read 316: 110 115 
+insertion: 681: 117 n
+read 105: 105 
+insertion: 682: 316 i
+read 103: 103 
+insertion: 683: 105 g
+read 110: 110 
+insertion: 684: 103 n
+read 557: 101 100 
+insertion: 685: 110 e
+read 563: 32 105 
+insertion: 686: 557  
+read 632: 110 116 
+insertion: 687: 563 n
+read 309: 32 116 
+insertion: 688: 632  
+read 269: 109 112 
+insertion: 689: 309 m
+read 418: 61 48 
+insertion: 690: 269 =
+read 392: 59 32 
+insertion: 691: 418 ;
+read 275: 47 47 
+insertion: 692: 392 /
+read 314: 116 101 
+insertion: 693: 275 t
+read 269: 109 112 
+insertion: 694: 314 m
+read 408: 111 114 
+insertion: 695: 269 o
+read 545: 97 114 121 
+insertion: 696: 408 a
+read 32: 32 
+insertion: 697: 545  
+read 118: 118 
+insertion: 698: 32 v
+read 351: 97 114 
+insertion: 699: 118 a
+read 105: 105 
+insertion: 700: 351 i
+read 97: 97 
+insertion: 701: 105 a
+read 98: 98 
+insertion: 702: 97 b
+read 328: 108 101 
+insertion: 703: 98 l
+read 687: 32 105 110 
+insertion: 704: 328  
+read 32: 32 
+insertion: 705: 687  
+read 119: 119 
+insertion: 706: 32 w
+read 104: 104 
+insertion: 707: 119 h
+read 283: 105 99 
+insertion: 708: 104 i
+read 669: 104 32 
+insertion: 709: 283 h
+read 119: 119 
+insertion: 710: 669 w
+read 264: 101 32 
+insertion: 711: 119 e
+read 600: 112 117 
+insertion: 712: 264 p
+read 371: 116 32 
+insertion: 713: 600 t
+read 552: 116 104 101 32 
+insertion: 714: 371 t
+read 574: 98 121 
+insertion: 715: 552 b
+read 314: 116 101 
+insertion: 716: 574 t
+read 32: 32 
+insertion: 717: 314  
+read 462: 114 101 
+insertion: 718: 32 r
+read 97: 97 
+insertion: 719: 462 a
+read 558: 100 32 
+insertion: 720: 97 d
+read 656: 32 32 32 
+insertion: 721: 558  
+read 509: 10 32 
+insertion: 722: 656 
+
+read 656: 32 32 32 
+insertion: 723: 509  
+read 681: 117 110 
+insertion: 724: 656 u
+read 317: 115 105 
+insertion: 725: 681 s
+read 684: 103 110 
+insertion: 726: 317 g
+read 686: 101 100 32 
+insertion: 727: 684 e
+read 677: 105 110 116 32 
+insertion: 728: 686 i
+read 295: 105 116 
+insertion: 729: 677 i
+read 690: 109 112 61 
+insertion: 730: 295 m
+read 48: 48 
+insertion: 731: 690 0
+read 531: 44 32 115 
+insertion: 732: 48 ,
+read 105: 105 
+insertion: 733: 531 i
+read 533: 122 101 
+insertion: 734: 105 z
+read 95: 95 
+insertion: 735: 533 _
+read 116: 116 
+insertion: 736: 95 t
+read 731: 109 112 61 48 
+insertion: 737: 116 m
+read 692: 59 32 47 
+insertion: 738: 731 ;
+read 658: 47 105 
+insertion: 739: 692 /
+read 737: 116 109 
+insertion: 740: 658 t
+read 112: 112 
+insertion: 741: 737 p
+read 598: 32 105 115 
+insertion: 742: 112  
+read 516: 32 116 104 101 32 
+insertion: 743: 598  
+read 258: 105 110 
+insertion: 744: 516 i
+read 263: 100 101 
+insertion: 745: 258 d
+read 120: 120 
+insertion: 746: 263 x
+read 524: 32 116 111 
+insertion: 747: 120  
+read 706: 32 119 
+insertion: 748: 524  
+read 114: 114 
+insertion: 749: 706 r
+read 295: 105 116 
+insertion: 750: 114 i
+read 484: 101 59 10 
+insertion: 751: 295 e
+read 675: 32 32 32 32 
+insertion: 752: 484  
+read 677: 105 110 116 32 
+insertion: 753: 675 i
+read 112: 112 
+insertion: 754: 677 p
+read 571: 111 115 
+insertion: 755: 112 o
+read 295: 105 116 
+insertion: 756: 571 i
+read 318: 105 111 110 
+insertion: 757: 295 i
+read 418: 61 48 
+insertion: 758: 318 =
+read 661: 44 32 102 
+insertion: 759: 418 ,
+read 519: 97 116 
+insertion: 760: 661 a
+read 311: 104 101 
+insertion: 761: 519 h
+read 114: 114 
+insertion: 762: 311 r
+read 691: 61 48 59 
+insertion: 763: 114 =
+read 657: 32 47 47 
+insertion: 764: 691  
+read 755: 112 111 
+insertion: 765: 657 p
+read 383: 115 116 
+insertion: 766: 755 s
+read 318: 105 111 110 
+insertion: 767: 383 i
+read 705: 32 105 110 32 
+insertion: 768: 318  
+read 552: 116 104 101 32 
+insertion: 769: 705 t
+read 542: 100 105 99 
+insertion: 770: 552 d
+read 296: 116 105 
+insertion: 771: 542 t
+read 346: 111 110 
+insertion: 772: 296 o
+read 545: 97 114 121 
+insertion: 773: 346 a
+read 723: 10 32 32 
+insertion: 774: 545 
+
+read 655: 32 32 
+insertion: 775: 723  
+read 275: 47 47 
+insertion: 776: 655 /
+read 677: 105 110 116 32 
+insertion: 777: 275 i
+read 102: 102 
+insertion: 778: 677 f
+read 100: 100 
+insertion: 779: 102 d
+read 61: 61 
+insertion: 780: 100 =
+read 111: 111 
+insertion: 781: 61 o
+read 112: 112 
+insertion: 782: 111 p
+read 315: 101 110 
+insertion: 783: 112 e
+read 428: 40 102 105 
+insertion: 784: 315 (
+read 404: 108 101 110 97 
+insertion: 785: 428 l
+read 331: 109 101 
+insertion: 786: 404 m
+read 359: 44 32 
+insertion: 787: 331 ,
+read 32: 32 
+insertion: 788: 359  
+read 39: 39 
+insertion: 789: 32 '
+read 114: 114 
+insertion: 790: 39 r
+read 439: 39 41 
+insertion: 791: 114 '
+read 739: 59 32 47 47 
+insertion: 792: 439 ;
+read 523: 102 105 108 101 32 
+insertion: 793: 739 f
+read 263: 100 101 
+insertion: 794: 523 d
+read 115: 115 
+insertion: 795: 263 s
+read 99: 99 
+insertion: 796: 115 c
+read 750: 114 105 
+insertion: 797: 99 r
+read 112: 112 
+insertion: 798: 750 p
+read 549: 116 111 
+insertion: 799: 112 t
+read 114: 114 
+insertion: 800: 549 r
+read 775: 10 32 32 32 
+insertion: 801: 114 
+
+read 32: 32 
+insertion: 802: 775  
+read 771: 100 105 99 116 
+insertion: 803: 32 d
+read 544: 105 111 110 97 
+insertion: 804: 771 i
+read 114: 114 
+insertion: 805: 544 r
+read 121: 121 
+insertion: 806: 114 y
+read 353: 42 32 
+insertion: 807: 121 *
+read 771: 100 105 99 116 
+insertion: 808: 353 d
+read 61: 61 
+insertion: 809: 771 =
+read 109: 109 
+insertion: 810: 61 m
+read 481: 97 108 
+insertion: 811: 109 a
+read 108: 108 
+insertion: 812: 481 l
+read 111: 111 
+insertion: 813: 108 o
+read 99: 99 
+insertion: 814: 111 c
+read 40: 40 
+insertion: 815: 99 (
+read 537: 115 105 122 101 
+insertion: 816: 40 s
+read 399: 111 102 
+insertion: 817: 537 o
+read 40: 40 
+insertion: 818: 399 (
+read 804: 100 105 99 116 105 
+insertion: 819: 40 d
+read 773: 111 110 97 
+insertion: 820: 804 o
+read 806: 114 121 
+insertion: 821: 773 r
+read 41: 41 
+insertion: 822: 806 )
+read 391: 41 59 
+insertion: 823: 41 )
+read 657: 32 47 47 
+insertion: 824: 391  
+read 820: 100 105 99 116 105 111 
+insertion: 825: 657 d
+read 673: 110 97 
+insertion: 826: 820 n
+read 806: 114 121 
+insertion: 827: 673 r
+read 802: 10 32 32 32 32 
+insertion: 828: 806 
+
+read 677: 105 110 116 32 
+insertion: 829: 802 i
+read 703: 98 108 
+insertion: 830: 677 b
+read 315: 101 110 
+insertion: 831: 703 e
+read 61: 61 
+insertion: 832: 315 =
+read 414: 49 59 
+insertion: 833: 61 1
+read 675: 32 32 32 32 
+insertion: 834: 414  
+read 657: 32 47 47 
+insertion: 835: 675  
+read 294: 98 105 
+insertion: 836: 657 b
+read 371: 116 32 
+insertion: 837: 294 t
+read 395: 108 101 110 103 
+insertion: 838: 371 l
+read 104: 104 
+insertion: 839: 395 h
+read 371: 116 32 
+insertion: 840: 104 t
+read 521: 111 102 32 
+insertion: 841: 371 o
+read 109: 109 
+insertion: 842: 521 m
+read 575: 121 32 
+insertion: 843: 109 y
+read 826: 100 105 99 116 105 111 110 
+insertion: 844: 575 d
+read 545: 97 114 121 
+insertion: 845: 826 a
+read 39: 39 
+insertion: 846: 545 '
+read 515: 115 32 
+insertion: 847: 39 s
+read 745: 105 110 100 
+insertion: 848: 515 i
+read 303: 101 120 
+insertion: 849: 745 e
+read 555: 101 115 
+insertion: 850: 303 e
+read 802: 10 32 32 32 32 
+insertion: 851: 555 
+
+read 537: 115 105 122 101 
+insertion: 852: 802 s
+read 736: 95 116 
+insertion: 853: 537 _
+read 690: 109 112 61 
+insertion: 854: 736 m
+read 537: 115 105 122 101 
+insertion: 855: 690 s
+read 679: 59 10 32 
+insertion: 856: 537 ;
+read 656: 32 32 32 
+insertion: 857: 679  
+read 443: 115 116 114 
+insertion: 858: 656 s
+read 117: 117 
+insertion: 859: 443 u
+read 308: 99 116 32 
+insertion: 860: 117 c
+read 837: 98 105 116 
+insertion: 861: 308 b
+read 297: 105 111 
+insertion: 862: 837 i
+read 353: 42 32 
+insertion: 863: 297 *
+read 837: 98 105 116 
+insertion: 864: 353 b
+read 857: 59 10 32 32 
+insertion: 865: 837 ;
+read 655: 32 32 
+insertion: 866: 857  
+read 311: 104 101 
+insertion: 867: 655 h
+read 720: 97 100 
+insertion: 868: 311 a
+read 101: 101 
+insertion: 869: 720 e
+read 114: 114 
+insertion: 870: 101 r
+read 32: 32 
+insertion: 871: 114  
+read 104: 104 
+insertion: 872: 32 h
+read 100: 100 
+insertion: 873: 104 d
+read 114: 114 
+insertion: 874: 100 r
+read 664: 59 9 
+insertion: 875: 114 ;
+read 665: 9 47 
+insertion: 876: 664 
+read 47: 47 
+insertion: 877: 665 /
+read 868: 104 101 97 
+insertion: 878: 47 h
+read 644: 100 101 114 
+insertion: 879: 868 d
+read 670: 32 111 102 
+insertion: 880: 644  
+read 522: 32 116 104 101 32 102 
+insertion: 881: 670  
+read 388: 105 108 101 
+insertion: 882: 522 i
+read 829: 10 32 32 32 32 105 
+insertion: 883: 388 
+
+read 688: 110 116 32 
+insertion: 884: 829 n
+read 491: 114 101 115 
+insertion: 885: 688 r
+read 117: 117 
+insertion: 886: 491 u
+read 108: 108 
+insertion: 887: 117 l
+read 116: 116 
+insertion: 888: 108 t
+read 691: 61 48 59 
+insertion: 889: 116 =
+read 368: 10 9 
+insertion: 890: 691 
+
+read 677: 105 110 116 32 
+insertion: 891: 368 i
+read 813: 108 111 
+insertion: 892: 677 l
+read 110: 110 
+insertion: 893: 813 n
+read 103: 103 
+insertion: 894: 110 g
+read 555: 101 115 
+insertion: 895: 103 e
+read 116: 116 
+insertion: 896: 555 t
+read 95: 95 
+insertion: 897: 116 _
+read 811: 109 97 
+insertion: 898: 95 m
+read 116: 116 
+insertion: 899: 811 t
+read 349: 99 104 
+insertion: 900: 116 c
+read 833: 61 49 
+insertion: 901: 349 =
+read 359: 44 32 
+insertion: 902: 833 ,
+read 741: 116 109 112 
+insertion: 903: 359 t
+read 95: 95 
+insertion: 904: 741 _
+read 893: 108 111 110 
+insertion: 905: 95 l
+read 895: 103 101 
+insertion: 906: 893 g
+read 383: 115 116 
+insertion: 907: 895 s
+read 898: 95 109 
+insertion: 908: 383 _
+read 519: 97 116 
+insertion: 909: 898 a
+read 901: 99 104 61 
+insertion: 910: 519 c
+read 419: 48 59 
+insertion: 911: 901 0
+read 368: 10 9 
+insertion: 912: 419 
+
+read 70: 70 
+insertion: 913: 368 F
+read 73: 73 
+insertion: 914: 70 I
+read 76: 76 
+insertion: 915: 73 L
+read 69: 69 
+insertion: 916: 76 E
+read 511: 42 32 102 
+insertion: 917: 69 *
+read 388: 105 108 101 
+insertion: 918: 511 i
+read 95: 95 
+insertion: 919: 388 _
+read 719: 114 101 97 
+insertion: 920: 95 r
+read 100: 100 
+insertion: 921: 719 d
+read 359: 44 32 
+insertion: 922: 100 ,
+read 42: 42 
+insertion: 923: 359 *
+read 452: 102 105 108 101 
+insertion: 924: 42 f
+read 95: 95 
+insertion: 925: 452 _
+read 119: 119 
+insertion: 926: 95 w
+read 750: 114 105 
+insertion: 927: 119 r
+read 314: 116 101 
+insertion: 928: 750 t
+read 866: 59 10 32 32 32 
+insertion: 929: 314 ;
+read 32: 32 
+insertion: 930: 866  
+read 802: 10 32 32 32 32 
+insertion: 931: 32 
+
+read 275: 47 47 
+insertion: 932: 802 /
+read 617: 99 111 109 112 
+insertion: 933: 275 c
+read 601: 117 116 
+insertion: 934: 617 u
+read 264: 101 32 
+insertion: 935: 601 e
+read 104: 104 
+insertion: 936: 264 h
+read 111: 111 
+insertion: 937: 104 o
+read 119: 119 
+insertion: 938: 111 w
+read 32: 32 
+insertion: 939: 119  
+read 811: 109 97 
+insertion: 940: 32 m
+read 110: 110 
+insertion: 941: 811 n
+read 575: 121 32 
+insertion: 942: 110 y
+read 837: 98 105 116 
+insertion: 943: 575 b
+read 748: 32 116 111 32 
+insertion: 944: 837  
+read 927: 119 114 
+insertion: 945: 748 w
+read 751: 105 116 101 
+insertion: 946: 927 i
+read 769: 32 105 110 32 116 
+insertion: 947: 751  
+read 325: 104 101 32 
+insertion: 948: 769 h
+read 617: 99 111 109 112 
+insertion: 949: 325 c
+read 529: 114 101 115 115 
+insertion: 950: 617 r
+read 686: 101 100 32 
+insertion: 951: 529 e
+read 523: 102 105 108 101 32 
+insertion: 952: 686 f
+read 802: 10 32 32 32 32 
+insertion: 953: 523 
+
+read 707: 119 104 
+insertion: 954: 802 w
+read 388: 105 108 101 
+insertion: 955: 707 i
+read 816: 40 115 
+insertion: 956: 388 (
+read 734: 105 122 
+insertion: 957: 816 i
+read 101: 101 
+insertion: 958: 734 e
+read 854: 95 116 109 
+insertion: 959: 101 _
+read 112: 112 
+insertion: 960: 854 p
+read 62: 62 
+insertion: 961: 112 >
+read 417: 62 61 
+insertion: 962: 62 >
+read 49: 49 
+insertion: 963: 417 1
+read 365: 41 32 
+insertion: 964: 49 )
+read 831: 98 108 101 
+insertion: 965: 365 b
+read 110: 110 
+insertion: 966: 831 n
+read 43: 43 
+insertion: 967: 110 +
+read 43: 43 
+insertion: 968: 43 +
+read 930: 59 10 32 32 32 32 
+insertion: 969: 43 ;
+read 802: 10 32 32 32 32 
+insertion: 970: 930 
+
+read 639: 102 112 
+insertion: 971: 802 f
+read 750: 114 105 
+insertion: 972: 639 r
+read 632: 110 116 
+insertion: 973: 750 n
+read 642: 102 40 115 
+insertion: 974: 632 f
+read 116: 116 
+insertion: 975: 642 t
+read 644: 100 101 114 
+insertion: 976: 116 d
+read 646: 114 44 32 
+insertion: 977: 644 r
+read 293: 34 98 
+insertion: 978: 646 "
+read 355: 108 101 110 
+insertion: 979: 293 l
+read 58: 58 
+insertion: 980: 355 :
+read 32: 32 
+insertion: 981: 58  
+read 37: 37 
+insertion: 982: 32 %
+read 105: 105 
+insertion: 983: 37 i
+read 651: 92 110 
+insertion: 984: 105 \
+read 34: 34 
+insertion: 985: 651 "
+read 359: 44 32 
+insertion: 986: 34 ,
+read 966: 98 108 101 110 
+insertion: 987: 359 b
+read 654: 41 59 10 32 
+insertion: 988: 966 )
+read 722: 32 32 32 10 
+insertion: 989: 654  
+read 675: 32 32 32 32 
+insertion: 990: 722  
+read 777: 47 47 105 
+insertion: 991: 675 /
+read 110: 110 
+insertion: 992: 777 n
+read 757: 105 116 105 
+insertion: 993: 110 i
+read 481: 97 108 
+insertion: 994: 757 a
+read 958: 105 122 101 
+insertion: 995: 481 i
+read 516: 32 116 104 101 32 
+insertion: 996: 958  
+read 845: 100 105 99 116 105 111 110 97 
+insertion: 997: 516 d
+read 828: 114 121 10 
+insertion: 998: 845 r
+read 675: 32 32 32 32 
+insertion: 999: 828  
+read 617: 99 111 109 112 
+insertion: 1000: 675 c
+read 95: 95 
+insertion: 1001: 617 _
+read 771: 100 105 99 116 
+insertion: 1002: 95 d
+read 95: 95 
+insertion: 1003: 771 _
+read 258: 105 110 
+insertion: 1004: 95 i
+read 295: 105 116 
+insertion: 1005: 258 i
+read 819: 40 100 
+insertion: 1006: 295 (
+read 283: 105 99 
+insertion: 1007: 819 i
+read 116: 116 
+insertion: 1008: 283 t
+read 733: 44 32 115 105 
+insertion: 1009: 116 ,
+read 533: 122 101 
+insertion: 1010: 733 z
+read 359: 44 32 
+insertion: 1011: 533 ,
+read 50: 50 
+insertion: 1012: 359 2
+read 53: 53 
+insertion: 1013: 50 5
+read 54: 54 
+insertion: 1014: 53 6
+read 989: 41 59 10 32 32 
+insertion: 1015: 54 )
+read 655: 32 32 
+insertion: 1016: 989  
+read 971: 10 32 32 32 32 102 
+insertion: 1017: 655 
+
+read 761: 97 116 104 
+insertion: 1018: 971 a
+read 870: 101 114 
+insertion: 1019: 761 e
+read 890: 61 48 59 10 
+insertion: 1020: 870 =
+read 675: 32 32 32 32 
+insertion: 1021: 890  
+read 932: 10 32 32 32 32 47 
+insertion: 1022: 675 
+
+read 658: 47 105 
+insertion: 1023: 932 /
+read 993: 110 105 
+insertion: 1024: 658 n
+read 296: 116 105 
+insertion: 1025: 993 t
+read 995: 97 108 105 
+insertion: 1026: 296 a
+read 533: 122 101 
+insertion: 1027: 995 z
+read 516: 32 116 104 101 32 
+insertion: 1028: 533  
+read 862: 98 105 116 105 
+insertion: 1029: 516 b
+read 525: 111 32 
+insertion: 1030: 862 o
+read 859: 115 116 114 117 
+insertion: 1031: 525 s
+read 284: 99 116 
+insertion: 1032: 859 c
+read 465: 117 114 
+insertion: 1033: 284 u
+read 264: 101 32 
+insertion: 1034: 465 e
+read 549: 116 111 
+insertion: 1035: 264 t
+read 749: 32 119 114 
+insertion: 1036: 549  
+read 947: 105 116 101 32 
+insertion: 1037: 749 i
+read 837: 98 105 116 
+insertion: 1038: 947 b
+read 848: 115 32 105 
+insertion: 1039: 837 s
+read 316: 110 115 
+insertion: 1040: 848 n
+read 314: 116 101 
+insertion: 1041: 316 t
+read 720: 97 100 
+insertion: 1042: 314 a
+read 881: 32 111 102 32 
+insertion: 1043: 720  
+read 716: 98 121 116 
+insertion: 1044: 881 b
+read 851: 101 115 10 
+insertion: 1045: 716 e
+read 675: 32 32 32 32 
+insertion: 1046: 851  
+read 837: 98 105 116 
+insertion: 1047: 675 b
+read 61: 61 
+insertion: 1048: 837 =
+read 837: 98 105 116 
+insertion: 1049: 61 b
+read 95: 95 
+insertion: 1050: 837 _
+read 782: 111 112 
+insertion: 1051: 95 o
+read 784: 101 110 40 
+insertion: 1052: 782 e
+read 630: 116 111 44 
+insertion: 1053: 784 t
+read 265: 32 34 
+insertion: 1054: 630  
+read 119: 119 
+insertion: 1055: 265 w
+read 653: 34 41 
+insertion: 1056: 119 "
+read 930: 59 10 32 32 32 32 
+insertion: 1057: 653 ;
+read 105: 105 
+insertion: 1058: 930 i
+read 40: 40 
+insertion: 1059: 105 (
+read 1048: 98 105 116 61 
+insertion: 1060: 40 b
+read 61: 61 
+insertion: 1061: 1048 =
+read 78: 78 
+insertion: 1062: 61 N
+read 85: 85 
+insertion: 1063: 78 U
+read 76: 76 
+insertion: 1064: 85 L
+read 76: 76 
+insertion: 1065: 76 L
+read 365: 41 32 
+insertion: 1066: 76 )
+read 972: 102 112 114 
+insertion: 1067: 365 f
+read 641: 105 110 116 102 
+insertion: 1068: 972 i
+read 816: 40 115 
+insertion: 1069: 641 (
+read 976: 116 100 
+insertion: 1070: 816 t
+read 870: 101 114 
+insertion: 1071: 976 e
+read 978: 114 44 32 34 
+insertion: 1072: 870 r
+read 110: 110 
+insertion: 1073: 978 n
+read 887: 117 108 
+insertion: 1074: 110 u
+read 337: 108 32 
+insertion: 1075: 887 l
+read 1030: 98 105 116 105 111 
+insertion: 1076: 337 b
+read 985: 92 110 34 
+insertion: 1077: 1030 \
+read 1016: 41 59 10 32 32 32 
+insertion: 1078: 985 )
+read 931: 32 10 
+insertion: 1079: 1016  
+read 1022: 32 32 32 32 10 
+insertion: 1080: 931  
+read 991: 32 32 32 32 47 
+insertion: 1081: 1022  
+read 47: 47 
+insertion: 1082: 991 /
+read 797: 99 114 
+insertion: 1083: 47 c
+read 101: 101 
+insertion: 1084: 797 e
+read 519: 97 116 
+insertion: 1085: 101 a
+read 768: 105 111 110 32 
+insertion: 1086: 519 i
+read 539: 111 102 32 116 
+insertion: 1087: 768 o
+read 325: 104 101 32 
+insertion: 1088: 539 h
+read 879: 104 101 97 100 
+insertion: 1089: 325 h
+read 870: 101 114 
+insertion: 1090: 879 e
+read 881: 32 111 102 32 
+insertion: 1091: 870  
+read 552: 116 104 101 32 
+insertion: 1092: 881 t
+read 452: 102 105 108 101 
+insertion: 1093: 552 f
+read 802: 10 32 32 32 32 
+insertion: 1094: 452 
+
+read 873: 104 100 
+insertion: 1095: 802 h
+read 114: 114 
+insertion: 1096: 873 r
+read 46: 46 
+insertion: 1097: 114 .
+read 998: 100 105 99 116 105 111 110 97 114 
+insertion: 1098: 46 d
+read 121: 121 
+insertion: 1099: 998 y
+read 95: 95 
+insertion: 1100: 121 _
+read 537: 115 105 122 101 
+insertion: 1101: 95 s
+read 61: 61 
+insertion: 1102: 537 =
+read 856: 115 105 122 101 59 
+insertion: 1103: 61 s
+read 368: 10 9 
+insertion: 1104: 856 
+
+read 1096: 104 100 114 
+insertion: 1105: 368 h
+read 46: 46 
+insertion: 1106: 1096 .
+read 906: 108 111 110 103 
+insertion: 1107: 46 l
+read 896: 101 115 116 
+insertion: 1108: 906 e
+read 909: 95 109 97 
+insertion: 1109: 896 _
+read 900: 116 99 
+insertion: 1110: 909 t
+read 104: 104 
+insertion: 1111: 900 h
+read 691: 61 48 59 
+insertion: 1112: 104 =
+read 877: 9 47 47 
+insertion: 1113: 691 
+read 618: 112 114 101 
+insertion: 1114: 877 p
+read 518: 112 97 
+insertion: 1115: 618 p
+read 462: 114 101 
+insertion: 1116: 518 r
+read 536: 32 116 104 101 32 115 
+insertion: 1117: 462  
+read 518: 112 97 
+insertion: 1118: 536 p
+read 99: 99 
+insertion: 1119: 518 c
+read 402: 101 32 102 
+insertion: 1120: 99 e
+read 494: 111 114 32 
+insertion: 1121: 402 o
+read 552: 116 104 101 32 
+insertion: 1122: 494 t
+read 111: 111 
+insertion: 1123: 552 o
+read 118: 118 
+insertion: 1124: 111 v
+read 870: 101 114 
+insertion: 1125: 118 e
+read 946: 119 114 105 
+insertion: 1126: 870 w
+read 296: 116 105 
+insertion: 1127: 946 t
+read 894: 110 103 
+insertion: 1128: 296 n
+read 368: 10 9 
+insertion: 1129: 894 
+
+read 1023: 10 32 32 32 32 47 47 
+insertion: 1130: 368 
+
+read 1127: 119 114 105 116 
+insertion: 1131: 1023 w
+read 1035: 101 32 116 
+insertion: 1132: 1127 e
+read 1089: 104 101 32 104 
+insertion: 1133: 1035 h
+read 1085: 101 97 
+insertion: 1134: 1089 e
+read 880: 100 101 114 32 
+insertion: 1135: 1085 d
+read 603: 105 110 32 
+insertion: 1136: 880 i
+read 552: 116 104 101 32 
+insertion: 1137: 603 t
+read 549: 116 111 
+insertion: 1138: 552 t
+read 742: 112 32 
+insertion: 1139: 549 p
+read 1088: 111 102 32 116 104 
+insertion: 1140: 742 o
+read 402: 101 32 102 
+insertion: 1141: 1088 e
+read 883: 105 108 101 10 
+insertion: 1142: 402 i
+read 1082: 32 32 32 32 47 47 
+insertion: 1143: 883  
+read 662: 102 108 
+insertion: 1144: 1082 f
+read 832: 101 110 61 
+insertion: 1145: 662 e
+read 443: 115 116 114 
+insertion: 1146: 832 s
+read 385: 108 101 110 40 
+insertion: 1147: 443 l
+read 1106: 104 100 114 46 
+insertion: 1148: 385 h
+read 343: 101 120 116 101 
+insertion: 1149: 1106 e
+read 682: 110 115 105 
+insertion: 1150: 343 n
+read 346: 111 110 
+insertion: 1151: 682 o
+read 1079: 41 59 10 32 32 32 32 
+insertion: 1152: 346 )
+read 1030: 98 105 116 105 111 
+insertion: 1153: 1079 b
+read 926: 95 119 
+insertion: 1154: 1030 _
+read 928: 114 105 116 
+insertion: 1155: 926 r
+read 101: 101 
+insertion: 1156: 928 e
+read 1060: 40 98 
+insertion: 1157: 101 (
+read 295: 105 116 
+insertion: 1158: 1060 i
+read 359: 44 32 
+insertion: 1159: 295 ,
+read 40: 40 
+insertion: 1160: 359 (
+read 117: 117 
+insertion: 1161: 40 u
+read 370: 105 110 116 
+insertion: 1162: 117 i
+read 54: 54 
+insertion: 1163: 370 6
+read 52: 52 
+insertion: 1164: 54 4
+read 736: 95 116 
+insertion: 1165: 52 _
+read 41: 41 
+insertion: 1166: 736 )
+read 1106: 104 100 114 46 
+insertion: 1167: 41 h
+read 1099: 100 105 99 116 105 111 110 97 114 121 
+insertion: 1168: 1106 d
+read 1101: 95 115 
+insertion: 1169: 1099 _
+read 958: 105 122 101 
+insertion: 1170: 1101 i
+read 1010: 44 32 115 105 122 
+insertion: 1171: 958 ,
+read 101: 101 
+insertion: 1172: 1010 e
+read 818: 111 102 40 
+insertion: 1173: 101 o
+read 381: 105 110 116 41 
+insertion: 1174: 818 i
+read 42: 42 
+insertion: 1175: 381 *
+read 56: 56 
+insertion: 1176: 42 8
+read 459: 41 59 10 
+insertion: 1177: 56 )
+read 9: 9 
+insertion: 1178: 459 
+read 1154: 98 105 116 105 111 95 
+insertion: 1179: 9 b
+read 1132: 119 114 105 116 101 
+insertion: 1180: 1154 w
+read 1158: 40 98 105 
+insertion: 1181: 1132 (
+read 1009: 116 44 
+insertion: 1182: 1158 t
+read 32: 32 
+insertion: 1183: 1009  
+read 1161: 40 117 
+insertion: 1184: 32 (
+read 1163: 105 110 116 54 
+insertion: 1185: 1161 i
+read 1165: 52 95 
+insertion: 1186: 1163 4
+read 116: 116 
+insertion: 1187: 1165 t
+read 1167: 41 104 
+insertion: 1188: 116 )
+read 874: 100 114 
+insertion: 1189: 1167 d
+read 1107: 46 108 
+insertion: 1190: 874 .
+read 346: 111 110 
+insertion: 1191: 1107 o
+read 907: 103 101 115 
+insertion: 1192: 346 g
+read 897: 116 95 
+insertion: 1193: 907 t
+read 899: 109 97 116 
+insertion: 1194: 897 m
+read 349: 99 104 
+insertion: 1195: 899 c
+read 1172: 44 32 115 105 122 101 
+insertion: 1196: 349 ,
+read 1174: 111 102 40 105 
+insertion: 1197: 1172 o
+read 632: 110 116 
+insertion: 1198: 1174 n
+read 41: 41 
+insertion: 1199: 632 )
+read 1176: 42 56 
+insertion: 1200: 41 *
+read 1079: 41 59 10 32 32 32 32 
+insertion: 1201: 1176 )
+read 638: 47 47 102 
+insertion: 1202: 1079 /
+read 408: 111 114 
+insertion: 1203: 638 o
+read 410: 40 105 61 
+insertion: 1204: 408 (
+read 419: 48 59 
+insertion: 1205: 410 0
+read 563: 32 105 
+insertion: 1206: 419  
+read 60: 60 
+insertion: 1207: 563 <
+read 54: 54 
+insertion: 1208: 60 6
+read 415: 59 32 105 
+insertion: 1209: 54 ;
+read 968: 43 43 
+insertion: 1210: 415 +
+read 41: 41 
+insertion: 1211: 968 )
+read 441: 10 9 9 
+insertion: 1212: 41 
+
+read 275: 47 47 
+insertion: 1213: 441 /
+read 1180: 98 105 116 105 111 95 119 
+insertion: 1214: 275 b
+read 1156: 114 105 116 101 
+insertion: 1215: 1180 r
+read 1182: 40 98 105 116 
+insertion: 1216: 1156 (
+read 1160: 44 32 40 
+insertion: 1217: 1182 ,
+read 1162: 117 105 
+insertion: 1218: 1160 u
+read 632: 110 116 
+insertion: 1219: 1162 n
+read 1164: 54 52 
+insertion: 1220: 632 6
+read 1166: 95 116 41 
+insertion: 1221: 1164 _
+read 1149: 104 100 114 46 101 
+insertion: 1222: 1166 h
+read 304: 120 116 
+insertion: 1223: 1149 x
+read 344: 101 110 115 
+insertion: 1224: 304 e
+read 318: 105 111 110 
+insertion: 1225: 344 i
+read 432: 91 105 
+insertion: 1226: 318 [
+read 93: 93 
+insertion: 1227: 432 ]
+read 1197: 44 32 115 105 122 101 111 
+insertion: 1228: 93 ,
+read 427: 102 40 
+insertion: 1229: 1197 f
+read 628: 99 104 97 114 
+insertion: 1230: 427 c
+read 1200: 41 42 
+insertion: 1231: 628 )
+read 1177: 56 41 
+insertion: 1232: 1200 8
+read 970: 59 10 32 32 32 32 10 
+insertion: 1233: 1177 ;
+read 1082: 32 32 32 32 47 47 
+insertion: 1234: 970  
+read 921: 114 101 97 100 
+insertion: 1235: 1082 r
+read 495: 32 97 
+insertion: 1236: 921  
+read 573: 32 98 
+insertion: 1237: 495  
+read 121: 121 
+insertion: 1238: 573 y
+read 717: 116 101 32 
+insertion: 1239: 121 t
+read 512: 102 114 111 
+insertion: 1240: 717 f
+read 501: 109 32 
+insertion: 1241: 512 m
+read 1093: 116 104 101 32 102 
+insertion: 1242: 501 t
+read 1143: 105 108 101 10 32 
+insertion: 1243: 1093 i
+read 656: 32 32 32 
+insertion: 1244: 1143  
+read 638: 47 47 102 
+insertion: 1245: 656 /
+read 640: 112 114 105 
+insertion: 1246: 638 p
+read 974: 110 116 102 
+insertion: 1247: 640 n
+read 1070: 40 115 116 
+insertion: 1248: 974 (
+read 977: 100 101 114 114 
+insertion: 1249: 1070 d
+read 359: 44 32 
+insertion: 1250: 977 ,
+read 34: 34 
+insertion: 1251: 359 "
+read 983: 37 105 
+insertion: 1252: 34 %
+read 985: 92 110 34 
+insertion: 1253: 983 \
+read 661: 44 32 102 
+insertion: 1254: 985 ,
+read 100: 100 
+insertion: 1255: 661 d
+read 1079: 41 59 10 32 32 32 32 
+insertion: 1256: 100 )
+read 1059: 105 40 
+insertion: 1257: 1079 i
+read 1241: 102 114 111 109 
+insertion: 1258: 1059 f
+read 435: 61 61 
+insertion: 1259: 1241 =
+read 1063: 78 85 
+insertion: 1260: 435 N
+read 1065: 76 76 
+insertion: 1261: 1063 L
+read 365: 41 32 
+insertion: 1262: 1065 )
+read 441: 10 9 9 
+insertion: 1263: 365 
+
+read 925: 102 105 108 101 95 
+insertion: 1264: 441 f
+read 921: 114 101 97 100 
+insertion: 1265: 925 r
+read 1103: 61 115 
+insertion: 1266: 921 =
+read 976: 116 100 
+insertion: 1267: 1103 t
+read 258: 105 110 
+insertion: 1268: 976 i
+read 471: 59 10 9 
+insertion: 1269: 258 ;
+read 101: 101 
+insertion: 1270: 471 e
+read 482: 108 115 
+insertion: 1271: 101 l
+read 264: 101 32 
+insertion: 1272: 482 e
+read 1264: 10 9 9 102 
+insertion: 1273: 264 
+
+read 919: 105 108 101 95 
+insertion: 1274: 1264 i
+read 1266: 114 101 97 100 61 
+insertion: 1275: 919 r
+read 407: 102 111 
+insertion: 1276: 1266 f
+read 783: 112 101 
+insertion: 1277: 407 p
+read 347: 110 40 
+insertion: 1278: 783 n
+read 1241: 102 114 111 109 
+insertion: 1279: 347 f
+read 1251: 44 32 34 
+insertion: 1280: 1241 ,
+read 114: 114 
+insertion: 1281: 1251 r
+read 1057: 34 41 59 
+insertion: 1282: 114 "
+read 1023: 10 32 32 32 32 47 47 
+insertion: 1283: 1057 
+
+read 1068: 102 112 114 105 
+insertion: 1284: 1023 f
+read 1248: 110 116 102 40 
+insertion: 1285: 1068 n
+read 643: 115 116 100 
+insertion: 1286: 1248 s
+read 1072: 101 114 114 
+insertion: 1287: 643 e
+read 1251: 44 32 34 
+insertion: 1288: 1072 ,
+read 37: 37 
+insertion: 1289: 1251 %
+read 99: 99 
+insertion: 1290: 37 c
+read 1254: 92 110 34 44 
+insertion: 1291: 99 \
+read 1184: 32 40 
+insertion: 1292: 1254  
+read 1231: 99 104 97 114 41 
+insertion: 1293: 1184 c
+read 741: 116 109 112 
+insertion: 1294: 1231 t
+read 1178: 41 59 10 9 
+insertion: 1295: 741 )
+read 637: 10 9 47 
+insertion: 1296: 1178 
+
+read 47: 47 
+insertion: 1297: 637 /
+read 387: 102 105 
+insertion: 1298: 47 f
+read 114: 114 
+insertion: 1299: 387 r
+read 383: 115 116 
+insertion: 1300: 114 s
+read 718: 32 114 
+insertion: 1301: 383  
+read 1135: 101 97 100 
+insertion: 1302: 718 e
+read 368: 10 9 
+insertion: 1303: 1135 
+
+read 491: 114 101 115 
+insertion: 1304: 368 r
+read 887: 117 108 
+insertion: 1305: 491 u
+read 889: 116 61 
+insertion: 1306: 887 t
+read 321: 102 114 
+insertion: 1307: 889 f
+read 1135: 101 97 100 
+insertion: 1308: 321 e
+read 40: 40 
+insertion: 1309: 1135 (
+read 38: 38 
+insertion: 1310: 40 &
+read 741: 116 109 112 
+insertion: 1311: 38 t
+read 359: 44 32 
+insertion: 1312: 741 ,
+read 49: 49 
+insertion: 1313: 359 1
+read 1313: 44 32 49 
+insertion: 1314: 49 ,
+read 661: 44 32 102 
+insertion: 1315: 1313 ,
+read 1275: 105 108 101 95 114 
+insertion: 1316: 661 i
+read 1135: 101 97 100 
+insertion: 1317: 1275 e
+read 1296: 41 59 10 9 10 
+insertion: 1318: 1135 )
+read 675: 32 32 32 32 
+insertion: 1319: 1296  
+read 480: 102 97 
+insertion: 1320: 675 f
+read 585: 116 104 101 114 
+insertion: 1321: 480 t
+read 61: 61 
+insertion: 1322: 585 =
+read 741: 116 109 112 
+insertion: 1323: 61 t
+read 471: 59 10 9 
+insertion: 1324: 741 ;
+read 1297: 10 9 47 47 
+insertion: 1325: 471 
+
+read 1236: 114 101 97 100 32 
+insertion: 1326: 1297 r
+read 1243: 116 104 101 32 102 105 
+insertion: 1327: 1236 t
+read 704: 108 101 32 
+insertion: 1328: 1243 l
+read 681: 117 110 
+insertion: 1329: 704 u
+read 296: 116 105 
+insertion: 1330: 681 t
+read 337: 108 32 
+insertion: 1331: 296 l
+read 719: 114 101 97 
+insertion: 1332: 337 r
+read 349: 99 104 
+insertion: 1333: 719 c
+read 516: 32 116 104 101 32 
+insertion: 1334: 349  
+read 69: 69 
+insertion: 1335: 516 E
+read 79: 79 
+insertion: 1336: 69 O
+read 70: 70 
+insertion: 1337: 79 F
+read 398: 32 111 
+insertion: 1338: 70  
+read 871: 114 32 
+insertion: 1339: 398 r
+read 566: 97 110 
+insertion: 1340: 871 a
+read 338: 32 101 
+insertion: 1341: 566  
+read 645: 114 114 
+insertion: 1342: 338 r
+read 494: 111 114 32 
+insertion: 1343: 645 o
+read 814: 111 99 
+insertion: 1344: 494 o
+read 99: 99 
+insertion: 1345: 814 c
+read 465: 117 114 
+insertion: 1346: 99 u
+read 115: 115 
+insertion: 1347: 465 s
+read 802: 10 32 32 32 32 
+insertion: 1348: 115 
+
+read 100: 100 
+insertion: 1349: 802 d
+read 525: 111 32 
+insertion: 1350: 100 o
+read 424: 123 10 9 
+insertion: 1351: 525 {
+read 425: 9 9 
+insertion: 1352: 424 
+read 1213: 10 9 9 47 
+insertion: 1353: 425 
+
+read 47: 47 
+insertion: 1354: 1213 /
+read 1236: 114 101 97 100 32 
+insertion: 1355: 47 r
+read 346: 111 110 
+insertion: 1356: 1236 o
+read 264: 101 32 
+insertion: 1357: 346 e
+read 1045: 98 121 116 101 
+insertion: 1358: 264 b
+read 624: 32 102 114 
+insertion: 1359: 1045  
+read 323: 111 109 32 
+insertion: 1360: 624 o
+read 1328: 116 104 101 32 102 105 108 
+insertion: 1361: 323 t
+read 332: 101 10 
+insertion: 1362: 1328 e
+read 425: 9 9 
+insertion: 1363: 332 
+read 1305: 114 101 115 117 
+insertion: 1364: 425 r
+read 888: 108 116 
+insertion: 1365: 1305 l
+read 61: 61 
+insertion: 1366: 888 =
+read 1308: 102 114 101 
+insertion: 1367: 61 f
+read 720: 97 100 
+insertion: 1368: 1308 a
+read 1310: 40 38 
+insertion: 1369: 720 (
+read 1312: 116 109 112 44 
+insertion: 1370: 1310 t
+read 32: 32 
+insertion: 1371: 1312  
+read 1314: 49 44 
+insertion: 1372: 32 1
+read 1372: 32 49 
+insertion: 1373: 1314  
+read 1316: 44 32 102 105 
+insertion: 1374: 1372 ,
+read 328: 108 101 
+insertion: 1375: 1316 l
+read 920: 95 114 
+insertion: 1376: 328 _
+read 1318: 101 97 100 41 
+insertion: 1377: 920 e
+read 471: 59 10 9 
+insertion: 1378: 1318 ;
+read 877: 9 47 47 
+insertion: 1379: 471 
+read 1285: 102 112 114 105 110 
+insertion: 1380: 877 f
+read 116: 116 
+insertion: 1381: 1285 t
+read 642: 102 40 115 
+insertion: 1382: 116 f
+read 1071: 116 100 101 
+insertion: 1383: 642 t
+read 645: 114 114 
+insertion: 1384: 1071 r
+read 1289: 44 32 34 37 
+insertion: 1385: 645 ,
+read 105: 105 
+insertion: 1386: 1289 i
+read 265: 32 34 
+insertion: 1387: 105  
+read 44: 44 
+insertion: 1388: 265 ,
+read 741: 116 109 112 
+insertion: 1389: 44 t
+read 32: 32 
+insertion: 1390: 741  
+read 824: 41 59 32 
+insertion: 1391: 32 )
+read 835: 32 32 32 32 32 
+insertion: 1392: 824  
+read 1017: 32 32 10 
+insertion: 1393: 835  
+read 1353: 9 9 10 
+insertion: 1394: 1017 
+read 425: 9 9 
+insertion: 1395: 1353 
+read 730: 105 116 109 
+insertion: 1396: 425 i
+read 112: 112 
+insertion: 1397: 730 p
+read 1367: 61 102 
+insertion: 1398: 112 =
+read 1019: 97 116 104 101 
+insertion: 1399: 1367 a
+read 875: 114 59 
+insertion: 1400: 1019 r
+read 9: 9 
+insertion: 1401: 875 
+read 441: 10 9 9 
+insertion: 1402: 9 
+
+read 904: 116 109 112 95 
+insertion: 1403: 441 t
+read 1108: 108 111 110 103 101 
+insertion: 1404: 904 l
+read 908: 115 116 95 
+insertion: 1405: 1108 s
+read 1195: 109 97 116 99 
+insertion: 1406: 908 m
+read 104: 104 
+insertion: 1407: 1195 h
+read 968: 43 43 
+insertion: 1408: 104 +
+read 1379: 59 10 9 9 
+insertion: 1409: 968 ;
+read 275: 47 47 
+insertion: 1410: 1379 /
+read 483: 115 101 
+insertion: 1411: 275 s
+read 351: 97 114 
+insertion: 1412: 483 a
+read 1334: 99 104 32 
+insertion: 1413: 351 c
+read 1387: 105 32 
+insertion: 1414: 1334 i
+read 711: 119 101 
+insertion: 1415: 1387 w
+read 495: 32 97 
+insertion: 1416: 711  
+read 108: 108 
+insertion: 1417: 495 l
+read 921: 114 101 97 100 
+insertion: 1418: 108 r
+read 575: 121 32 
+insertion: 1419: 921 y
+read 350: 104 97 
+insertion: 1420: 575 h
+read 1125: 118 101 
+insertion: 1421: 350 v
+read 516: 32 116 104 101 32 
+insertion: 1422: 1125  
+read 307: 97 99 
+insertion: 1423: 516 a
+read 464: 116 117 
+insertion: 1424: 307 t
+read 481: 97 108 
+insertion: 1425: 464 a
+read 591: 32 115 
+insertion: 1426: 481  
+read 305: 116 114 
+insertion: 1427: 591 t
+read 258: 105 110 
+insertion: 1428: 305 i
+read 103: 103 
+insertion: 1429: 258 g
+read 948: 32 105 110 32 116 104 
+insertion: 1430: 103  
+read 541: 101 32 100 
+insertion: 1431: 948 e
+read 1008: 105 99 116 
+insertion: 1432: 541 i
+read 805: 105 111 110 97 114 
+insertion: 1433: 1008 i
+read 546: 121 10 
+insertion: 1434: 805 y
+read 425: 9 9 
+insertion: 1435: 546 
+read 766: 112 111 115 
+insertion: 1436: 425 p
+read 757: 105 116 105 
+insertion: 1437: 766 i
+read 346: 111 110 
+insertion: 1438: 757 o
+read 61: 61 
+insertion: 1439: 346 =
+read 1001: 99 111 109 112 95 
+insertion: 1440: 61 c
+read 1003: 100 105 99 116 95 
+insertion: 1441: 1001 d
+read 1412: 115 101 97 
+insertion: 1442: 1003 s
+read 444: 114 99 
+insertion: 1443: 1412 r
+read 104: 104 
+insertion: 1444: 444 h
+read 1310: 40 38 
+insertion: 1445: 104 (
+read 1321: 102 97 116 
+insertion: 1446: 1310 f
+read 762: 104 101 114 
+insertion: 1447: 1321 h
+read 903: 44 32 116 
+insertion: 1448: 762 ,
+read 269: 109 112 
+insertion: 1449: 903 m
+read 359: 44 32 
+insertion: 1450: 269 ,
+read 771: 100 105 99 116 
+insertion: 1451: 359 d
+read 1178: 41 59 10 9 
+insertion: 1452: 771 )
+read 1380: 9 47 47 102 
+insertion: 1453: 1178 
+read 1247: 112 114 105 110 
+insertion: 1454: 1380 p
+read 1382: 116 102 
+insertion: 1455: 1247 t
+read 1249: 40 115 116 100 
+insertion: 1456: 1382 (
+read 1288: 101 114 114 44 
+insertion: 1457: 1249 e
+read 265: 32 34 
+insertion: 1458: 1288  
+read 685: 110 101 
+insertion: 1459: 265 n
+read 119: 119 
+insertion: 1460: 685 w
+read 95: 95 
+insertion: 1461: 119 _
+read 1447: 102 97 116 104 
+insertion: 1462: 95 f
+read 870: 101 114 
+insertion: 1463: 1447 e
+read 981: 58 32 
+insertion: 1464: 870 :
+read 983: 37 105 
+insertion: 1465: 981 %
+read 982: 32 37 
+insertion: 1466: 983  
+read 984: 105 92 
+insertion: 1467: 982 i
+read 652: 110 34 
+insertion: 1468: 984 n
+read 760: 44 32 102 97 
+insertion: 1469: 652 ,
+read 585: 116 104 101 114 
+insertion: 1470: 760 t
+read 359: 44 32 
+insertion: 1471: 585 ,
+read 1437: 112 111 115 105 
+insertion: 1472: 359 p
+read 772: 116 105 111 
+insertion: 1473: 1437 t
+read 110: 110 
+insertion: 1474: 772 n
+read 1453: 41 59 10 9 9 
+insertion: 1475: 110 )
+read 441: 10 9 9 
+insertion: 1476: 1453 
+
+read 1059: 105 40 
+insertion: 1477: 441 i
+read 1473: 112 111 115 105 116 
+insertion: 1478: 1059 p
+read 318: 105 111 110 
+insertion: 1479: 1473 i
+read 33: 33 
+insertion: 1480: 318 !
+read 418: 61 48 
+insertion: 1481: 33 =
+read 440: 41 32 123 10 
+insertion: 1482: 418 )
+read 425: 9 9 
+insertion: 1483: 440 
+read 426: 9 105 102 
+insertion: 1484: 425 
+read 40: 40 
+insertion: 1485: 426 (
+read 1405: 108 111 110 103 101 115 
+insertion: 1486: 40 l
+read 1194: 116 95 109 
+insertion: 1487: 1405 t
+read 910: 97 116 99 
+insertion: 1488: 1194 a
+read 669: 104 32 
+insertion: 1489: 910 h
+read 60: 60 
+insertion: 1490: 669 <
+read 689: 32 116 109 
+insertion: 1491: 60  
+read 112: 112 
+insertion: 1492: 689 p
+read 905: 95 108 
+insertion: 1493: 112 _
+read 1192: 111 110 103 
+insertion: 1494: 905 o
+read 1109: 101 115 116 95 
+insertion: 1495: 1192 e
+read 1407: 109 97 116 99 104 
+insertion: 1496: 1109 m
+read 1263: 41 32 10 
+insertion: 1497: 1407 )
+read 1484: 9 9 9 
+insertion: 1498: 1263 
+read 9: 9 
+insertion: 1499: 1484 
+read 1487: 108 111 110 103 101 115 116 
+insertion: 1500: 9 l
+read 1110: 95 109 97 116 
+insertion: 1501: 1487 _
+read 1334: 99 104 32 
+insertion: 1502: 1110 c
+read 61: 61 
+insertion: 1503: 1334 =
+read 1492: 32 116 109 112 
+insertion: 1504: 61  
+read 1494: 95 108 111 
+insertion: 1505: 1492 _
+read 894: 110 103 
+insertion: 1506: 1494 n
+read 1496: 101 115 116 95 109 
+insertion: 1507: 894 e
+read 1489: 97 116 99 104 
+insertion: 1508: 1496 a
+read 1379: 59 10 9 9 
+insertion: 1509: 1489 ;
+read 9: 9 
+insertion: 1510: 1379 
+read 1404: 116 109 112 95 108 
+insertion: 1511: 9 t
+read 1495: 111 110 103 101 
+insertion: 1512: 1404 o
+read 1406: 115 116 95 109 
+insertion: 1513: 1495 s
+read 1489: 97 116 99 104 
+insertion: 1514: 1406 a
+read 890: 61 48 59 10 
+insertion: 1515: 1489 =
+read 1484: 9 9 9 
+insertion: 1516: 890 
+read 275: 47 47 
+insertion: 1517: 1484 /
+read 720: 97 100 
+insertion: 1518: 275 a
+read 558: 100 32 
+insertion: 1519: 720 d
+read 552: 116 104 101 32 
+insertion: 1520: 558 t
+read 443: 115 116 114 
+insertion: 1521: 552 s
+read 1429: 105 110 103 
+insertion: 1522: 443 i
+read 1431: 32 105 110 32 116 104 101 
+insertion: 1523: 1429  
+read 803: 32 100 
+insertion: 1524: 1431  
+read 1433: 105 99 116 105 
+insertion: 1525: 803 i
+read 821: 111 110 97 114 
+insertion: 1526: 1433 o
+read 1435: 121 10 9 
+insertion: 1527: 821 y
+read 425: 9 9 
+insertion: 1528: 1435 
+read 1441: 99 111 109 112 95 100 
+insertion: 1529: 425 c
+read 1008: 105 99 116 
+insertion: 1530: 1441 i
+read 95: 95 
+insertion: 1531: 1008 _
+read 1519: 97 100 100 
+insertion: 1532: 95 a
+read 926: 95 119 
+insertion: 1533: 1519 _
+read 408: 111 114 
+insertion: 1534: 926 o
+read 100: 100 
+insertion: 1535: 408 d
+read 40: 40 
+insertion: 1536: 100 (
+read 1479: 112 111 115 105 116 105 
+insertion: 1537: 40 p
+read 346: 111 110 
+insertion: 1538: 1479 o
+read 1470: 44 32 102 97 116 
+insertion: 1539: 346 ,
+read 1448: 104 101 114 44 
+insertion: 1540: 1470 h
+read 1492: 32 116 109 112 
+insertion: 1541: 1448  
+read 1451: 44 32 100 
+insertion: 1542: 1492 ,
+read 1008: 105 99 116 
+insertion: 1543: 1451 i
+read 1453: 41 59 10 9 9 
+insertion: 1544: 1008 )
+read 1454: 9 47 47 102 112 
+insertion: 1545: 1453 
+read 973: 114 105 110 
+insertion: 1546: 1454 r
+read 1456: 116 102 40 
+insertion: 1547: 973 t
+read 1287: 115 116 100 101 
+insertion: 1548: 1456 s
+read 1385: 114 114 44 
+insertion: 1549: 1287 r
+read 265: 32 34 
+insertion: 1550: 1385  
+read 983: 37 105 
+insertion: 1551: 265 %
+read 1465: 58 32 37 
+insertion: 1552: 983 :
+read 1387: 105 32 
+insertion: 1553: 1465 i
+read 1253: 37 105 92 
+insertion: 1554: 1387 %
+read 1469: 110 34 44 
+insertion: 1555: 1253 n
+read 517: 32 112 
+insertion: 1556: 1469  
+read 756: 111 115 105 
+insertion: 1557: 517 o
+read 1474: 116 105 111 110 
+insertion: 1558: 756 t
+read 1540: 44 32 102 97 116 104 
+insertion: 1559: 1474 ,
+read 870: 101 114 
+insertion: 1560: 1540 e
+read 1449: 44 32 116 109 
+insertion: 1561: 870 ,
+read 112: 112 
+insertion: 1562: 1449 p
+read 1545: 41 59 10 9 9 9 
+insertion: 1563: 112 )
+read 460: 10 9 9 9 
+insertion: 1564: 1545 
+
+read 1215: 98 105 116 105 111 95 119 114 
+insertion: 1565: 460 b
+read 751: 105 116 101 
+insertion: 1566: 1215 i
+read 1217: 40 98 105 116 44 
+insertion: 1567: 751 (
+read 1184: 32 40 
+insertion: 1568: 1217  
+read 1219: 117 105 110 
+insertion: 1569: 1184 u
+read 116: 116 
+insertion: 1570: 1219 t
+read 1221: 54 52 95 
+insertion: 1571: 116 6
+read 1188: 116 41 
+insertion: 1572: 1221 t
+read 1397: 105 116 109 112 
+insertion: 1573: 1188 i
+read 987: 44 32 98 
+insertion: 1574: 1397 ,
+read 355: 108 101 110 
+insertion: 1575: 987 l
+read 1545: 41 59 10 9 9 9 
+insertion: 1576: 355 )
+read 1246: 47 47 102 112 
+insertion: 1577: 1545 /
+read 1547: 114 105 110 116 
+insertion: 1578: 1246 r
+read 1383: 102 40 115 116 
+insertion: 1579: 1547 f
+read 1250: 100 101 114 114 44 
+insertion: 1580: 1383 d
+read 655: 32 32 
+insertion: 1581: 1250  
+read 34: 34 
+insertion: 1582: 655 "
+read 1078: 92 110 34 41 
+insertion: 1583: 34 \
+read 1510: 59 10 9 9 9 
+insertion: 1584: 1078 ;
+read 1463: 102 97 116 104 101 
+insertion: 1585: 1510 f
+read 763: 114 61 
+insertion: 1586: 1463 r
+read 1324: 116 109 112 59 
+insertion: 1587: 763 t
+read 441: 10 9 9 
+insertion: 1588: 1324 
+
+read 475: 125 10 9 
+insertion: 1589: 441 }
+read 125: 125 
+insertion: 1590: 475 }
+read 706: 32 119 
+insertion: 1591: 125  
+read 708: 104 105 
+insertion: 1592: 706 h
+read 328: 108 101 
+insertion: 1593: 708 l
+read 40: 40 
+insertion: 1594: 328 (
+read 1365: 114 101 115 117 108 
+insertion: 1595: 40 r
+read 116: 116 
+insertion: 1596: 1365 t
+read 1481: 33 61 
+insertion: 1597: 116 !
+read 48: 48 
+insertion: 1598: 1481 0
+read 32: 32 
+insertion: 1599: 48  
+read 124: 124 
+insertion: 1600: 32 |
+read 124: 124 
+insertion: 1601: 124 |
+read 32: 32 
+insertion: 1602: 124  
+read 33: 33 
+insertion: 1603: 32 !
+read 102: 102 
+insertion: 1604: 33 f
+read 1173: 101 111 
+insertion: 1605: 102 e
+read 427: 102 40 
+insertion: 1606: 1173 f
+read 1265: 102 105 108 101 95 114 
+insertion: 1607: 427 f
+read 1318: 101 97 100 41 
+insertion: 1608: 1265 e
+read 1202: 41 59 10 32 32 32 32 47 
+insertion: 1609: 1318 )
+read 47: 47 
+insertion: 1610: 1202 /
+read 1132: 119 114 105 116 101 
+insertion: 1611: 47 w
+read 516: 32 116 104 101 32 
+insertion: 1612: 1132  
+read 607: 108 97 
+insertion: 1613: 516 l
+read 1301: 115 116 32 
+insertion: 1614: 607 s
+read 1538: 112 111 115 105 116 105 111 
+insertion: 1615: 1301 p
+read 319: 110 32 
+insertion: 1616: 1538 n
+read 1333: 114 101 97 99 
+insertion: 1617: 319 r
+read 311: 104 101 
+insertion: 1618: 1333 h
+read 100: 100 
+insertion: 1619: 311 d
+read 802: 10 32 32 32 32 
+insertion: 1620: 100 
+
+read 1566: 98 105 116 105 111 95 119 114 105 
+insertion: 1621: 802 b
+read 314: 116 101 
+insertion: 1622: 1566 t
+read 1568: 40 98 105 116 44 32 
+insertion: 1623: 314 (
+read 1586: 102 97 116 104 101 114 
+insertion: 1624: 1568 f
+read 1575: 44 32 98 108 
+insertion: 1625: 1586 ,
+read 315: 101 110 
+insertion: 1626: 1575 e
+read 1079: 41 59 10 32 32 32 32 
+insertion: 1627: 315 )
+read 1023: 10 32 32 32 32 47 47 
+insertion: 1628: 1079 
+
+read 260: 99 108 
+insertion: 1629: 1023 c
+read 571: 111 115 
+insertion: 1630: 260 o
+read 589: 101 32 97 
+insertion: 1631: 571 e
+read 108: 108 
+insertion: 1632: 589 l
+read 337: 108 32 
+insertion: 1633: 108 l
+read 1521: 116 104 101 32 115 
+insertion: 1634: 337 t
+read 468: 116 114 117 
+insertion: 1635: 1521 t
+read 1033: 99 116 117 
+insertion: 1636: 468 c
+read 491: 114 101 115 
+insertion: 1637: 1033 r
+read 1037: 32 119 114 105 
+insertion: 1638: 491  
+read 1128: 116 105 110 
+insertion: 1639: 1037 t
+read 1430: 103 32 
+insertion: 1640: 1128 g
+read 1336: 69 79 
+insertion: 1641: 1430 E
+read 70: 70 
+insertion: 1642: 1336 F
+read 67: 67 
+insertion: 1643: 70 C
+read 398: 32 111 
+insertion: 1644: 67  
+read 467: 110 32 116 
+insertion: 1645: 398 n
+read 949: 104 101 32 99 
+insertion: 1646: 467 h
+read 527: 111 109 112 
+insertion: 1647: 949 o
+read 951: 114 101 115 115 101 
+insertion: 1648: 527 r
+read 558: 100 32 
+insertion: 1649: 951 d
+read 1094: 102 105 108 101 10 
+insertion: 1650: 558 f
+read 1047: 32 32 32 32 98 
+insertion: 1651: 1094  
+read 1438: 105 116 105 111 
+insertion: 1652: 1047 i
+read 1155: 95 119 114 
+insertion: 1653: 1438 _
+read 1567: 105 116 101 40 
+insertion: 1654: 1155 i
+read 837: 98 105 116 
+insertion: 1655: 1567 b
+read 359: 44 32 
+insertion: 1656: 837 ,
+read 1642: 69 79 70 
+insertion: 1657: 359 E
+read 67: 67 
+insertion: 1658: 1642 C
+read 1626: 44 32 98 108 101 
+insertion: 1659: 67 ,
+read 1475: 110 41 
+insertion: 1660: 1626 n
+read 930: 59 10 32 32 32 32 
+insertion: 1661: 1475 ;
+read 1154: 98 105 116 105 111 95 
+insertion: 1662: 930 b
+read 1630: 99 108 111 
+insertion: 1663: 1154 c
+read 483: 115 101 
+insertion: 1664: 1630 s
+read 1182: 40 98 105 116 
+insertion: 1665: 483 (
+read 1178: 41 59 10 9 
+insertion: 1666: 1182 )
+read 1578: 47 47 102 112 114 
+insertion: 1667: 1178 /
+read 1069: 105 110 116 102 40 
+insertion: 1668: 1578 i
+read 1549: 115 116 100 101 114 
+insertion: 1669: 1069 s
+read 978: 114 44 32 34 
+insertion: 1670: 1549 r
+read 1555: 37 105 92 110 
+insertion: 1671: 978 %
+read 986: 34 44 
+insertion: 1672: 1555 "
+read 372: 32 108 
+insertion: 1673: 986  
+read 1513: 111 110 103 101 115 
+insertion: 1674: 372 o
+read 1488: 116 95 109 97 
+insertion: 1675: 1513 t
+read 1111: 116 99 104 
+insertion: 1676: 1488 t
+read 1296: 41 59 10 9 10 
+insertion: 1677: 1111 )
+read 877: 9 47 47 
+insertion: 1678: 1296 
+read 1612: 119 114 105 116 101 32 
+insertion: 1679: 877 w
+read 552: 116 104 101 32 
+insertion: 1680: 1612 t
+read 1487: 108 111 110 103 101 115 116 
+insertion: 1681: 552 l
+read 940: 32 109 
+insertion: 1682: 1487  
+read 1489: 97 116 99 104 
+insertion: 1683: 940 a
+read 1524: 32 105 110 32 116 104 101 32 
+insertion: 1684: 1489  
+read 1094: 102 105 108 101 10 
+insertion: 1685: 1524 f
+read 9: 9 
+insertion: 1686: 1094 
+read 925: 102 105 108 101 95 
+insertion: 1687: 9 f
+read 1132: 119 114 105 116 101 
+insertion: 1688: 925 w
+read 1367: 61 102 
+insertion: 1689: 1132 =
+read 1052: 111 112 101 
+insertion: 1690: 1367 o
+read 347: 110 40 
+insertion: 1691: 1052 n
+read 1054: 116 111 44 32 
+insertion: 1692: 347 t
+read 34: 34 
+insertion: 1693: 1054 "
+read 114: 114 
+insertion: 1694: 34 r
+read 43: 43 
+insertion: 1695: 114 +
+read 98: 98 
+insertion: 1696: 43 b
+read 1283: 34 41 59 10 
+insertion: 1697: 98 "
+read 1687: 9 102 
+insertion: 1698: 1283 
+read 483: 115 101 
+insertion: 1699: 1687 s
+read 101: 101 
+insertion: 1700: 483 e
+read 107: 107 
+insertion: 1701: 101 k
+read 785: 40 102 105 108 
+insertion: 1702: 107 (
+read 959: 101 95 
+insertion: 1703: 785 e
+read 1132: 119 114 105 116 101 
+insertion: 1704: 959 w
+read 1229: 44 32 115 105 122 101 111 102 
+insertion: 1705: 1132 ,
+read 380: 40 105 
+insertion: 1706: 1229 (
+read 1199: 110 116 41 
+insertion: 1707: 380 n
+read 359: 44 32 
+insertion: 1708: 1199 ,
+read 83: 83 
+insertion: 1709: 359 S
+read 69: 69 
+insertion: 1710: 83 E
+read 69: 69 
+insertion: 1711: 69 E
+read 75: 75 
+insertion: 1712: 69 K
+read 95: 95 
+insertion: 1713: 75 _
+read 1710: 83 69 
+insertion: 1714: 95 S
+read 84: 84 
+insertion: 1715: 1710 T
+read 824: 41 59 32 
+insertion: 1716: 84 )
+read 1105: 10 9 104 
+insertion: 1717: 824 
+
+read 1190: 100 114 46 
+insertion: 1718: 1105 d
+read 1501: 108 111 110 103 101 115 116 95 
+insertion: 1719: 1190 l
+read 1407: 109 97 116 99 104 
+insertion: 1720: 1501 m
+read 411: 61 108 
+insertion: 1721: 1407 =
+read 1675: 111 110 103 101 115 116 
+insertion: 1722: 411 o
+read 1502: 95 109 97 116 99 
+insertion: 1723: 1675 _
+read 104: 104 
+insertion: 1724: 1502 h
+read 471: 59 10 9 
+insertion: 1725: 104 ;
+read 102: 102 
+insertion: 1726: 471 f
+read 1181: 119 114 105 116 101 40 
+insertion: 1727: 102 w
+read 38: 38 
+insertion: 1728: 1181 &
+read 1106: 104 100 114 46 
+insertion: 1729: 38 h
+read 1720: 108 111 110 103 101 115 116 95 109 
+insertion: 1730: 1106 l
+read 1489: 97 116 99 104 
+insertion: 1731: 1720 a
+read 1706: 44 32 115 105 122 101 111 102 40 
+insertion: 1732: 1489 ,
+read 381: 105 110 116 41 
+insertion: 1733: 1706 i
+read 1315: 44 32 49 44 
+insertion: 1734: 381 ,
+read 559: 32 102 105 108 101 
+insertion: 1735: 1315  
+read 1654: 95 119 114 105 
+insertion: 1736: 559 _
+read 314: 116 101 
+insertion: 1737: 1654 t
+read 1178: 41 59 10 9 
+insertion: 1738: 314 )
+read 102: 102 
+insertion: 1739: 1178 f
+read 1664: 99 108 111 115 
+insertion: 1740: 102 c
+read 1157: 101 40 
+insertion: 1741: 1664 e
+read 1688: 102 105 108 101 95 119 
+insertion: 1742: 1157 f
+read 1156: 114 105 116 101 
+insertion: 1743: 1688 r
+read 1319: 41 59 10 9 10 32 
+insertion: 1744: 1156 )
+read 1245: 32 32 32 47 
+insertion: 1745: 1319  
+read 1298: 47 102 
+insertion: 1746: 1245 /
+read 462: 114 101 
+insertion: 1747: 1298 r
+read 1632: 101 32 97 108 
+insertion: 1748: 462 e
+read 337: 108 32 
+insertion: 1749: 1632 l
+read 584: 111 116 
+insertion: 1750: 337 o
+read 762: 104 101 114 
+insertion: 1751: 584 h
+read 1427: 32 115 116 
+insertion: 1752: 762  
+read 114: 114 
+insertion: 1753: 1427 r
+read 860: 117 99 
+insertion: 1754: 114 u
+read 464: 116 117 
+insertion: 1755: 860 t
+read 491: 114 101 115 
+insertion: 1756: 464 r
+read 802: 10 32 32 32 32 
+insertion: 1757: 491 
+
+read 1530: 99 111 109 112 95 100 105 
+insertion: 1758: 802 c
+read 341: 99 116 95 
+insertion: 1759: 1530 c
+read 115: 115 
+insertion: 1760: 341 s
+read 117: 117 
+insertion: 1761: 115 u
+read 112: 112 
+insertion: 1762: 117 p
+read 618: 112 114 101 
+insertion: 1763: 112 p
+read 492: 115 115 
+insertion: 1764: 618 s
+read 1007: 40 100 105 
+insertion: 1765: 492 (
+read 284: 99 116 
+insertion: 1766: 1007 c
+read 1079: 41 59 10 32 32 32 32 
+insertion: 1767: 284 )
+read 1308: 102 114 101 
+insertion: 1768: 1079 f
+read 1157: 101 40 
+insertion: 1769: 1308 e
+read 1452: 100 105 99 116 41 
+insertion: 1770: 1157 d
+read 1726: 59 10 9 102 
+insertion: 1771: 1452 ;
+read 1741: 99 108 111 115 101 
+insertion: 1772: 1726 c
+read 1703: 40 102 105 108 101 
+insertion: 1773: 1741 (
+read 1377: 95 114 101 
+insertion: 1774: 1703 _
+read 720: 97 100 
+insertion: 1775: 1377 a
+read 1628: 41 59 10 32 32 32 32 10 
+insertion: 1776: 720 )
+read 1081: 32 32 32 32 10 32 
+insertion: 1777: 1628  
+read 656: 32 32 32 
+insertion: 1778: 1081  
+read 1381: 102 112 114 105 110 116 
+insertion: 1779: 656 f
+read 1580: 102 40 115 116 100 
+insertion: 1780: 1381 f
+read 1458: 101 114 114 44 32 
+insertion: 1781: 1580 e
+read 266: 34 99 
+insertion: 1782: 1458 "
+read 1648: 111 109 112 114 
+insertion: 1783: 266 o
+read 619: 101 115 115 
+insertion: 1784: 1648 e
+read 768: 105 111 110 32 
+insertion: 1785: 619 i
+read 850: 101 120 101 
+insertion: 1786: 768 e
+read 1346: 99 117 
+insertion: 1787: 850 c
+read 314: 116 101 
+insertion: 1788: 1346 t
+read 100: 100 
+insertion: 1789: 314 d
+read 1584: 92 110 34 41 59 
+insertion: 1790: 100 \
+read 485: 10 125 
+insertion: 1791: 1584 
+
+read 300: 10 10 
+insertion: 1792: 485 
+
+read 613: 118 111 
+insertion: 1793: 300 v
+read 615: 105 100 
+insertion: 1794: 613 i
+read 803: 32 100 
+insertion: 1795: 615  
+read 101: 101 
+insertion: 1796: 803 e
+read 950: 99 111 109 112 114 
+insertion: 1797: 101 c
+read 619: 101 115 115 
+insertion: 1798: 950 e
+read 621: 40 99 104 
+insertion: 1799: 619 (
+read 362: 97 114 42 
+insertion: 1800: 621 a
+read 1360: 32 102 114 111 
+insertion: 1801: 362  
+read 626: 109 44 
+insertion: 1802: 1360 m
+read 360: 32 99 
+insertion: 1803: 626  
+read 622: 104 97 114 
+insertion: 1804: 360 h
+read 548: 42 32 116 
+insertion: 1805: 622 *
+read 111: 111 
+insertion: 1806: 548 o
+read 635: 41 123 
+insertion: 1807: 111 )
+read 1130: 10 9 10 
+insertion: 1808: 635 
+
+read 369: 9 105 
+insertion: 1809: 1130 
+read 688: 110 116 32 
+insertion: 1810: 369 n
+read 849: 105 110 100 101 
+insertion: 1811: 688 i
+read 120: 120 
+insertion: 1812: 849 x
+read 95: 95 
+insertion: 1813: 120 _
+read 1039: 98 105 116 115 
+insertion: 1814: 95 b
+read 359: 44 32 
+insertion: 1815: 1039 ,
+read 97: 97 
+insertion: 1816: 359 a
+read 117: 117 
+insertion: 1817: 97 u
+read 120: 120 
+insertion: 1818: 117 x
+read 627: 44 32 99 
+insertion: 1819: 120 ,
+read 1593: 104 105 108 
+insertion: 1820: 627 h
+read 100: 100 
+insertion: 1821: 1593 d
+read 920: 95 114 
+insertion: 1822: 100 _
+read 335: 111 111 
+insertion: 1823: 920 o
+read 889: 116 61 
+insertion: 1824: 335 t
+read 912: 48 59 10 
+insertion: 1825: 889 0
+read 1047: 32 32 32 32 98 
+insertion: 1826: 912  
+read 335: 111 111 
+insertion: 1827: 1047 o
+read 337: 108 32 
+insertion: 1828: 335 l
+read 1299: 102 105 114 
+insertion: 1829: 337 f
+read 908: 115 116 95 
+insertion: 1830: 1299 s
+read 1236: 114 101 97 100 32 
+insertion: 1831: 908 r
+read 1504: 61 32 
+insertion: 1832: 1236 =
+read 468: 116 114 117 
+insertion: 1833: 1504 t
+read 484: 101 59 10 
+insertion: 1834: 468 e
+read 1810: 9 105 110 
+insertion: 1835: 484 
+read 371: 116 32 
+insertion: 1836: 1810 t
+read 491: 114 101 115 
+insertion: 1837: 371 r
+read 1377: 95 114 101 
+insertion: 1838: 491 _
+read 1428: 116 114 105 
+insertion: 1839: 1377 t
+read 101: 101 
+insertion: 1840: 1428 e
+read 1125: 118 101 
+insertion: 1841: 101 v
+read 759: 61 48 44 
+insertion: 1842: 1125 =
+read 591: 32 115 
+insertion: 1843: 759  
+read 958: 105 122 101 
+insertion: 1844: 591 i
+read 930: 59 10 32 32 32 32 
+insertion: 1845: 958 ;
+read 1570: 117 105 110 116 
+insertion: 1846: 930 u
+read 1572: 54 52 95 116 
+insertion: 1847: 1570 6
+read 1302: 32 114 101 
+insertion: 1848: 1572  
+read 720: 97 100 
+insertion: 1849: 1302 a
+read 1004: 95 105 
+insertion: 1850: 720 _
+read 110: 110 
+insertion: 1851: 1004 n
+read 746: 100 101 120 
+insertion: 1852: 110 d
+read 1472: 44 32 112 
+insertion: 1853: 746 ,
+read 462: 114 101 
+insertion: 1854: 1472 r
+read 118: 118 
+insertion: 1855: 462 v
+read 95: 95 
+insertion: 1856: 118 _
+read 1346: 99 117 
+insertion: 1857: 95 c
+read 645: 114 114 
+insertion: 1858: 1346 r
+read 315: 101 110 
+insertion: 1859: 645 e
+read 1825: 116 61 48 
+insertion: 1860: 315 t
+read 930: 59 10 32 32 32 32 
+insertion: 1861: 1825 ;
+read 1032: 115 116 114 117 99 
+insertion: 1862: 930 s
+read 371: 116 32 
+insertion: 1863: 1032 t
+read 1030: 98 105 116 105 111 
+insertion: 1864: 371 b
+read 488: 42 32 99 
+insertion: 1865: 1030 *
+read 527: 111 109 112 
+insertion: 1866: 488 o
+read 1462: 95 102 
+insertion: 1867: 527 _
+read 388: 105 108 101 
+insertion: 1868: 1462 i
+read 930: 59 10 32 32 32 32 
+insertion: 1869: 388 ;
+read 263: 100 101 
+insertion: 1870: 930 d
+read 99: 99 
+insertion: 1871: 263 c
+read 1002: 95 100 
+insertion: 1872: 99 _
+read 1526: 105 99 116 105 111 
+insertion: 1873: 1002 i
+read 827: 110 97 114 
+insertion: 1874: 1526 n
+read 807: 121 42 
+insertion: 1875: 827 y
+read 1525: 32 100 105 
+insertion: 1876: 807  
+read 284: 99 116 
+insertion: 1877: 1525 c
+read 1846: 59 10 32 32 32 32 117 
+insertion: 1878: 284 ;
+read 682: 110 115 105 
+insertion: 1879: 1846 n
+read 727: 103 110 101 
+insertion: 1880: 682 g
+read 616: 100 32 99 
+insertion: 1881: 727 d
+read 1805: 104 97 114 42 
+insertion: 1882: 616 h
+read 698: 32 118 
+insertion: 1883: 1805  
+read 1797: 101 99 
+insertion: 1884: 698 e
+read 800: 116 111 114 
+insertion: 1885: 1797 t
+read 471: 59 10 9 
+insertion: 1886: 800 ;
+read 677: 105 110 116 32 
+insertion: 1887: 471 i
+read 811: 109 97 
+insertion: 1888: 677 m
+read 1813: 120 95 
+insertion: 1889: 811 x
+read 395: 108 101 110 103 
+insertion: 1890: 1813 l
+read 310: 116 104 
+insertion: 1891: 395 t
+read 1816: 44 32 97 
+insertion: 1892: 310 ,
+read 1033: 99 116 117 
+insertion: 1893: 1816 c
+read 481: 97 108 
+insertion: 1894: 1033 a
+read 905: 95 108 
+insertion: 1895: 481 _
+read 667: 101 110 103 
+insertion: 1896: 905 e
+read 310: 116 104 
+insertion: 1897: 667 t
+read 930: 59 10 32 32 32 32 
+insertion: 1898: 310 ;
+read 1090: 104 101 97 100 101 
+insertion: 1899: 930 h
+read 871: 114 32 
+insertion: 1900: 1090 r
+read 1096: 104 100 114 
+insertion: 1901: 871 h
+read 471: 59 10 9 
+insertion: 1902: 1096 ;
+read 914: 70 73 
+insertion: 1903: 471 F
+read 916: 76 69 
+insertion: 1904: 914 L
+read 808: 42 32 100 
+insertion: 1905: 916 *
+read 1797: 101 99 
+insertion: 1906: 808 e
+read 527: 111 109 112 
+insertion: 1907: 1797 o
+read 1234: 59 10 32 32 32 32 10 32 
+insertion: 1908: 527 ;
+read 1746: 32 32 32 47 47 
+insertion: 1909: 1234  
+read 1606: 101 111 102 
+insertion: 1910: 1746 e
+read 1872: 99 95 
+insertion: 1911: 1606 c
+read 766: 112 111 115 
+insertion: 1912: 1872 p
+read 32: 32 
+insertion: 1913: 766  
+read 1504: 61 32 
+insertion: 1914: 32 =
+read 771: 100 105 99 116 
+insertion: 1915: 1504 d
+read 45: 45 
+insertion: 1916: 771 -
+read 62: 62 
+insertion: 1917: 45 >
+read 115: 115 
+insertion: 1918: 62 s
+read 121: 121 
+insertion: 1919: 115 y
+read 109: 109 
+insertion: 1920: 121 m
+read 334: 98 111 
+insertion: 1921: 109 b
+read 482: 108 115 
+insertion: 1922: 334 l
+read 930: 59 10 32 32 32 32 
+insertion: 1923: 482 ;
+read 1001: 99 111 109 112 95 
+insertion: 1924: 930 c
+read 523: 102 105 108 101 32 
+insertion: 1925: 1001 f
+read 1504: 61 32 
+insertion: 1926: 523 =
+read 1050: 98 105 116 95 
+insertion: 1927: 1504 b
+read 1691: 111 112 101 110 
+insertion: 1928: 1050 o
+read 386: 40 102 
+insertion: 1929: 1691 (
+read 625: 114 111 109 
+insertion: 1930: 386 r
+read 1281: 44 32 34 114 
+insertion: 1931: 625 ,
+read 1057: 34 41 59 
+insertion: 1932: 1281 "
+read 1393: 32 32 32 32 32 32 
+insertion: 1933: 1057  
+read 657: 32 47 47 
+insertion: 1934: 1393  
+read 80: 80 
+insertion: 1935: 657 P
+read 462: 114 101 
+insertion: 1936: 80 r
+read 1116: 112 97 114 
+insertion: 1937: 462 p
+read 1523: 105 110 103 32 
+insertion: 1938: 1116 i
+read 843: 109 121 
+insertion: 1939: 1523 m
+read 803: 32 100 
+insertion: 1940: 843  
+read 519: 97 116 
+insertion: 1941: 803 a
+read 590: 97 32 
+insertion: 1942: 519 a
+read 1863: 115 116 114 117 99 116 
+insertion: 1943: 590 s
+read 1034: 117 114 101 
+insertion: 1944: 1863 u
+read 1348: 115 10 
+insertion: 1945: 1034 s
+read 1778: 32 32 32 32 10 32 32 
+insertion: 1946: 1348  
+read 776: 32 32 47 
+insertion: 1947: 1778  
+read 1355: 47 114 
+insertion: 1948: 776 /
+read 463: 101 116 
+insertion: 1949: 1355 e
+read 750: 114 105 
+insertion: 1950: 463 r
+read 1841: 101 118 
+insertion: 1951: 750 e
+read 936: 101 32 104 
+insertion: 1952: 1841 e
+read 1135: 101 97 100 
+insertion: 1953: 936 e
+read 870: 101 114 
+insertion: 1954: 1135 e
+read 1621: 10 32 32 32 32 98 
+insertion: 1955: 870 
+
+read 1653: 105 116 105 111 95 
+insertion: 1956: 1621 i
+read 921: 114 101 97 100 
+insertion: 1957: 1653 r
+read 348: 40 99 
+insertion: 1958: 921 (
+read 1867: 111 109 112 95 
+insertion: 1959: 348 o
+read 452: 102 105 108 101 
+insertion: 1960: 1867 f
+read 1218: 44 32 40 117 
+insertion: 1961: 452 ,
+read 1186: 105 110 116 54 52 
+insertion: 1962: 1218 i
+read 736: 95 116 
+insertion: 1963: 1186 _
+read 42: 42 
+insertion: 1964: 736 *
+read 41: 41 
+insertion: 1965: 42 )
+read 1729: 38 104 
+insertion: 1966: 41 &
+read 1190: 100 114 46 
+insertion: 1967: 1729 d
+read 1169: 100 105 99 116 105 111 110 97 114 121 95 
+insertion: 1968: 1190 d
+read 537: 115 105 122 101 
+insertion: 1969: 1169 s
+read 1733: 44 32 115 105 122 101 111 102 40 105 
+insertion: 1970: 537 ,
+read 1199: 110 116 41 
+insertion: 1971: 1733 n
+read 1201: 42 56 41 
+insertion: 1972: 1199 *
+read 471: 59 10 9 
+insertion: 1973: 1201 ;
+read 1154: 98 105 116 105 111 95 
+insertion: 1974: 471 b
+read 1958: 114 101 97 100 40 
+insertion: 1975: 1154 r
+read 1925: 99 111 109 112 95 102 
+insertion: 1976: 1958 c
+read 388: 105 108 101 
+insertion: 1977: 1925 i
+read 1962: 44 32 40 117 105 
+insertion: 1978: 388 ,
+read 1220: 110 116 54 
+insertion: 1979: 1962 n
+read 1187: 52 95 116 
+insertion: 1980: 1220 4
+read 1965: 42 41 
+insertion: 1981: 1187 *
+read 1967: 38 104 100 
+insertion: 1982: 1965 &
+read 1097: 114 46 
+insertion: 1983: 1967 r
+read 1731: 108 111 110 103 101 115 116 95 109 97 
+insertion: 1984: 1097 l
+read 1111: 116 99 104 
+insertion: 1985: 1731 t
+read 1971: 44 32 115 105 122 101 111 102 40 105 110 
+insertion: 1986: 1111 ,
+read 1188: 116 41 
+insertion: 1987: 1971 t
+read 1973: 42 56 41 59 
+insertion: 1988: 1188 *
+read 1809: 10 9 10 9 
+insertion: 1989: 1973 
+
+read 275: 47 47 
+insertion: 1990: 1809 /
+read 941: 109 97 110 
+insertion: 1991: 275 m
+read 97: 97 
+insertion: 1992: 941 a
+read 895: 103 101 
+insertion: 1993: 97 g
+read 331: 109 101 
+insertion: 1994: 895 m
+read 688: 110 116 32 
+insertion: 1995: 331 n
+read 1141: 111 102 32 116 104 101 
+insertion: 1996: 688 o
+read 1884: 32 118 101 
+insertion: 1997: 1141  
+read 284: 99 116 
+insertion: 1998: 1884 c
+read 494: 111 114 32 
+insertion: 1999: 284 o
+read 603: 105 110 32 
+insertion: 2000: 494 i
+read 955: 119 104 105 
+insertion: 2001: 603 w
+read 1334: 99 104 32 
+insertion: 2002: 955 c
+read 713: 112 117 116 
+insertion: 2003: 1334 p
+read 536: 32 116 104 101 32 115 
+insertion: 2004: 713  
+read 1920: 121 109 
+insertion: 2005: 536 y
+read 1922: 98 111 108 
+insertion: 2006: 1920 b
+read 1348: 115 10 
+insertion: 2007: 1922 s
+read 9: 9 
+insertion: 2008: 1348 
+read 1889: 109 97 120 
+insertion: 2009: 9 m
+read 1896: 95 108 101 
+insertion: 2010: 1889 _
+read 894: 110 103 
+insertion: 2011: 1896 n
+read 310: 116 104 
+insertion: 2012: 894 t
+read 61: 61 
+insertion: 2013: 310 =
+read 1730: 104 100 114 46 108 
+insertion: 2014: 61 h
+read 1723: 111 110 103 101 115 116 95 
+insertion: 2015: 1730 o
+read 1407: 109 97 116 99 104 
+insertion: 2016: 1723 m
+read 471: 59 10 9 
+insertion: 2017: 1407 ;
+read 1125: 118 101 
+insertion: 2018: 471 v
+read 1999: 99 116 111 
+insertion: 2019: 1125 c
+read 763: 114 61 
+insertion: 2020: 1999 r
+read 811: 109 97 
+insertion: 2021: 763 m
+read 1633: 108 108 
+insertion: 2022: 811 l
+read 814: 111 99 
+insertion: 2023: 1633 o
+read 40: 40 
+insertion: 2024: 814 (
+read 2010: 109 97 120 95 
+insertion: 2025: 40 m
+read 1891: 108 101 110 103 116 
+insertion: 2026: 2010 l
+read 1408: 104 43 
+insertion: 2027: 1891 h
+read 964: 49 41 
+insertion: 2028: 1408 1
+read 2018: 59 10 9 118 
+insertion: 2029: 964 ;
+read 1885: 101 99 116 
+insertion: 2030: 2018 e
+read 408: 111 114 
+insertion: 2031: 1885 o
+read 91: 91 
+insertion: 2032: 408 [
+read 2026: 109 97 120 95 108 
+insertion: 2033: 91 m
+read 1897: 101 110 103 116 
+insertion: 2034: 2026 e
+read 104: 104 
+insertion: 2035: 1897 h
+read 434: 93 61 
+insertion: 2036: 104 ]
+read 39: 39 
+insertion: 2037: 434 '
+read 92: 92 
+insertion: 2038: 39 \
+read 48: 48 
+insertion: 2039: 92 0
+read 39: 39 
+insertion: 2040: 48 '
+read 1909: 59 10 32 32 32 32 10 32 32 
+insertion: 2041: 39 ;
+read 655: 32 32 
+insertion: 2042: 1909  
+read 771: 100 105 99 116 
+insertion: 2043: 655 d
+read 1914: 32 61 
+insertion: 2044: 771  
+read 1683: 32 109 97 
+insertion: 2045: 1914  
+read 2023: 108 108 111 
+insertion: 2046: 1683 l
+read 815: 99 40 
+insertion: 2047: 2023 c
+read 817: 115 105 122 101 111 
+insertion: 2048: 815 s
+read 427: 102 40 
+insertion: 2049: 817 f
+read 1099: 100 105 99 116 105 111 110 97 114 121 
+insertion: 2050: 427 d
+read 823: 41 41 
+insertion: 2051: 1099 )
+read 1870: 59 10 32 32 32 32 100 
+insertion: 2052: 823 ;
+read 1907: 101 99 111 
+insertion: 2053: 1870 e
+read 269: 109 112 
+insertion: 2054: 1907 m
+read 1873: 95 100 105 
+insertion: 2055: 269 _
+read 341: 99 116 95 
+insertion: 2056: 1873 c
+read 1005: 105 110 105 
+insertion: 2057: 341 i
+read 116: 116 
+insertion: 2058: 1005 t
+read 1766: 40 100 105 99 
+insertion: 2059: 116 (
+read 1183: 116 44 32 
+insertion: 2060: 1766 t
+read 1168: 104 100 114 46 100 
+insertion: 2061: 1183 h
+read 1874: 105 99 116 105 111 110 
+insertion: 2062: 1168 i
+read 545: 97 114 121 
+insertion: 2063: 1874 a
+read 1170: 95 115 105 
+insertion: 2064: 545 _
+read 1011: 122 101 44 
+insertion: 2065: 1170 z
+read 32: 32 
+insertion: 2066: 1011  
+read 1013: 50 53 
+insertion: 2067: 32 2
+read 1015: 54 41 
+insertion: 2068: 1013 6
+read 866: 59 10 32 32 32 
+insertion: 2069: 1015 ;
+read 802: 10 32 32 32 32 
+insertion: 2070: 866 
+
+read 1817: 97 117 
+insertion: 2071: 802 a
+read 747: 120 32 
+insertion: 2072: 1817 x
+read 1504: 61 32 
+insertion: 2073: 747 =
+read 2062: 104 100 114 46 100 105 
+insertion: 2074: 1504 h
+read 543: 99 116 105 
+insertion: 2075: 2062 c
+read 1527: 111 110 97 114 121 
+insertion: 2076: 543 o
+read 2065: 95 115 105 122 
+insertion: 2077: 1527 _
+read 470: 101 59 
+insertion: 2078: 2065 e
+read 1934: 32 32 32 32 32 32 32 
+insertion: 2079: 470  
+read 1948: 32 32 47 47 
+insertion: 2080: 1934  
+read 67: 67 
+insertion: 2081: 1948 C
+read 527: 111 109 112 
+insertion: 2082: 67 o
+read 935: 117 116 101 
+insertion: 2083: 527 u
+read 516: 32 116 104 101 32 
+insertion: 2084: 935  
+read 1074: 110 117 
+insertion: 2085: 516 n
+read 1921: 109 98 
+insertion: 2086: 1074 m
+read 1091: 101 114 32 
+insertion: 2087: 1921 e
+read 521: 111 102 32 
+insertion: 2088: 1091 o
+read 1039: 98 105 116 115 
+insertion: 2089: 521 b
+read 1302: 32 114 101 
+insertion: 2090: 1039  
+read 1764: 112 114 101 115 
+insertion: 2091: 1302 p
+read 1860: 101 110 116 
+insertion: 2092: 1764 e
+read 1523: 105 110 103 32 
+insertion: 2093: 1860 i
+read 552: 116 104 101 32 
+insertion: 2094: 1523 t
+read 1812: 105 110 100 101 120 
+insertion: 2095: 552 i
+read 1046: 101 115 10 32 
+insertion: 2096: 1812 e
+read 1779: 32 32 32 102 
+insertion: 2097: 1046  
+read 1455: 112 114 105 110 116 
+insertion: 2098: 1779 p
+read 1781: 102 40 115 116 100 101 
+insertion: 2099: 1455 f
+read 1550: 114 114 44 32 
+insertion: 2100: 1781 r
+read 1252: 34 37 
+insertion: 2101: 1550 "
+read 1468: 105 92 110 
+insertion: 2102: 1252 i
+read 1673: 34 44 32 
+insertion: 2103: 1468 "
+read 2072: 97 117 120 
+insertion: 2104: 1673 a
+read 1079: 41 59 10 32 32 32 32 
+insertion: 2105: 2072 )
+read 1812: 105 110 100 101 120 
+insertion: 2106: 1079 i
+read 1814: 95 98 
+insertion: 2107: 1812 _
+read 295: 105 116 
+insertion: 2108: 1814 i
+read 515: 115 32 
+insertion: 2109: 295 s
+read 1504: 61 32 
+insertion: 2110: 515 =
+read 414: 49 59 
+insertion: 2111: 1504 1
+read 954: 10 32 32 32 32 119 
+insertion: 2112: 414 
+
+read 1593: 104 105 108 
+insertion: 2113: 954 h
+read 1157: 101 40 
+insertion: 2114: 1593 e
+read 2072: 97 117 120 
+insertion: 2115: 1157 a
+read 32: 32 
+insertion: 2116: 2072  
+read 962: 62 62 
+insertion: 2117: 32 >
+read 2111: 61 32 49 
+insertion: 2118: 962 =
+read 1212: 41 10 
+insertion: 2119: 2111 )
+read 1934: 32 32 32 32 32 32 32 
+insertion: 2120: 1212  
+read 687: 32 105 110 
+insertion: 2121: 1934  
+read 746: 100 101 120 
+insertion: 2122: 687 d
+read 2108: 95 98 105 
+insertion: 2123: 746 _
+read 605: 116 115 
+insertion: 2124: 2108 t
+read 1409: 43 43 59 
+insertion: 2125: 605 +
+read 802: 10 32 32 32 32 
+insertion: 2126: 1409 
+
+read 829: 10 32 32 32 32 105 
+insertion: 2127: 802 
+
+read 427: 102 40 
+insertion: 2128: 829 f
+read 549: 116 111 
+insertion: 2129: 427 t
+read 1260: 61 61 78 
+insertion: 2130: 549 =
+read 1064: 85 76 
+insertion: 2131: 1260 U
+read 1066: 76 41 
+insertion: 2132: 1064 L
+read 931: 32 10 
+insertion: 2133: 1066  
+read 425: 9 9 
+insertion: 2134: 931 
+read 1871: 100 101 99 
+insertion: 2135: 425 d
+read 527: 111 109 112 
+insertion: 2136: 1871 o
+read 1267: 61 115 116 
+insertion: 2137: 527 =
+read 1350: 100 111 
+insertion: 2138: 1267 d
+read 601: 117 116 
+insertion: 2139: 1350 u
+read 1270: 59 10 9 101 
+insertion: 2140: 601 ;
+read 1272: 108 115 101 
+insertion: 2141: 1270 l
+read 441: 10 9 9 
+insertion: 2142: 1272 
+
+read 2136: 100 101 99 111 
+insertion: 2143: 441 d
+read 690: 109 112 61 
+insertion: 2144: 2136 m
+read 1277: 102 111 112 
+insertion: 2145: 690 f
+read 1053: 101 110 40 116 
+insertion: 2146: 1277 e
+read 111: 111 
+insertion: 2147: 1053 o
+read 1251: 44 32 34 
+insertion: 2148: 111 ,
+read 1056: 119 34 
+insertion: 2149: 1251 w
+read 1745: 41 59 10 9 10 32 32 
+insertion: 2150: 1056 )
+read 655: 32 32 
+insertion: 2151: 1745  
+read 1975: 98 105 116 105 111 95 114 
+insertion: 2152: 655 b
+read 1309: 101 97 100 40 
+insertion: 2153: 1975 e
+read 1925: 99 111 109 112 95 102 
+insertion: 2154: 1309 c
+read 1978: 105 108 101 44 
+insertion: 2155: 1925 i
+read 32: 32 
+insertion: 2156: 1978  
+read 38: 38 
+insertion: 2157: 32 &
+read 921: 114 101 97 100 
+insertion: 2158: 38 r
+read 1851: 95 105 110 
+insertion: 2159: 921 _
+read 1853: 100 101 120 44 
+insertion: 2160: 1851 d
+read 2122: 32 105 110 100 
+insertion: 2161: 1853  
+read 303: 101 120 
+insertion: 2162: 2122 e
+read 2124: 95 98 105 116 
+insertion: 2163: 303 _
+read 115: 115 
+insertion: 2164: 2124 s
+read 824: 41 59 32 
+insertion: 2165: 115 )
+read 275: 47 47 
+insertion: 2166: 824 /
+read 82: 82 
+insertion: 2167: 275 R
+read 1135: 101 97 100 
+insertion: 2168: 82 e
+read 882: 32 116 104 101 32 102 105 
+insertion: 2169: 1135  
+read 1300: 114 115 
+insertion: 2170: 882 r
+read 602: 116 32 105 
+insertion: 2171: 1300 t
+read 1852: 110 100 
+insertion: 2172: 602 n
+read 303: 101 120 
+insertion: 2173: 1852 e
+read 1130: 10 9 10 
+insertion: 2174: 303 
+
+read 675: 32 32 32 32 
+insertion: 2175: 1130  
+read 955: 119 104 105 
+insertion: 2176: 675 w
+read 1594: 108 101 40 
+insertion: 2177: 955 l
+read 2159: 114 101 97 100 95 
+insertion: 2178: 1594 r
+read 1812: 105 110 100 101 120 
+insertion: 2179: 2159 i
+read 1603: 32 33 
+insertion: 2180: 1812  
+read 1504: 61 32 
+insertion: 2181: 1603 =
+read 1658: 69 79 70 67 
+insertion: 2182: 1504 E
+read 423: 41 32 123 
+insertion: 2183: 1658 )
+read 1746: 32 32 32 47 47 
+insertion: 2184: 423  
+read 85: 85 
+insertion: 2185: 1746 U
+read 632: 110 116 
+insertion: 2186: 85 n
+read 327: 105 108 
+insertion: 2187: 632 i
+read 516: 32 116 104 101 32 
+insertion: 2188: 327  
+read 315: 101 110 
+insertion: 2189: 516 e
+read 558: 100 32 
+insertion: 2190: 315 d
+read 521: 111 102 32 
+insertion: 2191: 558 o
+read 1798: 99 111 109 112 114 101 
+insertion: 2192: 521 c
+read 556: 115 115 101 
+insertion: 2193: 1798 s
+read 1650: 100 32 102 
+insertion: 2194: 556 d
+read 883: 105 108 101 10 
+insertion: 2195: 1650 i
+read 1395: 9 9 10 9 
+insertion: 2196: 883 
+read 1546: 9 47 47 102 112 114 
+insertion: 2197: 1395 
+read 1669: 105 110 116 102 40 115 
+insertion: 2198: 1546 i
+read 976: 116 100 
+insertion: 2199: 1669 t
+read 111: 111 
+insertion: 2200: 976 o
+read 601: 117 116 
+insertion: 2201: 111 u
+read 1386: 44 32 34 37 105 
+insertion: 2202: 601 ,
+read 1292: 92 110 34 44 32 
+insertion: 2203: 1386 \
+read 1707: 40 105 110 
+insertion: 2204: 1292 (
+read 1188: 116 41 
+insertion: 2205: 1707 t
+read 2179: 114 101 97 100 95 105 
+insertion: 2206: 1188 r
+read 2173: 110 100 101 
+insertion: 2207: 2179 n
+read 120: 120 
+insertion: 2208: 2173 x
+read 1453: 41 59 10 9 9 
+insertion: 2209: 120 )
+read 1424: 97 99 116 
+insertion: 2210: 1453 a
+read 117: 117 
+insertion: 2211: 1424 u
+read 1895: 97 108 95 
+insertion: 2212: 117 a
+read 2027: 108 101 110 103 116 104 
+insertion: 2213: 1895 l
+read 810: 61 109 
+insertion: 2214: 2027 =
+read 97: 97 
+insertion: 2215: 810 a
+read 1890: 120 95 108 
+insertion: 2216: 97 x
+read 2035: 101 110 103 116 104 
+insertion: 2217: 1890 e
+read 1410: 59 10 9 9 47 
+insertion: 2218: 2035 ;
+read 1949: 47 114 101 
+insertion: 2219: 1410 /
+read 1840: 116 114 105 101 
+insertion: 2220: 1949 t
+read 1422: 118 101 32 
+insertion: 2221: 1840 v
+read 119: 119 
+insertion: 2222: 1422 w
+read 1535: 111 114 100 
+insertion: 2223: 119 o
+read 1802: 32 102 114 111 109 
+insertion: 2224: 1535  
+read 2162: 32 105 110 100 101 
+insertion: 2225: 1802  
+read 120: 120 
+insertion: 2226: 2162 x
+read 802: 10 32 32 32 32 
+insertion: 2227: 120 
+
+read 675: 32 32 32 32 
+insertion: 2228: 802  
+read 1838: 114 101 115 95 
+insertion: 2229: 675 r
+read 462: 114 101 
+insertion: 2230: 1838 r
+read 2221: 116 114 105 101 118 
+insertion: 2231: 462 t
+read 101: 101 
+insertion: 2232: 2221 e
+read 61: 61 
+insertion: 2233: 101 =
+read 2144: 100 101 99 111 109 
+insertion: 2234: 61 d
+read 1493: 112 95 
+insertion: 2235: 2144 p
+read 1003: 100 105 99 116 95 
+insertion: 2236: 1493 d
+read 462: 114 101 
+insertion: 2237: 1003 r
+read 98: 98 
+insertion: 2238: 462 b
+read 1534: 95 119 111 
+insertion: 2239: 98 _
+read 114: 114 
+insertion: 2240: 1534 r
+read 1536: 100 40 
+insertion: 2241: 114 d
+read 2207: 114 101 97 100 95 105 110 
+insertion: 2242: 1536 r
+read 2161: 100 101 120 44 32 
+insertion: 2243: 2207 d
+read 2019: 118 101 99 
+insertion: 2244: 2161 v
+read 800: 116 111 114 
+insertion: 2245: 2019 t
+read 450: 44 32 38 
+insertion: 2246: 800 ,
+read 2211: 97 99 116 117 
+insertion: 2247: 450 a
+read 2213: 97 108 95 108 
+insertion: 2248: 2211 a
+read 2035: 101 110 103 116 104 
+insertion: 2249: 2213 e
+read 1543: 44 32 100 105 
+insertion: 2250: 2035 ,
+read 1767: 99 116 41 
+insertion: 2251: 1543 c
+read 392: 59 32 
+insertion: 2252: 1767 ;
+read 2134: 32 10 9 
+insertion: 2253: 392  
+read 1402: 9 10 
+insertion: 2254: 2134 
+read 2121: 32 32 32 32 32 32 32 32 
+insertion: 2255: 1402  
+read 933: 47 47 99 
+insertion: 2256: 2121 /
+read 928: 114 105 116 
+insertion: 2257: 933 r
+read 283: 105 99 
+insertion: 2258: 928 i
+read 1426: 97 108 32 
+insertion: 2259: 283 a
+read 317: 115 105 
+insertion: 2260: 1426 s
+read 1425: 116 117 97 
+insertion: 2261: 317 t
+read 1474: 116 105 111 110 
+insertion: 2262: 1425 t
+read 2228: 10 32 32 32 32 32 
+insertion: 2263: 1474 
+
+read 656: 32 32 32 
+insertion: 2264: 2228  
+read 1059: 105 40 
+insertion: 2265: 656 i
+read 2230: 114 101 115 95 114 
+insertion: 2266: 1059 r
+read 1950: 101 116 114 
+insertion: 2267: 2230 e
+read 105: 105 
+insertion: 2268: 1950 i
+read 1952: 101 118 101 
+insertion: 2269: 105 e
+read 435: 61 61 
+insertion: 2270: 1952 =
+read 413: 45 49 
+insertion: 2271: 435 -
+read 440: 41 32 123 10 
+insertion: 2272: 413 )
+read 2121: 32 32 32 32 32 32 32 32 
+insertion: 2273: 440  
+read 1402: 9 10 
+insertion: 2274: 2121 
+read 1484: 9 9 9 
+insertion: 2275: 1402 
+read 2235: 100 101 99 111 109 112 
+insertion: 2276: 1484 d
+read 2056: 95 100 105 99 
+insertion: 2277: 2235 _
+read 897: 116 95 
+insertion: 2278: 2056 t
+read 258: 105 110 
+insertion: 2279: 897 i
+read 578: 115 101 114 
+insertion: 2280: 258 s
+read 1474: 116 105 111 110 
+insertion: 2281: 578 t
+read 40: 40 
+insertion: 2282: 1474 (
+read 2205: 40 105 110 116 
+insertion: 2283: 40 (
+read 41: 41 
+insertion: 2284: 2205 )
+read 618: 112 114 101 
+insertion: 2285: 41 p
+read 1856: 118 95 
+insertion: 2286: 618 v
+read 1858: 99 117 114 
+insertion: 2287: 1856 c
+read 462: 114 101 
+insertion: 2288: 1858 r
+read 632: 110 116 
+insertion: 2289: 462 n
+read 1820: 44 32 99 104 
+insertion: 2290: 632 ,
+read 327: 105 108 
+insertion: 2291: 1820 i
+read 1822: 100 95 
+insertion: 2292: 327 d
+read 322: 114 111 
+insertion: 2293: 1822 r
+read 584: 111 116 
+insertion: 2294: 322 o
+read 2251: 44 32 100 105 99 
+insertion: 2295: 584 ,
+read 1188: 116 41 
+insertion: 2296: 2251 t
+read 1510: 59 10 9 9 9 
+insertion: 2297: 1188 ;
+read 2277: 100 101 99 111 109 112 95 
+insertion: 2298: 1510 d
+read 2237: 100 105 99 116 95 114 
+insertion: 2299: 2277 d
+read 101: 101 
+insertion: 2300: 2237 e
+read 2239: 98 95 
+insertion: 2301: 101 b
+read 2223: 119 111 
+insertion: 2302: 2239 w
+read 2241: 114 100 
+insertion: 2303: 2223 r
+read 1595: 40 114 
+insertion: 2304: 2241 (
+read 1135: 101 97 100 
+insertion: 2305: 1595 e
+read 2160: 95 105 110 100 
+insertion: 2306: 1135 _
+read 303: 101 120 
+insertion: 2307: 2160 e
+read 359: 44 32 
+insertion: 2308: 303 ,
+read 2245: 118 101 99 116 
+insertion: 2309: 359 v
+read 408: 111 114 
+insertion: 2310: 2245 o
+read 2247: 44 32 38 97 
+insertion: 2311: 408 ,
+read 1894: 99 116 117 97 
+insertion: 2312: 2247 c
+read 108: 108 
+insertion: 2313: 1894 l
+read 2011: 95 108 101 110 
+insertion: 2314: 108 _
+read 668: 103 116 104 
+insertion: 2315: 2011 g
+read 2296: 44 32 100 105 99 116 
+insertion: 2316: 668 ,
+read 1079: 41 59 10 32 32 32 32 
+insertion: 2317: 2296 )
+read 675: 32 32 32 32 
+insertion: 2318: 1079  
+read 1687: 9 102 
+insertion: 2319: 675 
+read 105: 105 
+insertion: 2320: 1687 i
+read 2171: 114 115 116 
+insertion: 2321: 105 r
+read 1775: 95 114 101 97 
+insertion: 2322: 2171 _
+read 780: 100 61 
+insertion: 2323: 1775 d
+read 1834: 116 114 117 101 
+insertion: 2324: 780 t
+read 930: 59 10 32 32 32 32 
+insertion: 2325: 1834 ;
+read 675: 32 32 32 32 
+insertion: 2326: 930  
+read 473: 125 10 
+insertion: 2327: 675 }
+read 2121: 32 32 32 32 32 32 32 32 
+insertion: 2328: 473  
+read 2264: 10 32 32 32 32 32 32 
+insertion: 2329: 2121 
+
+read 655: 32 32 
+insertion: 2330: 2264  
+read 349: 99 104 
+insertion: 2331: 655 c
+read 2292: 105 108 100 
+insertion: 2332: 349 i
+read 1823: 95 114 111 
+insertion: 2333: 2292 _
+read 584: 111 116 
+insertion: 2334: 1823 o
+read 61: 61 
+insertion: 2335: 584 =
+read 2310: 118 101 99 116 111 
+insertion: 2336: 61 v
+read 114: 114 
+insertion: 2337: 2310 r
+read 91: 91 
+insertion: 2338: 114 [
+read 2248: 97 99 116 117 97 
+insertion: 2339: 91 a
+read 2314: 108 95 
+insertion: 2340: 2248 l
+read 2027: 108 101 110 103 116 104 
+insertion: 2341: 2314 l
+read 421: 45 45 
+insertion: 2342: 2027 -
+read 93: 93 
+insertion: 2343: 421 ]
+read 2326: 59 10 32 32 32 32 32 
+insertion: 2344: 93 ;
+read 990: 32 32 32 10 32 
+insertion: 2345: 2326  
+read 1934: 32 32 32 32 32 32 32 
+insertion: 2346: 990  
+read 1102: 115 105 122 101 61 
+insertion: 2347: 1934 s
+read 2034: 109 97 120 95 108 101 
+insertion: 2348: 1102 m
+read 2012: 110 103 116 
+insertion: 2349: 2034 n
+read 104: 104 
+insertion: 2350: 2012 h
+read 45: 45 
+insertion: 2351: 104 -
+read 2340: 97 99 116 117 97 108 
+insertion: 2352: 45 a
+read 2315: 95 108 101 110 103 
+insertion: 2353: 2340 _
+read 1898: 116 104 59 
+insertion: 2354: 2315 t
+read 2330: 10 32 32 32 32 32 32 32 
+insertion: 2355: 1898 
+
+read 320: 32 102 
+insertion: 2356: 2330  
+read 1728: 119 114 105 116 101 40 38 
+insertion: 2357: 320 w
+read 2337: 118 101 99 116 111 114 
+insertion: 2358: 1728 v
+read 2339: 91 97 
+insertion: 2359: 2337 [
+read 2313: 99 116 117 97 108 
+insertion: 2360: 2339 c
+read 2354: 95 108 101 110 103 116 
+insertion: 2361: 2313 _
+read 2036: 104 93 
+insertion: 2362: 2354 h
+read 1172: 44 32 115 105 122 101 
+insertion: 2363: 2036 ,
+read 1735: 44 32 49 44 32 
+insertion: 2364: 1172 ,
+read 2235: 100 101 99 111 109 112 
+insertion: 2365: 1735 d
+read 2318: 41 59 10 32 32 32 32 32 
+insertion: 2366: 2235 )
+read 1746: 32 32 32 47 47 
+insertion: 2367: 2318  
+read 2332: 99 104 105 
+insertion: 2368: 1746 c
+read 108: 108 
+insertion: 2369: 2332 l
+read 2293: 100 95 114 
+insertion: 2370: 108 d
+read 1824: 111 111 116 
+insertion: 2371: 2293 o
+read 2336: 61 118 
+insertion: 2372: 1824 =
+read 2031: 101 99 116 111 
+insertion: 2373: 2336 e
+read 2338: 114 91 
+insertion: 2374: 2031 r
+read 2025: 40 109 
+insertion: 2375: 2338 (
+read 2216: 97 120 
+insertion: 2376: 2025 a
+read 2362: 95 108 101 110 103 116 104 
+insertion: 2377: 2216 _
+read 421: 45 45 
+insertion: 2378: 2362 -
+read 41: 41 
+insertion: 2379: 421 )
+read 2344: 93 59 
+insertion: 2380: 41 ]
+read 441: 10 9 9 
+insertion: 2381: 2344 
+
+read 2356: 10 32 32 32 32 32 32 32 32 
+insertion: 2382: 441 
+
+read 1258: 105 40 102 
+insertion: 2383: 2356 i
+read 2321: 105 114 
+insertion: 2384: 1258 i
+read 1831: 115 116 95 114 
+insertion: 2385: 2321 s
+read 1135: 101 97 100 
+insertion: 2386: 1831 e
+read 435: 61 61 
+insertion: 2387: 1135 =
+read 480: 102 97 
+insertion: 2388: 435 f
+read 1272: 108 115 101 
+insertion: 2389: 480 l
+read 1483: 41 32 123 10 9 
+insertion: 2390: 1272 )
+read 2135: 9 9 100 
+insertion: 2391: 1483 
+read 2054: 101 99 111 109 
+insertion: 2392: 2135 e
+read 2236: 112 95 100 
+insertion: 2393: 2054 p
+read 1531: 105 99 116 95 
+insertion: 2394: 2236 i
+read 2280: 105 110 115 
+insertion: 2395: 1531 i
+read 870: 101 114 
+insertion: 2396: 2280 e
+read 2282: 116 105 111 110 40 
+insertion: 2397: 870 t
+read 2243: 114 101 97 100 95 105 110 100 
+insertion: 2398: 2282 r
+read 2308: 101 120 44 
+insertion: 2399: 2243 e
+read 517: 32 112 
+insertion: 2400: 2308  
+read 1855: 114 101 118 
+insertion: 2401: 517 r
+read 1857: 95 99 
+insertion: 2402: 1855 _
+read 465: 117 114 
+insertion: 2403: 1857 u
+read 2289: 114 101 110 
+insertion: 2404: 465 r
+read 1183: 116 44 32 
+insertion: 2405: 2289 t
+read 1771: 100 105 99 116 41 59 
+insertion: 2406: 1183 d
+read 2356: 10 32 32 32 32 32 32 32 32 
+insertion: 2407: 1771 
+
+read 2328: 125 10 32 
+insertion: 2408: 2356 }
+read 1934: 32 32 32 32 32 32 32 
+insertion: 2409: 2328  
+read 2286: 112 114 101 118 
+insertion: 2410: 1934 p
+read 2403: 95 99 117 
+insertion: 2411: 2286 _
+read 1859: 114 114 101 
+insertion: 2412: 2403 r
+read 632: 110 116 
+insertion: 2413: 1859 n
+read 61: 61 
+insertion: 2414: 632 =
+read 2399: 114 101 97 100 95 105 110 100 101 
+insertion: 2415: 61 r
+read 120: 120 
+insertion: 2416: 2399 x
+read 2345: 59 10 32 32 32 32 32 32 
+insertion: 2417: 120 ;
+read 655: 32 32 
+insertion: 2418: 2345  
+read 1830: 102 105 114 115 
+insertion: 2419: 655 f
+read 897: 116 95 
+insertion: 2420: 1830 t
+read 1832: 114 101 97 100 32 61 
+insertion: 2421: 897 r
+read 320: 32 102 
+insertion: 2422: 1832  
+read 481: 97 108 
+insertion: 2423: 320 a
+read 483: 115 101 
+insertion: 2424: 481 s
+read 2418: 59 10 32 32 32 32 32 32 32 
+insertion: 2425: 483 ;
+read 573: 32 98 
+insertion: 2426: 2418  
+read 1957: 105 116 105 111 95 114 
+insertion: 2427: 573 i
+read 2154: 101 97 100 40 99 
+insertion: 2428: 1957 e
+read 1960: 111 109 112 95 102 
+insertion: 2429: 2154 o
+read 2156: 105 108 101 44 32 
+insertion: 2430: 1960 i
+read 2158: 38 114 
+insertion: 2431: 2156 &
+read 2306: 101 97 100 95 
+insertion: 2432: 2158 e
+read 1812: 105 110 100 101 120 
+insertion: 2433: 2306 i
+read 631: 44 32 105 110 
+insertion: 2434: 1812 ,
+read 2123: 100 101 120 95 
+insertion: 2435: 631 d
+read 1039: 98 105 116 115 
+insertion: 2436: 2123 b
+read 1392: 41 59 32 32 
+insertion: 2437: 1039 )
+read 2121: 32 32 32 32 32 32 32 32 
+insertion: 2438: 1392  
+read 1934: 32 32 32 32 32 32 32 
+insertion: 2439: 2121  
+read 2167: 47 47 82 
+insertion: 2440: 1934 /
+read 2169: 101 97 100 32 
+insertion: 2441: 2167 e
+read 2095: 116 104 101 32 105 
+insertion: 2442: 2169 t
+read 2208: 110 100 101 120 
+insertion: 2443: 2095 n
+read 802: 10 32 32 32 32 
+insertion: 2444: 2208 
+
+read 2409: 125 10 32 32 
+insertion: 2445: 802 }
+read 1017: 32 32 10 
+insertion: 2446: 2409  
+read 1082: 32 32 32 32 47 47 
+insertion: 2447: 1017  
+read 67: 67 
+insertion: 2448: 1082 C
+read 813: 108 111 
+insertion: 2449: 67 l
+read 1761: 115 117 
+insertion: 2450: 813 s
+read 1117: 114 101 32 
+insertion: 2451: 1761 r
+read 521: 111 102 32 
+insertion: 2452: 1117 o
+read 812: 97 108 108 
+insertion: 2453: 521 a
+read 1941: 32 100 97 
+insertion: 2454: 812  
+read 116: 116 
+insertion: 2455: 1941 t
+read 1943: 97 32 115 
+insertion: 2456: 116 a
+read 1636: 116 114 117 99 
+insertion: 2457: 1943 t
+read 1756: 116 117 114 
+insertion: 2458: 1636 t
+read 2097: 101 115 10 32 32 
+insertion: 2459: 1756 e
+read 2152: 32 32 98 
+insertion: 2460: 2097  
+read 1653: 105 116 105 111 95 
+insertion: 2461: 2152 i
+read 1773: 99 108 111 115 101 40 
+insertion: 2462: 1653 c
+read 1925: 99 111 109 112 95 102 
+insertion: 2463: 1773 c
+read 388: 105 108 101 
+insertion: 2464: 1925 i
+read 2438: 41 59 32 32 32 
+insertion: 2465: 388 )
+read 2439: 32 32 32 32 32 32 32 32 32 
+insertion: 2466: 2438  
+read 2467: res_retrieve
+insertion: 2467: 2439  
+32 32 32 32 32 32 32 32 32 32 
+read 2468: res_retrieve
+insertion: 2468: 2467  
+32 32 32 32 32 32 32 32 32 32 32 
+read 971: 10 32 32 32 32 102 
+insertion: 2469: 2468 
+
+read 1773: 99 108 111 115 101 40 
+insertion: 2470: 971 c
+read 2366: 100 101 99 111 109 112 41 
+insertion: 2471: 1773 d
+read 930: 59 10 32 32 32 32 
+insertion: 2472: 2366 ;
+read 275: 47 47 
+insertion: 2473: 930 /
+read 1455: 112 114 105 110 116 
+insertion: 2474: 275 p
+read 2278: 95 100 105 99 116 
+insertion: 2475: 1455 _
+read 2060: 40 100 105 99 116 
+insertion: 2476: 2278 (
+read 1079: 41 59 10 32 32 32 32 
+insertion: 2477: 2060 )
+read 2299: 100 101 99 111 109 112 95 100 
+insertion: 2478: 1079 d
+read 1531: 105 99 116 95 
+insertion: 2479: 2299 i
+read 1761: 115 117 
+insertion: 2480: 1531 s
+read 1763: 112 112 
+insertion: 2481: 1761 p
+read 529: 114 101 115 115 
+insertion: 2482: 1763 r
+read 2477: 40 100 105 99 116 41 
+insertion: 2483: 529 (
+read 2042: 59 10 32 32 32 32 10 32 32 32 
+insertion: 2484: 2477 ;
+read 320: 32 102 
+insertion: 2485: 2042  
+read 2099: 112 114 105 110 116 102 
+insertion: 2486: 320 p
+read 1457: 40 115 116 100 101 
+insertion: 2487: 2099 (
+read 2101: 114 114 44 32 34 
+insertion: 2488: 1457 r
+read 2235: 100 101 99 111 109 112 
+insertion: 2489: 2101 d
+read 529: 114 101 115 115 
+insertion: 2490: 2235 r
+read 1786: 105 111 110 32 101 
+insertion: 2491: 529 i
+read 120: 120 
+insertion: 2492: 1786 x
+read 1797: 101 99 
+insertion: 2493: 120 e
+read 935: 117 116 101 
+insertion: 2494: 1797 u
+read 1790: 100 92 
+insertion: 2495: 935 d
+read 652: 110 34 
+insertion: 2496: 1790 n
+read 459: 41 59 10 
+insertion: 2497: 652 )
+read 486: 125 10 10 
+insertion: 2498: 459 }
+read 300: 10 10 
+insertion: 2499: 486 
