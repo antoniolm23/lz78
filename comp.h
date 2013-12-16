@@ -15,3 +15,6 @@ void compress(char* from, char* to, int size);
 
 /*decompress function*/
 void decompress(char* from, char* to);
+
+//Compute and print verbose mode information
+void verbose_mode(bool comp, struct timeval, struct timeval, char*, char*);

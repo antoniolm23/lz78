@@ -40,7 +40,7 @@ void compress(char* from, char* to, int size){
     //compute how many bit to write in the compressed file 
     while(size_tmp>>=1) blen++;
     
-    fprintf(stderr, "blen: %i\n", blen);
+    //fprintf(stderr, "blen: %i\n", blen);
     
     //initialize the dictionary
     comp_dict_init(dict, size, 256);
@@ -98,7 +98,7 @@ void compress(char* from, char* to, int size){
 			//fprintf(stderr, "%i: %i %i\n", position, father, tmp);
 			
 			bitio_write(bit, (uint64_t)itmp, blen);
-			fprintf(stderr,  "%i\n", itmp);
+			//fprintf(stderr,  "%i\n", itmp);
 			father=tmp;
 		}
 	} while(result!=0 || !feof(file_read));
@@ -154,7 +154,7 @@ void decompress(char* from, char* to){
 	
 	//management of the vector in which put the symbols
 	max_length=hdr.longest_match*8;
-	fprintf(stderr, "ml: %i\n", max_length);
+	//fprintf(stderr, "ml: %i\n", max_length);
 	vector=malloc(max_length+1);
 	vector[max_length]='\0';
     
@@ -162,7 +162,7 @@ void decompress(char* from, char* to){
     decomp_dict_init(dict, hdr.dictionary_size, 256);
    
     aux = hdr.dictionary_size;         //Compute the number of bits representing the indexes
-    fprintf(stderr, "%i\n", aux);
+    //fprintf(stderr, "%i\n", aux);
     index_bits = 1;
     while(aux >>= 1)
         index_bits++;
@@ -176,7 +176,7 @@ void decompress(char* from, char* to){
 	
     while(read_index != EOFC) {   //Until the end of compressed file
 		
-		fprintf(stderr, "%i\n", (int)read_index);
+		//fprintf(stderr, "%i\n", (int)read_index);
 		actual_length=0;
 		//retrieve word from index
         res_retrieve=decomp_dict_reb_word(read_index, vector, &actual_length, dict);  
@@ -184,7 +184,7 @@ void decompress(char* from, char* to){
         //critical situation
         if(res_retrieve==-1) {
 			//child_root=vector[0];
-        	fprintf(stderr, "$ret$: ");
+        	//fprintf(stderr, "$ret$: ");
 			decomp_dict_insertion(prev_current, child_root, dict);
 			actual_length=0;
 			decomp_dict_reb_word(read_index, vector, &actual_length, dict);
@@ -224,3 +224,27 @@ void decompress(char* from, char* to){
 }
 
 
+//Compute and print verbose mode information
+void verbose_mode(bool comp, struct timeval s_time, struct timeval f_time,
+                                                char* i_name, char* o_name) {
+    double comp_ratio;
+    struct stat input_stat, output_stat;
+    struct timeval elapsed_time;
+    
+    elapsed_time.tv_sec = f_time.tv_sec - s_time.tv_sec;
+    elapsed_time.tv_usec = f_time.tv_usec - s_time.tv_usec;
+    stat(i_name, &input_stat);  //Files information
+    stat(o_name, &output_stat);
+    comp_ratio = (((double)output_stat.st_size / input_stat.st_size) * 100);
+    if (comp == true)
+        fprintf(stderr, "Compression of %s: \n", i_name);
+    else
+        fprintf(stderr, "Decompression of %s: \n", i_name);
+    fprintf(stderr, "User ID: %i\n", input_stat.st_uid);
+    fprintf(stderr, "Size: %llu bytes\n", input_stat.st_size);
+    if (comp == true)
+        fprintf(stderr, "Compression ratio: %g%%\n", comp_ratio);
+    else
+        fprintf(stderr, "Decompression ratio: %g%%\n", comp_ratio);
+    fprintf(stderr, "Time: %lu.%hu s\n", elapsed_time.tv_sec, (short)elapsed_time.tv_usec);
+}
