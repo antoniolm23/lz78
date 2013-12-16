@@ -127,18 +127,18 @@ int main(int argc, char* argv[]) {
 		//}
 	}
 	
-	/*//decompression
+	//decompression
 	if(option[1]==true) {
 		if(input_filename==NULL) input_filename="compressed.lz78";
 		if(output_filename==NULL) output_filename="decomp.txt";
 		//better managing file extensions automatically or having the possibility of printing the 
 		//out of the decompressor to the standard output?
-		begin = clock();
+		//begin = clock();
 		decompress(input_filename, output_filename);
-		end = clock();
-		time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-		if(option[4]==true) fprintf(stderr, "time spent: %f\n", time_spent);
-	}*/
+		//end = clock();
+		//time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+		//if(option[4]==true) fprintf(stderr, "time spent: %f\n", time_spent);
+	}
 	
     return 0;
 }

@@ -58,17 +58,17 @@ bitio* bit_open(char* name, char* mode) {
   	f->size=MAX_SIZE*64;		//size in bits
   	
   	//set the structure for reading mode
-  	if(f->writing==O_RDONLY) {
+  	//if(f->writing==O_RDONLY) {
     	//fprintf(stderr, "apro il file in reading\n");
     	f->end=f->size;
     	f->next=0;
-  	}
+  	//}
   
   	//set the structure for writing mode
-  	else {
-    	f->end=f->size;
-    	f->next=0;
-  	}
+  	//else {
+    //	f->end=f->size;
+   // 	f->next=0;
+  	//}
   
   	//set the buffer to zero in order to perform the writing operations
   	for(i=0; i<MAX_SIZE; i++) {
@@ -182,8 +182,10 @@ int bitio_read(bitio* f, uint64_t* datum, int len) {
     
     int offset, readable, noffset;
     uint64_t* pointer;
-    uint64_t tmp/*, tmp2*/;
+    uint64_t tmp=0, tmp2=0;
     int res;
+	bool rep=false;
+	int old_n;
     
     //check all the parameters
     if((f == NULL) || (len < 1) || (len > sizeof(datum)*8)) {
@@ -209,8 +211,8 @@ again:
     }
     
     //all bits read, so read another block
-    if(readable==f->size) {
-		res=read(f->fd, f->buf, MAX_SIZE*8);
+    if(readable==f->size||readable==0) {
+		res=read(f->fd, f->buf, (MAX_SIZE*8));
 		if(res<0) {
 			fprintf(stderr, "error in read\n");
 			return -1;
@@ -218,8 +220,8 @@ again:
 		
 		//reset the structure
 		f->next=0;
-		f->end=MAX_SIZE*8;
-		f->size=MAX_SIZE*8;
+		f->end=MAX_SIZE*64;
+		//f->size=MAX_SIZE*64;
 	}
 	
 	//go to the right address
@@ -234,16 +236,24 @@ again:
 	//retrieve the datum on 64 bits
 	tmp=le64toh(*pointer);
 	tmp>>=offset;
-	tmp &= (((uint64_t)1 << (len)) - 1);
-	f->next+=noffset;
+	if(len<64)
+		tmp &= (((uint64_t)1 << (len)) - 1);
+	f->next=(f->next+noffset)%(f->end);
 	len-=noffset;
 	
 	//check if I have to continue
 	if(len>0) {
-		tmp>>=len;
+		tmp2=tmp;
+		rep=true;
+		old_n=noffset;
 		goto again;
 	}
-	
+	if(rep==true) {
+		tmp<<=old_n;
+		tmp=(tmp|tmp2);
+	}
+	htole64(tmp);
+	*datum=tmp;
     return 1;
 }
 

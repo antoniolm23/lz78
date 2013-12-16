@@ -14,4 +14,4 @@ typedef struct hdr {
 void compress(char* from, char* to, int size);
 
 /*decompress function*/
-void decompress(char*, char* );
+void decompress(char* from, char* to);

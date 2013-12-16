@@ -117,6 +117,7 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table);
 //suppress the hash table 
 void hash_suppress(ht_table* table);
 
+void hash_print(ht_table* table);
 /*******************************************************************************
  * 						DECOMPRESSOR TABLE FUNCTIONS
  * ****************************************************************************/
@@ -132,3 +133,5 @@ int tab_retrieve_word(int index, int* vector, int* size, table* t);
 
 //suppress the table
 void tab_suppression(table* t);
+
+void print_tab(table* t);

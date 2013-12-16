@@ -273,6 +273,12 @@ void hash_suppress(ht_table* table) {
 	
 }
 
+void hash_print(ht_table* table) {
+	int i;
+	for(i=0; i<table->total_size; i++) 
+		fprintf(stderr, "%i: %i %c %i\n", i, table->ht_array[i].ht_father,
+			table->ht_array[i].ht_symbol, table->ht_array[i].label);
+}
 /*******************************************************************************
  * DECOMPRESSOR FUNCTIONS
  * ****************************************************************************/
@@ -294,10 +300,10 @@ void tab_init(table* t, int size, int symbols) {
 	t->array[symbols].father=ROOT;
 	t->array[symbols].symbol=EOFC;
 	t->size=size;
-	t->next_pos=symbols++;
+	t->next_pos=symbols+1;
 	
-	i=symbols+1;
-	for(i=0; i<size; i++) {
+	
+	for(i=symbols+1; i<size; i++) {
 		t->array[i].father=EMPTY_ENTRY;
 		t->array[i].symbol=EMPTY_ENTRY;
 	}
@@ -315,29 +321,36 @@ int tab_insertion(int father, unsigned int symbol, table* t) {
 	t->array[pos].father=father;
 	t->array[pos].symbol=symbol;
 	t->next_pos++;
-	
+	//fprintf(stderr, "insertion: %i: %i %c\n", pos, 	t->array[pos].father,
+	//	(char)t->array[pos].symbol);
 	//check if there is space
-	if(t->next_pos>t->size) return -1;
-	else return 0;
+	fprintf(stderr, "%i: %i, %c\n", pos, t->array[pos].father, (char)t->array[pos].symbol);
+	if(t->next_pos>t->size) {
+		fprintf(stderr, "table_full\n");
+		return -1;}
+	else return pos;
 }
 
 //retrieve a word in the dictionary
 int tab_retrieve_word(int index, int* vector, int* size, table* t) {
 	
-	int pos=*size-1;
+	int pos=0;
 	int tmp_index=index;
 	
-	if(t->array[index].father==EMPTY_ENTRY) return -1;
+	if(t->array[index].father==EMPTY_ENTRY) {
+		//fprintf(stderr, "index: %i\n", index);
+		return -1;
+	}
 	
 	//scan the array until reach the root
 	while(t->array[index].father!=ROOT) {
 		
-		vector[pos]=t->array[index].symbol;
-		pos--;
+		vector[pos]=(char)t->array[index].symbol;
+		pos++;
 		index=t->array[tmp_index].father;
 		tmp_index=index;
 	}
-	
+	vector[pos]=(char)t->array[index].symbol;
 	*size=pos;
 	return 0;
 }
@@ -347,5 +360,12 @@ void tab_suppression(table* t) {
 	free(t->array);
 	t->size=0;
 	t->next_pos=0;
+}
+
+void print_tab(table* t) {
+	int i;
+	for(i=0; i<3000; i++) {
+		//fprintf(stderr, "%i: %i %i\n", i, t->array[i].father, t->array[i].symbol);
+	}
 }
 

@@ -72,6 +72,7 @@ void decomp_dict_insertion(int father, unsigned int symbol, dec_dictionary* d){
 	//check if we need a new table
 	if(res==-1) {
 		
+		fprintf(stderr, "full table\n");
 		tab_suppression(&d->tab);
 		tab_init(&d->tab, d->size, d->symbols);
 		
@@ -84,8 +85,15 @@ int decomp_dict_reb_word(int index, int* vector, int* size, dec_dictionary* d) {
 	
 	int tmp=*size;
 	int res;
-	res=tab_retrieve_word(index, &(*vector), &tmp, &d->tab);
+	res=tab_retrieve_word(index, vector, &tmp, &d->tab);
 	*size=tmp;
 	
 	return res;
+}
+
+//suppress the dictionary
+void decomp_dict_suppress(dec_dictionary* d){
+	
+	tab_suppression(&d->tab);
+	free(d);
 }

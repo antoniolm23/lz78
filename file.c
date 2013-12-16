@@ -34,7 +34,7 @@ void compress(char* from, char* to, int size){
     struct bitio* bit;
     header hdr;		//header of the file
     int result=0;
-	int longest_match=1, tmp_longest_match=1;
+	int longest_match=1, tmp_longest_match=0;
 	FILE* file_read, *file_write;
     
     //compute how many bit to write in the compressed file 
@@ -92,13 +92,13 @@ void compress(char* from, char* to, int size){
 		if(position!=0) {
 			if(longest_match < tmp_longest_match) 
 				longest_match = tmp_longest_match;
-			tmp_longest_match=1;
+			tmp_longest_match=0;
 			//add the string in the dictionary
 			comp_dict_add_word(position, father, tmp, dict);
 			//fprintf(stderr, "%i: %i %i\n", position, father, tmp);
 			
 			bitio_write(bit, (uint64_t)itmp, blen);
-			fprintf(stderr,  "%i\n", itmp);
+			//fprintf(stderr,  "\n");
 			father=tmp;
 		}
 	} while(result!=0 || !feof(file_read));
@@ -116,7 +116,7 @@ void compress(char* from, char* to, int size){
 	hdr.longest_match=longest_match;
 	fwrite(&hdr.longest_match, sizeof(int), 1, file_write);
 	fclose(file_write);
-	hash_print(&dict->table);
+	
     //free all other structures
     comp_dict_suppress(dict);
     free(dict);
@@ -128,29 +128,26 @@ void compress(char* from, char* to, int size){
 
 void decompress(char* from, char* to){
 	
-	unsigned int index_bits, aux, child_root=0;
+	int index_bits, aux, child_root=0;
     bool first_read = true;
-	int res_retrieve=0, tmp_length;
+	int res_retrieve=0, size;
     uint64_t read_index, prev_current=0;
     struct bitio* comp_file;
     dec_dictionary* dict;
-    int* vector;
-	int max_length, actual_length, i;
+    unsigned char* vector;
+	int max_length, actual_length;
     header hdr;
 	FILE* decomp;
     
     //eofc_pos = dict->symbols;
     comp_file = bit_open(from, "r");       //Preparing my data structures
-	
+    
     //retrieve header
     bitio_read(comp_file, (uint64_t*)&hdr.dictionary_size, sizeof(int)*8);
 	bitio_read(comp_file, (uint64_t*)&hdr.longest_match, sizeof(int)*8);
 	
-	//fprintf(stderr, "aaaaa %i %i\n", hdr.dictionary_size, hdr.longest_match);
-	
 	//management of the vector in which put the symbols
-	max_length=hdr.longest_match+40;
-	fprintf(stderr, "ml: %i\n", max_length);
+	max_length=hdr.longest_match;
 	vector=malloc(max_length+1);
 	vector[max_length]='\0';
     
@@ -172,41 +169,33 @@ void decompress(char* from, char* to){
 	
     while(read_index != EOFC) {   //Until the end of compressed file
 		
-		fprintf(stderr, "%i\n", (int)read_index);
-		actual_length=0;
+		//fprintf(stdout, "%i\n", (int)read_index);
+		actual_length=max_length;
 		//retrieve word from index
         res_retrieve=decomp_dict_reb_word(read_index, vector, &actual_length, dict);  
 		
         //critical situation
         if(res_retrieve==-1) {
-			child_root=vector[0];
-        	fprintf(stderr, "$ret$: ");
-			decomp_dict_insertion(prev_current, child_root, dict);
-			actual_length=0;
+        	
+			decomp_dict_insertion((int)prev_current, child_root, dict);
 			decomp_dict_reb_word(read_index, vector, &actual_length, dict);
         	first_read=true;
         }
-        tmp_length=actual_length;
-		//actual_length--;
-        child_root=vector[actual_length];
-		
-        //size=max_length-actual_length;
-		for(i=tmp_length; i>=0; i--) {
-			//fprintf(stderr, "%c", (char)vector[i]);
-			fwrite((char*)&vector[i], 1, 1, decomp);
-		}
-		//fprintf(stderr, "\n");
+        
+        child_root=vector[actual_length--];
+        
+        size=max_length-actual_length;
+        fwrite(&vector[actual_length], size, 1, decomp);
         //child_root=vector[(max_length--)];
 		
-        if(first_read==false) 
-			decomp_dict_insertion(prev_current, child_root, dict);
-		
+        if(first_read==false) {
+			decomp_dict_insertion(read_index, prev_current, dict);
+        }
         prev_current=read_index;
         first_read = false;
         bitio_read(comp_file, &read_index, index_bits);                 //Read the index
     }
     
-    print_tab(&dict->tab);
     //Closure of all data structures
     bitio_close(comp_file);                                 
     fclose(decomp);
