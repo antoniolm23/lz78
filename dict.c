@@ -72,7 +72,7 @@ void decomp_dict_insertion(int father, unsigned int symbol, dec_dictionary* d){
 	//check if we need a new table
 	if(res==-1) {
 		
-		fprintf(stderr, "full table\n");
+		//fprintf(stderr, "full table\n");
 		tab_suppression(&d->tab);
 		tab_init(&d->tab, d->size, d->symbols);
 		

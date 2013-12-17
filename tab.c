@@ -86,6 +86,7 @@ void list_del(collision_elem* list) {
 		q=q->next;
 		free(p);	
     }
+    free(q);
     list=NULL;
 }
 
@@ -217,13 +218,15 @@ int hash_search(int* father,unsigned int child, ht_table* table) {
 //add a new child in the hash table
 int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 	
-	int i;	//simple iterator
+	int i, pos=0;	//simple iterator
 	//int index; used to reach a position in the hash table
 	//index=hash_search(father, symbol, table, flag);
 	//fprintf(stderr, "flag: %i", *flag);
 	//if the position is occupied by another string then we have to manage collison
 	if(table->ht_array[index].ht_father != EMPTY_ENTRY) {
 		list_ins(table->next_free_entry, father, symbol, &table->ht_array[index].next);
+        pos=table->next_free_entry;
+        table->next_free_entry++;
 		index=table->next_free_entry;
 		for(i=table->next_free_entry; i<table->total_size; i++) {
 			if(table->ht_array[i].ht_father==EMPTY_ENTRY &&
@@ -235,11 +238,13 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 		}
 	}
 	
+    if(pos==0)
+        pos=index;
 	//now we can do the insertion
-	table->ht_array[index].ht_father=father;
-	table->ht_array[index].ht_symbol=symbol;
-	table->ht_array[index].label=table->next_label;
-	table->ht_array[index].next=NULL;
+	table->ht_array[pos].ht_father=father;
+	table->ht_array[pos].ht_symbol=symbol;
+	table->ht_array[pos].label=table->next_label;
+	table->ht_array[pos].next=NULL;
 	
 	//increase the label for the next insertion
 	table->next_label++;
@@ -287,8 +292,8 @@ void hash_print(ht_table* table) {
 void tab_init(table* t, int size, int symbols) {
 	
 	int i;
-	fprintf(stderr, "size: %li\n", size*sizeof(entry)*2);
-	t->array=malloc(size*sizeof(entry));
+	//fprintf(stderr, "size: %li\n", size*sizeof(entry)*2);
+	t->array=malloc(size*sizeof(d_entry));
 	
 	//initialize the first entries as did in the compressor_table
 	for(i=0; i<symbols; i++) {
@@ -324,9 +329,9 @@ int tab_insertion(int father, unsigned int symbol, table* t) {
 	//fprintf(stderr, "insertion: %i: %i %c\n", pos, 	t->array[pos].father,
 	//	(char)t->array[pos].symbol);
 	//check if there is space
-	fprintf(stderr, "%i: %i, %c\n", pos, t->array[pos].father, (char)t->array[pos].symbol);
+	//fprintf(stderr, "%i: %i, %c\n", pos, t->array[pos].father, (char)t->array[pos].symbol);
 	if(t->next_pos>t->size) {
-		fprintf(stderr, "table_full\n");
+		//fprintf(stderr, "table_full\n");
 		return -1;}
 	else return pos;
 }

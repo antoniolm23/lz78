@@ -10,8 +10,10 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <stdint.h>
-#include <time.h>
+#include <sys/stat.h>
+#include <sys/time.h>
 #include "endian.h" //Mac OS requirement
+
 #define EOFC 256
 #define int_stdin 0
 #define int_stdout 1

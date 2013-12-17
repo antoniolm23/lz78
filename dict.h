@@ -1,4 +1,3 @@
-//#include "everything.h"
 #include "tab.h"
 
 /*******************************************************************************
@@ -46,8 +45,9 @@ void decomp_dict_init(dec_dictionary* d, int size, int symbols);
 //insertion in the decompressor dictionary
 void decomp_dict_insertion(int father, unsigned int symbol, dec_dictionary* d);
 
+//retrieve a word in the dictionary
+//write in size how many positions there are in the rebuilt word
+int decomp_dict_reb_word(int index, int* vector, int* size, dec_dictionary* d);
+
 //suppress the decompressor dictionary
 void decomp_dict_suppress(dec_dictionary* d);
-
-//returns how many positions there are in the rebuilt word
-int decomp_dict_reb_word(int index, int* vector, int* size, dec_dictionary* d);

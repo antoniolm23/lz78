@@ -77,15 +77,15 @@ typedef struct ht_table{
  * 					DECOMPRESSOR DATA STRUCTURES
  * ****************************************************************************/
 
-typedef struct entry{
+typedef struct d_entry{
 	int father;				//index of the father in the tree
 	unsigned int symbol;	//symbol associated to the arch
-}entry;
+}d_entry;
 
 typedef struct table{
 	int next_pos;			//next position for insertion
 	int size;				//total size
-	entry* array;			//array of entities
+	d_entry* array;			//array of entities
 }table;
 
 /*******************************************************************************

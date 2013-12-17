@@ -1,6 +1,5 @@
 #include "comp.h"
-//#include "dict.h"
-//#include "bitio.h"
+#include "sys/stat.h"
 
 //extract the extension from the filename
 bool extract_extension(char* filename, char* ext) {
@@ -36,9 +35,11 @@ void compress(char* from, char* to, int size){
     int result=0;
 	int longest_match=1, tmp_longest_match=1;
 	FILE* file_read, *file_write;
+    bool first_cycle = true;
     
     //compute how many bit to write in the compressed file 
-    while(size_tmp>>=1) blen++;
+    while(size_tmp>>=1)
+        blen++;
     
     //fprintf(stderr, "blen: %i\n", blen);
     
@@ -78,15 +79,13 @@ void compress(char* from, char* to, int size){
 	
 	//read the file until reach the EOF or an error occurs
     do {
-			
-		//read one byte from the file
-		result=fread(&tmp, 1, 1, file_read);
 		//fprintf(stderr, "%i ",tmp );        
 		
 		itmp=father;	
 		tmp_longest_match++;
 		//search if we already have the actual string in the dictionary
-		position=comp_dict_search(&father, tmp, dict);
+		if(first_cycle!=true)
+        position=comp_dict_search(&father, tmp, dict);
 		//fprintf(stderr, "new_father: %i %i\n", father, position);
 		
 		if(position!=0) {
@@ -101,6 +100,9 @@ void compress(char* from, char* to, int size){
 			//fprintf(stderr,  "%i\n", itmp);
 			father=tmp;
 		}
+        //read one byte from the file
+		result=fread(&tmp, 1, 1, file_read);
+        first_cycle=false;
 	} while(result!=0 || !feof(file_read));
     //write the last position reached
     bitio_write(bit, father, blen);
@@ -153,7 +155,7 @@ void decompress(char* from, char* to){
 	//fprintf(stderr, "aaaaa %i %i\n", hdr.dictionary_size, hdr.longest_match);
 	
 	//management of the vector in which put the symbols
-	max_length=hdr.longest_match*8;
+	max_length=hdr.longest_match*sizeof(int);
 	//fprintf(stderr, "ml: %i\n", max_length);
 	vector=malloc(max_length+1);
 	vector[max_length]='\0';
