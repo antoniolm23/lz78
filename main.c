@@ -79,18 +79,18 @@ int main(int argc, char* argv[]) {
     }
 	
 	//Default size of the dictionary
-    if(size<900) size=1000;
+    if(size<900 || size_opt==false) size=900;
 	
 	//Compression
     if(comp_opt==true) {
 		if(keyboard_opt==true)
 			input_filename=NULL;
 		else {
-			if(input_filename==NULL)
+			if(input_opt==false)
                 input_filename="file.txt";
 			//input_fd=open(input_filename, 'r');
 		}
-		if(output_filename==NULL)
+		if(output_opt==false)
             output_filename="compressed.lz78";
         if(verbose_opt == true) {
             fprintf(stderr, "-- LZ78 compression implementation of A.LaMarra G.Rotili --\n");

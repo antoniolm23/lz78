@@ -12,7 +12,7 @@
 #include <stdint.h>
 #include <sys/stat.h>
 #include <sys/time.h>
-#include "endian.h" //Mac OS requirement
+//#include "endian.h" //Mac OS requirement
 
 #define EOFC 256
 #define int_stdin 0
