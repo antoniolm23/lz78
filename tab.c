@@ -123,10 +123,13 @@ int list_search(int index, int father, unsigned int symbol, ht_table* table, int
 //initialization of the dictioanry
 void hash_init(int size, int symbols, ht_table* table) {
 	
+	fprintf(stderr, "hash_init\n");
+	
 	int i;	//iterator
 	int y;
 	
 	table->ht_array=malloc((sizeof(ht_entry))*size);
+	fprintf(stderr, "size in bytes: %lu\n", (sizeof(ht_entry))*size);
 	
 	for(i = 0; i < symbols; i++) {
 		y=i;
@@ -220,7 +223,9 @@ int hash_search(int* father,unsigned int child, ht_table* table) {
 //add a new child in the hash table
 int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 	
-	int i, pos=0;	//simple iterator
+	int i=0, pos=0;	//simple iterator
+	
+	fprintf(stderr, "hash_add %i %i\n", father, symbol);
 	//int index; used to reach a position in the hash table
 	//index=hash_search(father, symbol, table, flag);
 	//fprintf(stderr, "flag: %i", *flag);
@@ -242,6 +247,7 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 	
     if(pos==0)
         pos=index;
+	
 	//now we can do the insertion
 	table->ht_array[pos].ht_father=father;
 	table->ht_array[pos].ht_symbol=symbol;
@@ -252,10 +258,10 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 	table->next_label++;
 	//ratio=(double)(table->actual_size)/(double)(table->total_size);
 	//fprintf(stderr, "%f %f\n", ratio, max_r);
-	if(table->next_label>table->total_size) {
-		//fprintf(stderr, "full_dict\n");
+	if(table->next_label==table->total_size) {
+		fprintf(stderr, "full_dict\n");
 		return -1;
-		}
+	}
 	
 	//fprintf(stderr, "hash_add: %i\n", table->ht_array[index].ht_father);
 	//all went ok, there is space we can continue using this dictionary
@@ -265,15 +271,20 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 
 //suppress the hash table
 void hash_suppress(ht_table* table) {
-	int i;
+	int i=0;
+	int tot=0;
+	fprintf(stderr, "hash_suppress\n");
 	
 	//free the memory allocated to the collision lists
-	for(i=0; i<table->total_size; i++) 
+	for(i=0; i<table->total_size; i++) {
 		list_del(table->ht_array[i].next);
 	
+		if(table->ht_array[i].next!=NULL) tot++;
+	}
+	
+	fprintf(stderr, "\ttot: %i\n", tot);
 	//free the memory allocated to the table
 	free(table->ht_array);
-	
 	//reset the parameters of the table
 	table->next_label=0;
 	table->total_size=0;
@@ -332,7 +343,7 @@ int tab_insertion(int father, unsigned int symbol, table* t) {
 	//	(char)t->array[pos].symbol);
 	//check if there is space
 	//fprintf(stderr, "%i: %i, %c\n", pos, t->array[pos].father, (char)t->array[pos].symbol);
-	if(t->next_pos>t->size) {
+	if(t->next_pos==t->size) {
 		//fprintf(stderr, "table_full\n");
 		return -1;}
 	else return pos;
