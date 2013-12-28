@@ -188,7 +188,7 @@ int hash_search(int* father,unsigned int child, ht_table* table) {
 	tmp+=child;
 	
 	index=hash(tmp, table->total_size);
-	if(index==0) fprintf(stderr, "index: %i\n", index);
+	if(index==0) fprintf(stderr, "index: %i lab: %i\n", index, table->next_label);
 	//fprintf(stderr, "index: %i\n", index);
 	//check if the entry is empty
 	if(table->ht_array[index].ht_father==EMPTY_ENTRY && table->ht_array[index].ht_symbol==EMPTY_ENTRY) {

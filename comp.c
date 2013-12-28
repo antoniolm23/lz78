@@ -39,7 +39,6 @@ void compress(char* from, char* to, int size){
     bit=bit_open(to, "w");
     if(bit==NULL) fprintf(stderr, "null bitio\n");
     
-    
     //creation of the header of the file
     hdr.dictionary_size=size;
 	hdr.longest_match=0;	//prepare the space for the overwriting
@@ -81,7 +80,7 @@ void compress(char* from, char* to, int size){
 			tmp_longest_match=1;
 			//add the string in the dictionary
 			comp_dict_add_word(position, father, tmp, dict);
-			//fprintf(stderr, "%i: %i %i\n", position, father, tmp);
+			//fprintf(stderr, "label: %i\n", dict->table.next_label);
 			
 			bitio_write(bit, (uint64_t)itmp, blen);
 			//fprintf(stderr,  "%i\n", itmp);
