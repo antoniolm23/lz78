@@ -188,24 +188,26 @@ int hash_search(int* father,unsigned int child, ht_table* table) {
 	tmp+=child;
 	
 	index=hash(tmp, table->total_size);
+	if(index==0) fprintf(stderr, "index: %i\n", index);
 	//fprintf(stderr, "index: %i\n", index);
 	//check if the entry is empty
-	if(table->ht_array[index].ht_father==EMPTY_ENTRY && table->ht_array[index].ht_symbol==EMPTY_ENTRY)
+	if(table->ht_array[index].ht_father==EMPTY_ENTRY && table->ht_array[index].ht_symbol==EMPTY_ENTRY) {
 		//fprintf(stderr, "emptypos %i\n", index);
 		return index;
+	}
 	
 	//check if the entry is occupied by the same symbol
 	if(table->ht_array[index].ht_father==(*father) && table->ht_array[index].ht_symbol==child) {
 		//fprintf(stderr, "yourpos\n");
 		*father=table->ht_array[index].label; //the new father is the pointer to the child node
-		return 0;
+		return -1;
 	}
 	
 	//search in the collision list
 	pos=list_search(index, *father, child, table, &new_flag);
 	if(new_flag==FOUND) {
 		*father=table->ht_array[pos].label; //the new father is the pointer to the child node
-		return 0;
+		return -1;
 	}
 	
 	//the entry is occupied by another symbol thus we have a collision, return the index, it's up 

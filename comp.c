@@ -12,7 +12,7 @@ void compress(char* from, char* to, int size){
     //int i;
     unsigned int tmp=0; //temporary variable in which we put the byte read    
     unsigned int itmp=0, size_tmp=0; //itmp is the index to write;
-    int position=0, father=0; //postion in the dictionary
+    int position=-1, father=0; //postion in the dictionary
     //int fd=open(filename,  'r'); //file descriptor
     dictionary* dict=malloc(sizeof(dictionary)); //dictionary
     int blen=1;     //bit lenght of my dictionary's indexes
@@ -75,7 +75,7 @@ void compress(char* from, char* to, int size){
 			position=comp_dict_search(&father, tmp, dict);
 		//fprintf(stderr, "new_father: %i %i\n", father, position);
 		
-		if(position!=0) {
+		if(position!=-1) {
 			if(longest_match < tmp_longest_match) 
 				longest_match = tmp_longest_match;
 			tmp_longest_match=1;
@@ -109,7 +109,7 @@ void compress(char* from, char* to, int size){
 	
 	fwrite(&hdr.longest_match, sizeof(int), 1, file_write);
 	fclose(file_write);
-	fprintf(stderr, "%i\n", dict->table.next_label);
+	fprintf(stderr, "labels: %i\n", dict->table.next_label);
 	//hash_print(&dict->table);
     //free all other structures
     comp_dict_suppress(dict);
