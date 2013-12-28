@@ -123,13 +123,13 @@ int list_search(int index, int father, unsigned int symbol, ht_table* table, int
 //initialization of the dictioanry
 void hash_init(int size, int symbols, ht_table* table) {
 	
-	fprintf(stderr, "hash_init\n");
+	//fprintf(stderr, "hash_init\n");
 	
 	int i;	//iterator
 	int y;
 	
 	table->ht_array=malloc((sizeof(ht_entry))*size);
-	fprintf(stderr, "size in bytes: %lu\n", (sizeof(ht_entry))*size);
+	//fprintf(stderr, "size in bytes: %lu\n", (sizeof(ht_entry))*size);
 	
 	for(i = 0; i < symbols; i++) {
 		y=i;
@@ -191,7 +191,6 @@ int hash_search(int* father,unsigned int child, ht_table* table) {
 	tmp+=child;
 	
 	index=hash(tmp, table->total_size);
-	if(index==0) fprintf(stderr, "index: %i lab: %i\n", index, table->next_label);
 	//fprintf(stderr, "index: %i\n", index);
 	//check if the entry is empty
 	if(table->ht_array[index].ht_father==EMPTY_ENTRY && table->ht_array[index].ht_symbol==EMPTY_ENTRY) {
@@ -225,7 +224,6 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 	
 	int i=0, pos=0;	//simple iterator
 	
-	fprintf(stderr, "hash_add %i %i\n", father, symbol);
 	//int index; used to reach a position in the hash table
 	//index=hash_search(father, symbol, table, flag);
 	//fprintf(stderr, "flag: %i", *flag);
@@ -259,7 +257,7 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 	//ratio=(double)(table->actual_size)/(double)(table->total_size);
 	//fprintf(stderr, "%f %f\n", ratio, max_r);
 	if(table->next_label==table->total_size) {
-		fprintf(stderr, "full_dict\n");
+		//fprintf(stderr, "full_dict\n");
 		return -1;
 	}
 	
@@ -273,7 +271,7 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 void hash_suppress(ht_table* table) {
 	int i=0;
 	int tot=0;
-	fprintf(stderr, "hash_suppress\n");
+	//fprintf(stderr, "hash_suppress\n");
 	
 	//free the memory allocated to the collision lists
 	for(i=0; i<table->total_size; i++) {
@@ -282,7 +280,7 @@ void hash_suppress(ht_table* table) {
 		if(table->ht_array[i].next!=NULL) tot++;
 	}
 	
-	fprintf(stderr, "\ttot: %i\n", tot);
+	//fprintf(stderr, "\ttot: %i\n", tot);
 	//free the memory allocated to the table
 	free(table->ht_array);
 	//reset the parameters of the table

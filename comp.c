@@ -108,7 +108,7 @@ void compress(char* from, char* to, int size){
 	
 	fwrite(&hdr.longest_match, sizeof(int), 1, file_write);
 	fclose(file_write);
-	fprintf(stderr, "labels: %i\n", dict->table.next_label);
+	//fprintf(stderr, "labels: %i\n", dict->table.next_label);
 	//hash_print(&dict->table);
     //free all other structures
     comp_dict_suppress(dict);
@@ -199,7 +199,7 @@ void decompress(char* from, char* to){
     }
     
     fprintf(stderr, "decompression executed\n");
-    fprintf(stderr, "%i\n", dict->tab.next_pos);
+    //fprintf(stderr, "%i\n", dict->tab.next_pos);
     //print_tab(&dict->tab);
 	free(vector);
     //Closure of all data structures
