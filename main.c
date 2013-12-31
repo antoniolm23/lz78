@@ -83,8 +83,10 @@ int main(int argc, char* argv[]) {
 	
 	//Compression
     if(comp_opt==true) {
-		if(keyboard_opt==true)
+		if(keyboard_opt==true) {
 			input_filename=NULL;
+			fprintf(stderr, "Type the string to compress at the end press Ctrl+D\n");
+		}
 		else {
 			if(input_opt==false)
                 input_filename="file.txt";
@@ -101,9 +103,9 @@ int main(int argc, char* argv[]) {
 	
 	//Decompression
 	if(decomp_opt==true) {
-		if(input_filename==NULL)
+		if(input_opt==false)
             input_filename="compressed.lz78";
-		if(output_filename==NULL)
+		if(output_opt==false)
             output_filename="decomp.txt";
 		//better managing file extensions automatically or having the possibility of printing the 
 		//out of the decompressor to the standard output?
