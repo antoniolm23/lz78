@@ -1,7 +1,14 @@
 /*
- This is an header file
+ * everything.h
+ * Antonio La Marra - Giacomo Rotili
+ * December 2013
+ * 
+ * Set of header files most used in the project
+ *
  */
-#pragma once
+
+/* Header file  */
+#pragma once        /* Avoid multiple include of this file during compilation */
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -12,18 +19,13 @@
 #include <stdint.h>
 #include <sys/stat.h>
 #include <sys/time.h>
-//#include "endian.h" //Mac OS requirement
+#include "endian.h"
 
-#define EOFC 256
-#define int_stdin 0
-#define int_stdout 1
-#define int_stderr 2
+#define EOFC 256    /* End of File for compressed files (symbols <= 255) */
 
-//#undef SIZE
-//#define SIZE 2048
-
+/* Definition of the Boolean type */
 #ifndef bool
-typedef enum{true, false} bool;	//definition of bool type
+typedef enum{true, false} bool;
 #endif
 
 
