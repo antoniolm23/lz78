@@ -169,7 +169,7 @@ void hash_init(int size, int symbols, ht_table* table);
  * PARAMETERS: father - father of the node to search
  *             child - symbol of the node to search
  *             table - hash table in which search
- * RETURNS: If the element is present, returns i -1 otherwise the position 
+ * RETURNS: If the element is present returns -1 otherwise the position
  *          computed by the hash function
  *
  * If the element is present father is overwritten with the pointer(label) to 
@@ -243,8 +243,8 @@ void tab_init(table* t, int size, int symbols);
 int tab_insertion(int father, unsigned int symbol, table* t);
 
 /* TAB_RETRIEVE_WORD
- * PURPOSE: Retrieves the symbols of the nodes between the node index and the 
- *          root, i.e. a word in the dictionary
+ * PURPOSE: Retrieves the symbols of the nodes between the node with label index
+ *          and the root, i.e. a word in the dictionary
  *PARAMETERS:   index - position of the node (last character in the word)
  *              vector - buffer in which store the word retrieved
  *              size - Size of the word retrieved

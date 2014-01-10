@@ -24,7 +24,8 @@ struct bitio; /* Opaque data type */
  *                    "w" to write mode
  * RETURNS: If the file is successfully opened, returns a pointer to a bitio 
  *          object, otherwise a null pointer
- * NOTE: If the file doesn't exist, it is created
+ * 
+ * If the file doesn't exist, it is created
  */
 struct bitio* bit_open(char* name, char* mode);
 

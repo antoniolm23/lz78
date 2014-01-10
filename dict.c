@@ -1,99 +1,138 @@
+/*
+ * dict.c
+ * Antonio La Marra - Giacomo Rotili
+ * December 2013
+ *
+ * This file contains the definitions of the functions for use dictionary and 
+ * dec_dictionary structure. (See dict.h)
+ *
+ * NOTE: Almost all the functions simply invoke the methods of the underlying
+ *       structures. (See dict.h)
+ */
+
 #include "dict.h"
-//#include "everything.h"
 
-/*******************************************************************************
- * 					COMPRESSOR DICTIONARY
- * ****************************************************************************/
+/*      *       *       *       *       *       *       *       *       *
+ *                      COMPRESSOR DICTIONARY
+ *      *       *       *       *       *       *       *       *       */
 
-//initialize the dictionary
+
+/* COMP_DICT_INIT
+ *
+ * PURPOSE: Initialize the dictionary
+ */
 void comp_dict_init(dictionary* dict, int dict_tot, int symbols) {
 	
-	dict->dict_size=dict_tot;
-	dict->symbols=symbols;
+    /* Setting other parameter of the structure */
+	dict->dict_size = dict_tot;
+	dict->symbols = symbols;
 	hash_init(dict_tot, symbols, &dict->table);
-	
 }
 
-//add a new string in the dictionary
+
+/* COMP_DICT_ADD_WORD
+ *
+ * PURPOSE: Add a word to the dictionary
+ */
 int comp_dict_add_word(int index, int father, unsigned int symbol, dictionary* d) {
 	
-	int res;
+	int res;    /* variable to store hash_add() return */
 	
-	//call the add string in the hash
-	res=hash_add(index, father, symbol, &d->table);
+	res = hash_add(index, father, symbol, &d->table);
 	
-	//if the hash is full suppress it and rebuid it
-	if(res==-1) {
-		//fprintf(stderr, "full dict, %i %i\n", father, symbol);
-		hash_suppress(&d->table);
-		hash_init(d->dict_size, d->symbols, &d->table);
-		//pos=hash_add(index, father, symbol, &d->table, flag);
+	if(res == -1) {   /* Hash table full? */
+		hash_suppress(&d->table);   /* Destroy actual dictionary */
+		hash_init(d->dict_size, d->symbols, &d->table); /* Built a new one*/
 	}
-	
 	return res;
 }
 
-//search a couple father son in the table
+
+/* COMP_DICT_SEARCH
+ *
+ * PURPOSE: Search a word in the dictionary
+ */
 int comp_dict_search(int* father, unsigned int child, dictionary* D){
-	int tmp_father=*father;
-	int tmp = hash_search(&tmp_father, child, &D->table);
-	//fprintf(stderr, "dict_index: %i\n", tmp);
-	*father=tmp_father;
+    
+	int tmp, tmp_father;   /* Temporary variables */
+    
+    tmp_father = *father;
+    tmp = hash_search(&tmp_father, child, &D->table);
+	*father = tmp_father;
+    
 	return tmp;
 }
 
-//suppress the dictionary
+
+/* COMP_DICT_SUPPRESS
+ *
+ * PURPOSE: Destroy the dictionary
+ */
 void comp_dict_suppress(dictionary* d) {
-	hash_suppress(&d->table);
-	d->dict_size=0;
-	d->symbols=0;
-} 
-
-/*******************************************************************************
- * 					DECOMPRESSOR DICTIONARY & FUNCTIONS
- * ****************************************************************************/
-
-//function to initialize the dictionary used by the decompressor
-void decomp_dict_init(dec_dictionary* d, int size, int symbols) {
-	//fprintf(stderr, "size: %i\n", size);
-	d->size=size;
-	d->symbols=symbols;
-	
-	tab_init(&d->tab, size, symbols);
-	
+    
+	hash_suppress(&d->table);   /* Destroy the hash table */
+    /* reset parameters of the dictionary */
+	d->dict_size = 0;
+	d->symbols = 0;
 }
 
-//insertion in the decompressor dictionary
+
+/*      *       *       *       *       *       *       *       *       *
+ *                      DECOMPRESSOR DICTIONARY
+ *      *       *       *       *       *       *       *       *       */
+
+
+
+/* DECOMP_DICT_INIT
+ *
+ * PURPOSE: Initialize the dictionary
+ */
+void decomp_dict_init(dec_dictionary* d, int size, int symbols) {
+    
+	d->size = size;
+	d->symbols = symbols;
+	tab_init(&d->tab, size, symbols);
+}
+
+
+/* DECOMP_DICT_INSERTION
+ *
+ * PURPOSE: Insert a word to the dictionary
+ */
 void decomp_dict_insertion(int father, unsigned int symbol, dec_dictionary* d){
 	
 	int res;
-	res=tab_insertion(father, symbol, &d->tab);
-	 
-	//check if we need a new table
-	if(res==-1) {
-		
-		//fprintf(stderr, "full table\n");
-		tab_suppression(&d->tab);
-		tab_init(&d->tab, d->size, d->symbols);
-		
+    
+	res = tab_insertion(father, symbol, &d->tab);
+	if(res == -1) { /* Table full? */
+		tab_suppression(&d->tab);   /* Destroy the table */
+		tab_init(&d->tab, d->size, d->symbols); /* Built a new one*/
 	}
-	
 }
 
-//returns how many positions there are in the rebuilt word
+
+/* DECOMP_DICT_REB_WORD
+ *
+ * PURPOSE: Retrieve a word in the dictionary
+ */
 int decomp_dict_reb_word(int index, int* vector, int* size, dec_dictionary* d) {
 	
-	int tmp=*size;
-	int res;
-	res=tab_retrieve_word(index, vector, &tmp, &d->tab);
-	*size=tmp;
+	int tmp, res;   /* Support variables */
+    
+    tmp = *size;
+	res = tab_retrieve_word(index, vector, &tmp, &d->tab);
+	*size = tmp;
 	
 	return res;
 }
 
-//suppress the dictionary
+
+/* DECOMP_DICT_SUPPRESS
+ *
+ * PURPOSE: Destroy the dictionary
+ */
 void decomp_dict_suppress(dec_dictionary* d){
 	
-	tab_suppression(&d->tab);
-	free(d);
+	tab_suppression(&d->tab);   /* Destroy the table */
+	free(d);    /* Deallocate the dictionary */
 }

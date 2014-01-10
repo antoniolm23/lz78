@@ -3,7 +3,7 @@
  * Antonio La Marra - Giacomo Rotili
  * December 2013
  *
- * This file contains the definitions of the functions by use ht_table and table
+ * This file contains the definitions of the functions for use ht_table and table
  * structure. (See tab.h)
  */
 
@@ -183,8 +183,8 @@ void hash_init(int size, int symbols, ht_table* table) {
 
 
 /* HASH
+ *
  * PURPOSE: Compute the hash values
- * PARAMETERS:  father - number obtained from a specific computing from father
  */
 int hash(int father, int size) {
   
@@ -237,8 +237,8 @@ int hash_search(int* father, unsigned int child, ht_table* table) {
 
 
 /* HASH_ADD
+ *
  * PURPOSE: Insert an element(child node) to the table(tree)
- * PARAMETERS:  index - Position in which insert the node
  */
 int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 	
@@ -271,7 +271,7 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 	table->ht_array[pos].next = NULL;
 	
 	table->next_label++;    /* Update the label for the next insertion */
-	if(table->next_label == table->total_size)  /* Full hash table? */
+	if(table->next_label == table->total_size)  /* Hash table full? */
 		return -1;
 	
 	return 1;   /* insert successfully */
@@ -279,8 +279,8 @@ int hash_add(int index, int father, unsigned int symbol, ht_table* table) {
 
 
 /* HASH_SUPPRESS
+ *
  * PURPOSE: Delete the hash table
- * PARAMETERS: table - Hash table to delete
  */
 void hash_suppress(ht_table* table) {
     
@@ -296,6 +296,7 @@ void hash_suppress(ht_table* table) {
 
 
 /* HASH_PRINT
+ *
  * PURPOSE: Print to video the contents of the hash table
  */
 void hash_print(ht_table* table) {
@@ -341,6 +342,7 @@ void tab_init(table* t, int size, int symbols) {
 
 
 /* TAB_INSERTION
+ *
  * PURPOSE: Insert an element(child node) to the table(tree)
  */
 int tab_insertion(int father, unsigned int symbol, table* t) {
@@ -360,6 +362,7 @@ int tab_insertion(int father, unsigned int symbol, table* t) {
 
 
 /* TAB_RETRIEVE_WORD
+ *
  * PURPOSE: Retrieves the symbols of the nodes between the node index and the
  *          root, i.e. a word in the dictionary.
  */
@@ -386,6 +389,7 @@ int tab_retrieve_word(int index, int* vector, int* size, table* t) {
 
 
 /* TAB_SUPPRESSION
+ *
  * PURPOSE: Delete the table
  */
 void tab_suppression(table* t) {
@@ -397,8 +401,8 @@ void tab_suppression(table* t) {
 
 
 /* PRINT_TAB
+ *
  * PURPOSE: Print to video the contents of the table
- * PARAMETERS: t - Table to print
  */
 void print_tab(table* t) {
     
