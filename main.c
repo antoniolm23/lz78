@@ -125,8 +125,8 @@ int main(int argc, char* argv[]) {
             input_filename = "compressed.lz78"; /* default name of compressed
                                                  file */
 		if(output_opt == false)
-            output_filename = "decomp.txt"; /* default name of decompressed
-                                             file */
+            output_filename = NULL; /* default name of decompressed
+                                            file */
         if(verbose_opt == true) {  /* verbose mode on? */
             fprintf(stderr, "%s", title);
             gettimeofday(&start_time, NULL); /* Start to clock processing */
