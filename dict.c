@@ -74,6 +74,7 @@ void comp_dict_suppress(dictionary* d) {
     /* reset parameters of the dictionary */
 	d->dict_size = 0;
 	d->symbols = 0;
+	free(d);
 }
 
 

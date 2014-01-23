@@ -10,6 +10,7 @@
 
 
 #include "comp.h"
+#include "bitio.h"
 #include "sys/stat.h"
 
 
@@ -36,10 +37,10 @@ void compress(char* from, char* to, int size) {
     
     struct bitio* bit;  /* Bitio interface to write indexes on file compressed */
     dictionary* dict; /* pointer to dictionary object */
-    header hdr;		/* header of the file */
 	
     dict = malloc(sizeof(dictionary)); /* Create the dictionary */
-    
+    if(dict == NULL) exit(-1);
+	
     /* Compute lenght of dictionary's indexes */
     size_tmp = size;
     while(size_tmp >>= 1)
@@ -51,26 +52,24 @@ void compress(char* from, char* to, int size) {
     
     /* Create the output file trough bitio interface */
     bit = bit_open(to, "w");
-    if(bit == NULL)
+    if(bit == NULL) {
         fprintf(stderr, "null bitio\n");
-    
-    /* creation of the file's header */
-    hdr.dictionary_size = size;
-	hdr.longest_match = 0;
+		comp_dict_suppress(dict);
+	}
 	
     /* Write the header at the beginning of the file */
-    bitio_write(bit, (uint64_t)hdr.dictionary_size, (sizeof(int) * 8));
-	bitio_write(bit, (uint64_t)hdr.longest_match, (sizeof(int) * 8));
+    bitio_write(bit, (uint64_t)size, (sizeof(int) * 8));
 
     if(from == NULL) /* Sequence to compress from keyboard? */
 		file_read = stdin;
 	else
 		file_read = fopen(from, "r");
 	
-	result = fread(&tmp, 1, 1, file_read);  /* Read the first symbol */
-    father = tmp;
-	
     do {
+		result = fread(&tmp, 1, 1, file_read);  /* Read the symbol */
+		if(result == 0) break;
+		
+		father = tmp;
 		itmp = father;	
 		tmp_longest_match++;    /* Update length of the actual "matching" string */
         
@@ -79,10 +78,7 @@ void compress(char* from, char* to, int size) {
 			position = comp_dict_search(&father, tmp, dict);
 
 		if(position != -1) {    /* No Match */
-			if(longest_match < tmp_longest_match) /* New longest match? */
-				longest_match = tmp_longest_match;    /* Update longest length */
-			tmp_longest_match = 1;  /* Reset */
-            
+			
             /* add the string in the dictionary */
 			comp_dict_add_word(position, father, tmp, dict);
 			
@@ -91,7 +87,6 @@ void compress(char* from, char* to, int size) {
             
 			father = tmp;   /* Next match search will start from this symbol */
 		}
-		result = fread(&tmp, 1, 1, file_read);  /* read next symbol */
         first_cycle = false;    /* First iteration end */
         
 	} while(result != 0 || !feof(file_read));   /* Until reach the EOF or an 
@@ -101,16 +96,8 @@ void compress(char* from, char* to, int size) {
     bitio_write(bit, EOFC, blen);   /* Write EOF on the compressed file */
     bitio_close(bit);   /* Close compressed file */
 	
-    /* Write the longest match in compressed file's header */
-	file_write = fopen(to, "r+b");  /* Open compressed file */
-	fseek(file_write, sizeof(int), SEEK_SET); /* Beginning of file*/
-	hdr.longest_match = longest_match;
-	fwrite(&hdr.longest_match, sizeof(int), 1, file_write);
-	fclose(file_write); /* Close compressed file */
-
     /* Deallocate all data structures used */
     comp_dict_suppress(dict);
-    free(dict);
 	fclose(file_read);
     
     fprintf(stderr, "Compression executed\n");
@@ -131,32 +118,33 @@ void decompress(char* from, char* to) {
     int* vector;    /* To store the retrieved words from the dictionary */
 	unsigned int index_bits = 1;    /* length of dictionary's indexes (in bit) */
     unsigned int aux;
+	int size;	/* size of the dictionary */
     unsigned int child_root = 0;
     bool first_read = true;
 	struct bitio* comp_file;    /* Bitio interface to read indexes on file compressed */
     uint64_t read_index, prev_current = 0;
     dec_dictionary* dict;   /* dictionary*/
-    header hdr; /* To store file's header */
 	FILE* decomp;   /* To handle output file */
     
     /* Open compressed file trough bitio interface */
     comp_file = bit_open(from, "r");
+	if(comp_file == NULL) exit(-1);
 	
     /* retrieve header's information */
-    bitio_read(comp_file, (uint64_t*)&hdr.dictionary_size, sizeof(int)*8);
-	bitio_read(comp_file, (uint64_t*)&hdr.longest_match, sizeof(int)*8);
+    bitio_read(comp_file, (uint64_t*)&size, sizeof(int)*8);
 	
 	/* construction of vector  */
-	max_length = (hdr.longest_match * sizeof(int));
-	vector = malloc(max_length + 1);
-	vector[max_length] = '\0';
+	vector = malloc(size + 1);
+	if(vector == NULL) exit(-1);
+	vector[size] = '\0';
     
     /* Create and initialize the dictionary */
     dict = malloc(sizeof(dec_dictionary));
-    decomp_dict_init(dict, hdr.dictionary_size, 256);
+	if(dict == NULL) exit(-1);
+    decomp_dict_init(dict, size, 256);
    
     /* Compute lenght of dictionary's indexes */
-    aux = hdr.dictionary_size;
+    aux = size;
     while(aux >>=  1)
         index_bits++;
     
@@ -164,10 +152,13 @@ void decompress(char* from, char* to) {
 		decomp = stdout;
 	else
 		decomp = fopen(to, "w");    /* File decompressed */
+		if(decomp == NULL) exit(-1);
 	
     bitio_read(comp_file, &read_index, index_bits); /* Read the first index */
 	
-    while(read_index !=  EOFC) {   /* Until end of compressed file */
+    do {   
+		
+		bitio_read(comp_file, &read_index, index_bits); /* Read next index */
 		
 		/* retrieve word */
         res_retrieve = decomp_dict_reb_word(read_index, vector, &actual_length, dict);  
@@ -195,8 +186,8 @@ void decompress(char* from, char* to) {
         prev_current = read_index;
         first_read = false; /* First iteration end */
         
-        bitio_read(comp_file, &read_index, index_bits); /* Read next index */
-    }
+        
+    }   while(read_index !=  EOFC); /* Until end of compressed file */ 
 
     /* Deallocate all data structures used */
     bitio_close(comp_file);                                 

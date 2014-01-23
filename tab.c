@@ -74,12 +74,14 @@ uint32_t lookup(const void *key, size_t length, uint32_t initval) {
  *
  * PURPOSE: Insert an element at the top of collision list
  */
-void list_ins(int pos, int father, collision_elem** list) {
+int list_ins(int pos, int father, collision_elem** list) {
     
     collision_elem* p, *q, *t;
     
     /* create a new element */
     p = (collision_elem*)malloc(sizeof(collision_elem));
+	if(p == NULL) exit(-1);
+	
     p->elem_pos = pos;
     p->elem_father = father;
     p->next = NULL;
@@ -150,7 +152,7 @@ void hash_init(int size, int symbols, ht_table* table) {
 	int i, y;	/* for(;;) iterator */
 
 	table->ht_array = malloc((sizeof(ht_entry)) * size);    /* table allocation */
-	
+	if(table->ht_array == NULL) exit(-1);
     /*Initialize the first entry with the symbols of the sequence to compress */
 	for(i = 0; i < symbols; i++) {
 		y = i;
@@ -315,11 +317,12 @@ void hash_print(ht_table* table) {
  *
  * PURPOSE: Initialize the table structure
  */
-void tab_init(table* t, int size, int symbols) {
+int tab_init(table* t, int size, int symbols) {
 	
 	int i;
     
 	t->array = malloc(size*sizeof(d_entry));    /* table allocation */
+	if(t->array == NULL) return -1;
 	
 	/*Initialize the first entry with the symbols of the compressed sequence */
 	for(i = 0; i < symbols; i++) {
@@ -338,6 +341,8 @@ void tab_init(table* t, int size, int symbols) {
 		t->array[i].father = EMPTY_ENTRY;
 		t->array[i].symbol = EMPTY_ENTRY;
 	}
+	
+	return 1;
 }
 
 

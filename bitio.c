@@ -33,7 +33,7 @@ bitio* bit_open(char* name, char* mode) {
 	int i;
 	bitio* f = calloc(1, sizeof(bitio));
     
-    /* Checking parameters */
+	/* Checking parameters */
   	if(f == NULL) {
     	fprintf(stderr, "error in allocating\n");
     	errno = ENOMEM;	/* No memory available */

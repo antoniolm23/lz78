@@ -19,7 +19,7 @@
 #include <stdint.h>
 #include <sys/stat.h>
 #include <sys/time.h>
-#include "endian.h"
+//#include "endian.h"
 
 #define EOFC 256    /* End of File for compressed files (symbols <= 255) */
 

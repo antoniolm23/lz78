@@ -195,7 +195,7 @@ int hash(int father, int size);
  *              symbol - symbol of the node to insert
  *              table - hash table in which insert
  *
- * RETURNS: Returns 1 if the insertion successfully, otherwise -1 i.e. the
+ * RETURNS: Returns 1 if the insertion successfully,otherwise -1 i.e. if the
  *          table is full
  */
 int hash_add(int index, int father, unsigned int symbol, ht_table* table);

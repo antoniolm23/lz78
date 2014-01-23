@@ -13,15 +13,6 @@
  */
 
 #include "dict.h"
-#include "bitio.h"
-
-
-/* Header of the compressed file */
-typedef struct hdr {
-    int dictionary_size;   /* Size of the dicionary used to compress */
-    int longest_match;  /* Length of longest match found in compression phase */
-} header;
-
 
 /* COMPRESS
  *
