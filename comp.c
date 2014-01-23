@@ -64,6 +64,7 @@ void compress(char* from, char* to, int size) {
 		file_read = stdin;
 	else
 		file_read = fopen(from, "r");
+	if(file_read == NULL) exit(-1);
 	
     do {
 		result = fread(&tmp, 1, 1, file_read);  /* Read the symbol */
@@ -152,7 +153,7 @@ void decompress(char* from, char* to) {
 		decomp = stdout;
 	else
 		decomp = fopen(to, "w");    /* File decompressed */
-		if(decomp == NULL) exit(-1);
+	if(decomp == NULL) exit(-1);
 	
     bitio_read(comp_file, &read_index, index_bits); /* Read the first index */
 	
