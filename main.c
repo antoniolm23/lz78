@@ -1,7 +1,7 @@
 /*
  * main.c
  * Antonio La Marra - Giacomo Rotili
- * December 2013
+ * January 2014
  *
  * Implementation of lz78 command.
  *
@@ -122,7 +122,7 @@ int main(int argc, char* argv[]) {
     
 	if(decomp_opt == true) {
 		if(input_opt == false)
-            input_filename = "compressed.lz78"; /* default name of compressed
+			input_filename = "compressed.lz78"; /* default name of compressed
                                                  file */
 		if(output_opt == false)
             output_filename = NULL; /* decompression to video */
@@ -135,10 +135,10 @@ int main(int argc, char* argv[]) {
 		decompress(input_filename, output_filename);
 	}
     
-    if(verbose_opt ==  true) {  /* verbose mode on? */
-        gettimeofday(&finish_time, NULL); /* Finish to clock processing */
-        verbose_mode(comp_opt, start_time, finish_time, input_filename, output_filename);
-    }
-    
-    return 0;
+	if(verbose_opt ==  true) {	/* verbose mode on? */
+		gettimeofday(&finish_time, NULL); /* Finish to clock processing */
+		verbose_mode(comp_opt, start_time, finish_time, input_filename, output_filename);
+	}
+
+	return 0;
 }
