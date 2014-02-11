@@ -1,7 +1,7 @@
 /*
  * dict.c
  * Antonio La Marra - Giacomo Rotili
- * December 2013
+ * February 2014
  *
  * This file contains the definitions of the functions for use dictionary and
  * dec_dictionary structure. (See dict.h)

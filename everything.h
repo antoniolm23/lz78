@@ -1,14 +1,14 @@
 /*
  * everything.h
  * Antonio La Marra - Giacomo Rotili
- * December 2013
- * 
+ * February 2014
+ *
  * Set of header files most used in the project
  *
  */
 
-/* Header file  */
-#pragma once        /* Avoid multiple include of this file during compilation */
+/* Header file */
+#pragma once	/* Avoid multiple include of this file during compilation */
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -19,9 +19,9 @@
 #include <stdint.h>
 #include <sys/stat.h>
 #include <sys/time.h>
-//#include "endian.h"
+/* #include "endian.h" */	/*OS X requirement */
 
-#define EOFC 256    /* End of File for compressed files (symbols <= 255) */
+#define EOFC 256	/* End of File for compressed files (symbols <= 255) */
 
 /* Definition of the Boolean type */
 #ifndef bool

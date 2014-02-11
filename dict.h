@@ -1,7 +1,7 @@
 /*
  * dict.h
  * Antonio La Marra - Giacomo Rotili
- * December 2013
+ * February 2014
  *
  * Definitions data structure and functions prototypes by which the dictionaries
  * of compressor and decompressor are implemented.
@@ -24,11 +24,9 @@
 
 /* Dictionary object */
 typedef struct dict {
-	
 	int dict_size;	/* Dimension of the dictionary */
 	int symbols;	/* Cardinality of the alphabet with which words are written */
 	ht_table table;	/* Hash table, core of the dictionary */
-
 } dictionary;
 
 
@@ -89,11 +87,11 @@ void comp_dict_suppress(dictionary* dict);
  *		*		*		*		*		*		*		*		*		*/
 
 /* Dictionary object */
-typedef struct dec_dict{
+typedef struct dec_dict {
 	int size;	/* Dimension of the dictionary */
 	int symbols;	/* Cardinality of the alphabet with which words are written */
 	table tab;	/* Table, core of the dictionary */
-}dec_dictionary;
+} dec_dictionary;
 
 
 /* DECOMP_DICT_INIT

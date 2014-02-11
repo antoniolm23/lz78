@@ -1,7 +1,7 @@
 /*
  * comp.h
  * Antonio La Marra - Giacomo Rotili
- * December 2013
+ * February 2014
  *
  * Definition of data and function prototypes that implemented the compression
  * and decompression algorithms.

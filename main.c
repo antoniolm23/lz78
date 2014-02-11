@@ -1,23 +1,23 @@
 /*
-* main.c
-* Antonio La Marra - Giacomo Rotili
-* January 2014
-*
-* Implementation of lz78 command.
-*
-* NOTE: main merely reads and interprets the command parameters, then calling 
-		compress() or decompress().
-*/
+ * main.c
+ * Antonio La Marra - Giacomo Rotili
+ * January 2014
+ *
+ * Implementation of lz78 command.
+ *
+ * NOTE: main merely reads and interprets the command parameters, then calling
+ compress() or decompress().
+ */
 
 
 #include "everything.h"
 #include "comp.h"
 
 int main(int argc, char* argv[]) {
-
+	
 	int size = 0;	/* size of the dictionary used by compressor */
 	int actopt;	/* takes into account the character corresponding to actual
-					option */
+				 option */
 	/* flags for the options */
 	bool comp_opt = false;	/* compression option */
 	bool decomp_opt = false;	/* decompression option */
@@ -32,25 +32,25 @@ int main(int argc, char* argv[]) {
 	char* key_inst = "Type the string to compress at the end press Ctrl+D\n";
 	struct timeval start_time;	/* Start time to clock processing */
 	struct timeval finish_time;	/* Finish time to clock processing */
-
+	
 	/* Checking syntax of the command */
 	if(argc < 2) {	/* Surely missing parameters */
 		fprintf(stderr, "Missing options!\n");
 		exit(-1);
 	}
-
+	
 	/* Checking options entered by the user */
-
+	
 	while((actopt = getopt(argc, argv, "cdvi:o:s:k:")) != -1) {
 		switch(actopt) {
 			case 'c':	/* compression */
 				comp_opt = true;
 				break;
-
+				
 			case 'd':	/* decompression */
 				decomp_opt = true;
 				break;
-
+				
 			case 'i':	/* input filename */
 				input_opt = true;
 				input_filename = optarg;
@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
 					return -1;
 				}
 				break;
-
+				
 			case 'o':	/* output filename */
 				output_opt = true;
 				output_filename = optarg;
@@ -68,57 +68,57 @@ int main(int argc, char* argv[]) {
 					return -1;
 				}
 				break;
-
+				
 			case 'v':	/* verbose mode */
 				verbose_opt = true;
 				break;
-
+				
 			case 's':   /* size of dictionary */
 				size_opt = true;
 				size = atoi(optarg);    /* optarg is a string */
 				break;
-
+				
 			case 'k':   /* sequence to compress from keyboard */
 				keyboard_opt = true;
 				break;
-
+				
 			default:
-			break;
+				break;
 		}
 	}
-
+	
 	if(size < 900 || size_opt == false)	/* Default size of the dictionary */
 		size = 900;
-
-/*		*		*		*		*		*		*		*		*		*
-*								COMPRESSOR
-*		*		*		*		*		*		*		*		*		*/
-
+	
+	/*		*		*		*		*		*		*		*		*		*
+	 *								COMPRESSOR
+	 *		*		*		*		*		*		*		*		*		*/
+	
 	if(comp_opt == true) {
 		if(keyboard_opt == true) {	/* No file to compress, input from keyboard */
 			input_filename = NULL;
 			fprintf(stderr, "%s", key_inst);	/* keyboard input instruction for use */
 		}
-	else {
-		if(input_opt == false)
-			input_filename = "file.txt";	/* default file to compress */
+		else {
+			if(input_opt == false)
+				input_filename = "file.txt";	/* default file to compress */
+		}
+		
+		if(output_opt == false)
+			output_filename = "compressed.lz78";    /* default name of compressed file */
+		if(verbose_opt == true) {	/* verbose mode on? */
+			fprintf(stderr, "%s", title);
+			gettimeofday(&start_time, NULL); /* Start time to clock processing */
+		}
+		
+		/* start compression */
+		compress(input_filename, output_filename, size);
 	}
-
-	if(output_opt == false)
-		output_filename = "compressed.lz78";    /* default name of compressed file */
-	if(verbose_opt == true) {	/* verbose mode on? */
-		fprintf(stderr, "%s", title);
-		gettimeofday(&start_time, NULL); /* Start time to clock processing */
-	}
-
-	/* start compression */
-	compress(input_filename, output_filename, size);
-	}
-
-/*		*		*		*		*		*		*		*		*		*
-*								DECOMPRESSOR
-*		*		*		*		*		*		*		*		*		*/
-
+	
+	/*		*		*		*		*		*		*		*		*		*
+	 *								DECOMPRESSOR
+	 *		*		*		*		*		*		*		*		*		*/
+	
 	if(decomp_opt == true) {
 		if(input_opt == false)
 			input_filename = "compressed.lz78";	/* default name of compressed file */
@@ -127,16 +127,16 @@ int main(int argc, char* argv[]) {
 		if(verbose_opt == true) {	/* verbose mode on? */
 			fprintf(stderr, "%s", title);
 			gettimeofday(&start_time, NULL);	/* Start to clock processing */
-	}
-
-	/* start decompression */
-	decompress(input_filename, output_filename);
+		}
+		
+		/* start decompression */
+		decompress(input_filename, output_filename);
 	}
 	
 	if(verbose_opt ==  true) {	/* verbose mode on? */
 		gettimeofday(&finish_time, NULL); /* Finish to clock processing */
 		verbose_mode(comp_opt, start_time, finish_time, input_filename, output_filename);
 	}
-
+	
 	return 0;
 }

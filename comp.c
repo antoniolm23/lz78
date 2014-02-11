@@ -1,12 +1,12 @@
 /*
-* comp.c
-* Antonio La Marra - Giacomo Rotili
-* December 2013
-*
-* Implementation of the compression and decompression algorithms.
-*
-*
-*/
+ * comp.c
+ * Antonio La Marra - Giacomo Rotili
+ * February 2014
+ *
+ * Implementation of the compression and decompression algorithms.
+ *
+ *
+ */
 
 
 #include "comp.h"
@@ -15,11 +15,11 @@
 
 
 /* COMPRESS
-*
-* PURPOSE: Implement the LZ78 compress algorithm
-*/
+ *
+ * PURPOSE: Implement the LZ78 compress algorithm
+ */
 void compress(char* from, char* to, int size) {
-
+	
 	int position = -1;	/* position of a word in the dictionary */
 	int father = 0;	/* last match found */
 	int blen = 1;	/* length of dictionary's indexes (in bit) */
@@ -30,71 +30,71 @@ void compress(char* from, char* to, int size) {
 	unsigned int tmp = 0;	/* Symbol read from file to compress (1 byte)*/
 	unsigned int itmp = 0;	/* index to write */
 	bool first_cycle = true;	/* flag to discriminate first symbol read, which
-									that will always produce a match
-									(See HASH_INIT in tab.c) */
-
+								 that will always produce a match
+								 (See HASH_INIT in tab.c) */
+	
 	FILE* file_read, *file_write;   /* To handle input and output file */
-
+	
 	struct bitio* bit;	/* Bitio interface to write indexes on file compressed */
 	dictionary* dict;	/* pointer to dictionary object */
-
+	
 	dict = malloc(sizeof(dictionary));	/* Create the dictionary */
 	if(dict == NULL)
 		exit(-1);
-
+	
 	/* Compute lenght of dictionary's indexes */
 	size_tmp = size;
 	while(size_tmp >>= 1)
 		blen++;
-
-/* Initialize the dictionary; reading a byte at time, the alphabet is composed
-	by the bit strings in [0, 255] */
+	
+	/* Initialize the dictionary; reading a byte at time, the alphabet is composed
+	 by the bit strings in [0, 255] */
 	comp_dict_init(dict, size, 256);
-
-/* Create the output file trough bitio interface */
+	
+	/* Create the output file trough bitio interface */
 	bit = bit_open(to, "w");
 	if(bit == NULL) {
 		fprintf(stderr, "null bitio\n");
 		comp_dict_suppress(dict);
 	}
-
-/* Write the header at the beginning of the file */
+	
+	/* Write the header at the beginning of the file */
 	bitio_write(bit, (uint64_t)size, (sizeof(int) * 8));
-
+	
 	if(from == NULL) /* Sequence to compress from keyboard? */
 		file_read = stdin;
 	else
 		file_read = fopen(from, "r");
 	if(file_read == NULL)
 		exit(-1);
-
+	
 	do {
 		result = fread(&tmp, 1, 1, file_read);  /* Read the symbol */
 		if(result == 0)
 			break;
-
+		
 		father = tmp;
 		itmp = father;
 		tmp_longest_match++;	/* Update length of the actual "matching" string */
-
+		
 		if(first_cycle != true)	/* Not first symbol read? */
-			/* search the actual string in the dictionary */
+		/* search the actual string in the dictionary */
 			position = comp_dict_search(&father, tmp, dict);
-
-			if(position != -1) {	/* No Match */
-
-		/* add the string in the dictionary */
-		comp_dict_add_word(position, father, tmp, dict);
-
-		/* Write on compressed file, label of the last match */
-		bitio_write(bit, (uint64_t)itmp, blen);
-
-		father = tmp;   /* Next match search will start from this symbol */
-			}
+		
+		if(position != -1) {	/* No Match */
+			
+			/* add the string in the dictionary */
+			comp_dict_add_word(position, father, tmp, dict);
+			
+			/* Write on compressed file, label of the last match */
+			bitio_write(bit, (uint64_t)itmp, blen);
+			
+			father = tmp;   /* Next match search will start from this symbol */
+		}
 		first_cycle = false;	/* First iteration end */
-
-	} while(result != 0 || !feof(file_read));	/* Until reach the EOF or an 
-													error occurs */
+		
+	} while(result != 0 || !feof(file_read));	/* Until reach the EOF or an
+												 error occurs */
 	
 	bitio_write(bit, father, blen);	/* Write the last position reached */
 	bitio_write(bit, EOFC, blen);	/* Write EOF on the compressed file */
@@ -159,7 +159,8 @@ void decompress(char* from, char* to) {
 		decomp = stdout;
 	else
 		decomp = fopen(to, "w");    /* File decompressed */
-	if(decomp == NULL) exit(-1);
+	if(decomp == NULL)
+		exit(-1);
 	
 	bitio_read(comp_file, &read_index, index_bits); /* Read the first index */
 	
