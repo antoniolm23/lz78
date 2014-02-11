@@ -24,7 +24,6 @@ void compress(char* from, char* to, int size) {
 	int father = 0;	/* last match found */
 	int blen = 1;	/* length of dictionary's indexes (in bit) */
 	int result = 0;	/* variable to store fread() return */
-	int longest_match = 1;	/* Length of longest match */
 	int tmp_longest_match = 1;
 	unsigned int size_tmp = 0;	/* store variable for size */
 	unsigned int tmp = 0;	/* Symbol read from file to compress (1 byte)*/
@@ -33,7 +32,7 @@ void compress(char* from, char* to, int size) {
 								 that will always produce a match
 								 (See HASH_INIT in tab.c) */
 	
-	FILE* file_read, *file_write;   /* To handle input and output file */
+	FILE* file_read;   /* To handle input and output file */
 	
 	struct bitio* bit;	/* Bitio interface to write indexes on file compressed */
 	dictionary* dict;	/* pointer to dictionary object */
@@ -114,7 +113,6 @@ void compress(char* from, char* to, int size) {
  */
 void decompress(char* from, char* to) {
 	
-	int max_length; /* Length of the longest word in dictionary */
 	int actual_length = 0;	/* Length of the just retrieved word */
 	int tmp_length;
 	int i;  /* iterator */

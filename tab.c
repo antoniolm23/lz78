@@ -74,7 +74,7 @@ uint32_t lookup(const void *key, size_t length, uint32_t initval) {
  *
  * PURPOSE: Insert an element at the top of collision list
  */
-int list_ins(int pos, int father, collision_elem** list) {
+void list_ins(int pos, int father, collision_elem** list) {
 	
 	collision_elem* p, *q, *t;
 	

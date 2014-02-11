@@ -220,7 +220,7 @@ void hash_print(ht_table* table);
  *				symbols - number of symbols of the compressed sequence
  *				table - table to initialize
  */
-void tab_init(table* t, int size, int symbols);
+int tab_init(table* t, int size, int symbols);
 
 /* TAB_INSERTION
  * PURPOSE:	Insert an element(child node) to the table(tree)
