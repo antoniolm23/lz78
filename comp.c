@@ -24,7 +24,6 @@ void compress(char* from, char* to, int size) {
 	int father = 0;	/* last match found */
 	int blen = 1;	/* length of dictionary's indexes (in bit) */
 	int result = 0;	/* variable to store fread() return */
-	int tmp_longest_match = 1;
 	unsigned int size_tmp = 0;	/* store variable for size */
 	unsigned int tmp = 0;	/* Symbol read from file to compress (1 byte)*/
 	unsigned int itmp = 0;	/* index to write */
@@ -55,6 +54,7 @@ void compress(char* from, char* to, int size) {
 	if(bit == NULL) {
 		fprintf(stderr, "null bitio\n");
 		comp_dict_suppress(dict);
+        exit(-1);
 	}
 	
 	/* Write the header at the beginning of the file */
@@ -72,10 +72,12 @@ void compress(char* from, char* to, int size) {
 		if(result == 0)
 			break;
 		
-		father = tmp;
-		itmp = father;
-		tmp_longest_match++;	/* Update length of the actual "matching" string */
+        if(first_cycle == true) 
+            father = tmp;
+        
+        itmp = father;
 		
+        
 		if(first_cycle != true)	/* Not first symbol read? */
 		/* search the actual string in the dictionary */
 			position = comp_dict_search(&father, tmp, dict);
@@ -160,12 +162,11 @@ void decompress(char* from, char* to) {
 	if(decomp == NULL)
 		exit(-1);
 	
-	bitio_read(comp_file, &read_index, index_bits); /* Read the first index */
-	
 	do {
 		
 		bitio_read(comp_file, &read_index, index_bits); /* Read next index */
-		
+		if(read_index == EOFC) 
+            break;
 		/* retrieve word */
 		res_retrieve = decomp_dict_reb_word(read_index, vector, &actual_length, dict);
 		
