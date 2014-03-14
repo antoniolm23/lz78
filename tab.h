@@ -30,30 +30,6 @@
 #define FOUND 3
 #define NOT_FOUND 4
 
-/* Computations used by the function lookup() to compute the hash (See tab.c) */
-
-#define rot(x, k) (((x) << (k)) | ((x) >> (32 - (k))))
-
-#define mix(a, b, c) \
-{ \
-	a -= c;  a ^= rot(c, 4);  c += b; \
-	b -= a;  b ^= rot(a, 6);  a += c; \
-	c -= b;  c ^= rot(b, 8);  b += a; \
-	a -= c;  a ^= rot(c, 16);  c += b; \
-	b -= a;  b ^= rot(a, 19);  a += c; \
-	c -= b;  c ^= rot(b, 4);  b += a; \
-}
-
-#define final(a, b, c) \
-{ \
-	c ^= b; c -= rot(b, 14); \
-	a ^= c; a -= rot(c, 11); \
-	b ^= a; b -= rot(a, 25); \
-	c ^= b; c -= rot(b, 16); \
-	a ^= c; a -= rot(c, 4);  \
-	b ^= a; b -= rot(a, 14); \
-	c ^= b; c -= rot(b, 24); \
-}
 
 /*		*		*		*		*		*		*		*		*		*
  *							COMPRESSOR DATA STRUCTURES
@@ -187,7 +163,7 @@ int hash(int father, int size);
  *				table - hash table in which insert
  *
  * RETURNS:	Returns 1 if the insertion successfully,otherwise -1 i.e. if the
- *			table is full
+ *			table is full, i.e. when the load factor is 0.75
  */
 int hash_add(int index, int father, unsigned int symbol, ht_table* table);
 
@@ -229,7 +205,9 @@ int tab_init(table* t, int size, int symbols);
  *				table - table in which insert
  *
  * RETURNS:	Returns the position in which insert next node, otherwise -1 i.e.
- *			the table is full
+ *			the table is full, i.e. when the load factor is 0.75
+ * 
+ *
  */
 int tab_insertion(int father, unsigned int symbol, table* t);
 

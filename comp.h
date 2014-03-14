@@ -13,6 +13,17 @@
 
 #include "dict.h"
 
+#define N_PRIME 14
+
+
+/* LESS_PRIME
+ *
+ * PURPOSE: Retrieve from file the largest prime number less than n
+ * PARAMETERS:	n - reference number for the retrieval
+ */
+int less_prime(int n, int v[]);
+
+
 /* COMPRESS
  *
  * PURPOSE: Implement the LZ78 compress algorithm

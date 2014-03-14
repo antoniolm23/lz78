@@ -88,7 +88,9 @@ int main(int argc, char* argv[]) {
 	}
 	
 	if(size < 900 || size_opt == false)	/* Default size of the dictionary */
-		size = 900;
+		size = 887;
+	if(size > 65535)
+		fprintf(stderr, "Dimension out of range, set to max value available\n");
 	
 	/*		*		*		*		*		*		*		*		*		*
 	 *								COMPRESSOR

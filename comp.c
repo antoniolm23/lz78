@@ -14,12 +14,35 @@
 #include "sys/stat.h"
 
 
+/* LESS_PRIME
+ *
+ * PURPOSE: Retrieve from a specific array the largest prime number less than n
+ * PARAMETERS:	n - reference number for the retrieval
+ */
+int less_prime(int n, int v[]){
+	
+	int i;
+	
+	if(n <= v[1])
+		return v[1];
+	
+	for(i=0; i<N_PRIME; i++) {
+		if(n > v[i] && n < v[i+1])
+			return v[i];
+	}
+	return v[N_PRIME];
+}
+
+
 /* COMPRESS
  *
  * PURPOSE: Implement the LZ78 compress algorithm
  */
 void compress(char* from, char* to, int size) {
 	
+	/* possible values ​​of the size of the dictionary */
+	int prime[] = {1021, 1531, 2203, 3067, 4549, 6143, 9137, 12281,
+		19207, 24571, 37139, 49139, 56237, 77773};
 	int position = -1;	/* position of a word in the dictionary */
 	int father = 0;	/* last match found */
 	int blen = 1;	/* length of dictionary's indexes (in bit) */
@@ -39,6 +62,8 @@ void compress(char* from, char* to, int size) {
 	dict = malloc(sizeof(dictionary));	/* Create the dictionary */
 	if(dict == NULL)
 		exit(-1);
+	
+	size = less_prime(size, prime);	/* Compute dictionary's indexes*/
 	
 	/* Compute lenght of dictionary's indexes */
 	size_tmp = size;
