@@ -40,7 +40,7 @@ int less_prime(int n, int v[]){
  */
 void compress(char* from, char* to, int size) {
 	
-	/* possible values ​​of the size of the dictionary */
+	/* possible values of the size of the dictionary */
 	int prime[] = {1021, 1531, 2203, 3067, 4549, 6143, 9137, 12281,
 		19207, 24571, 37139, 49139, 56237, 77773};
 	int position = -1;	/* position of a word in the dictionary */
